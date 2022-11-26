@@ -10,12 +10,14 @@
 <body class="page__body">
 
   <header class="main-header">
-    <a class="main-header__logo-sign-mobile">
+    <a class="main-header__logo-sign-mobile" href="./index.html">
       <img class="logo-sign-mobile" src="./img/ce-logo-sign-mobile.svg" width="34" height="38"
         alt="Логотип компании Кэт-Энерджи.">
+      <span class="visually-hidden">Переход на главную страницу сайта.</span>
     </a>
-    <a class="main-header__logo-text">
+    <a class="main-header__logo-text" href="./index.html">
       <img class="logo-text" src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
+      <span class="visually-hidden">Переход на главную страницу сайта.</span>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -24,17 +26,17 @@
       <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">
+            <a class="main-nav__link" href="./index.html">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link" href="./catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__item  main-nav__item--current">
-            <a class="main-nav__link">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">
               Подбор программы
             </a>
           </li>
@@ -116,7 +118,7 @@
           <ul class="fieldset__checkbox-list">
             <li class="fieldset__checkbox-list-item">
               <input class="fieldset__checkbox" type="checkbox" id="optional-sweetener" name="optional-goods"
-                value="sweetener">
+                value="sweetener" checked>
               <label for="optional-sweetener" class="fieldset__lable">сахарозаменитель</label>
             </li>
             <li class="fieldset__checkbox-list-item">
@@ -135,7 +137,7 @@
           </ul>
         </fieldset>
         <button class="selection-form__submit-button button" type="submit">Отправить заявку</button>
-        <P class="selection-form__required-comment-text">* — Обязательные поля</P>
+        <p class="selection-form__required-comment-text">* — Обязательные поля</p>
       </form>
     </section>
 
@@ -143,20 +145,25 @@
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="section-address__invitation invitation">
         <p class="invitation__text">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="invitation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="invitation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
+      <iframe class="section-address__map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac73c773355661d4ad1f7f6566c411e0f16d2d41f51f743cf585d747337a2fc40&amp;source=constructor">
+      </iframe>
     </section>
 
   </main>
 
   <footer class="main-footer">
 
-    <a class="main-footer__logo" href="">
+    <a class="main-footer__logo" href="./index.html">
+      <span class="visually-hidden">Переход на главную страницу сайта.</span>
       <img class="logo-text" src="./img/ce-logo-text.svg" width="128" height="24" alt="Логотип компании Кэт-Энерджи.">
     </a>
     <ul class="main-footer__socials socials">
       <li class="socials__item">
-        <a href="" class="socials__link socials__link--vkontakte">
+        <a href="#" class="socials__link socials__link--vkontakte">
+          <span class="visually-hidden">Переход на страницу компании во ВКонтакте.</span>
           <svg class="socials__img" xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor"
             viewBox="0 0 28 22">
             <path
@@ -165,7 +172,8 @@
         </a>
       </li>
       <li class="socials__item">
-        <a href="" class="socials__link socials__link--youtube">
+        <a href="#" class="socials__link socials__link--youtube">
+          <span class="visually-hidden">Переход на страницу компании в Youtube.</span>
           <svg class="socials__img" xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor"
             viewBox="0 0 28 22">
             <path
@@ -174,7 +182,8 @@
         </a>
       </li>
       <li class="socials__item">
-        <a href="" class="socials__link socials__link--telegram">
+        <a href="#" class="socials__link socials__link--telegram">
+          <span class="visually-hidden">Переход на страницу компании в Telegram.</span>
           <svg class="socials__img" xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor"
             viewBox="0 0 28 22">
             <path fill-rule="evenodd"
@@ -187,6 +196,7 @@
     <div class="main-footer__htmlacademy-logo">
       <a class="htmlacademy-logo htmlacademy-logo--extended" href="https://htmlacademy.ru/intensive/adaptive"
         target="_blank">
+        <span class="visually-hidden">Переход на сайт компании HTМL academy.</span>
         <p class="htmlacademy-logo__text">HTML Academy</p>
         <svg class="htmlacademy-logo__sign" xmlns="http://www.w3.org/2000/svg" width="27" height="34"
           viewBox="0 0 27 34" fill="currentColor">

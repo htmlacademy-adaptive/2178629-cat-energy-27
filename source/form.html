@@ -4,18 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>HTML Academy: Кэт энерджи. Подбор Программы.</title>
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
-    <a class="main-header__logo-sign-mobile">
+    <a class="main-header__logo-sign-mobile" href="./index.html">
       <img class="logo-sign-mobile" src="./img/ce-logo-sign-mobile.svg" width="34" height="38"
         alt="Логотип компании Кэт-Энерджи.">
+      <span class="visually-hidden">Переход на главную страницу сайта.</span>
     </a>
-    <a class="main-header__logo-text">
+    <a class="main-header__logo-text" href="./index.html">
       <img class="logo-text" src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
+      <span class="visually-hidden">Переход на главную страницу сайта.</span>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -24,7 +26,7 @@
       <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current">
+            <a class="main-nav__link" href="./index.html">
               Главная
             </a>
           </li>
@@ -34,7 +36,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="./form.html">
+            <a class="main-nav__link main-nav__link--current">
               Подбор программы
             </a>
           </li>
@@ -45,82 +47,98 @@
 
   <main class="main-wrapper">
 
-    <h1 class="visually-hidden">Системы функционального питания для котов. Похудение и набор массы.</h1>
+    <h1 class="visually-hidden">Подбор программы системы функционального питания для котов.</h1>
 
-    <section class="section-hero">
-      <h2 class="visually-hidden">Начните выбор системы функционального питания для котов.</h2>
-      <b class="section-hero__title title">Функциональное питание для котов</b>
-      <p class="section-hero__subtitle">Занялся собой? Займись котом!</p>
-      <img class="section-hero__img" src="./img/index-can-mobile.png"
-        alt="Упаковка питания для котов серии Кэт Энерджи Про, курица, весом 500 грамм.">
-      <a class="section-hero__button button" href="./form.html">Подобрать программу</a>
-    </section>
-
-    <section class="section-programs">
-      <h2 class="visually-hidden">Описание программ функционального питания для котов.</h2>
-      <ul class="section-programs__list">
-        <li class="section-programs__item program program--slim">
-          <h3 class="program-title">Похудение</h3>
-          <p class="program-desription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
-            на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="program-to-catalog-link" href="./catalog.html#first-slim-product">Каталог Slim</a>
-        </li>
-        <li class="section-programs__item program program--pro">
-          <h3 class="program-title">Набор массы</h3>
-          <p class="program-desription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-            поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="program-to-catalog-link" href="./catalog.html#first-pro-product">Каталог Pro</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section-workflow">
-      <h2 class="visually-hidden">Описание действия программ функционального питания котов.</h2>
-      <b class="section-workflow__title title">Как это работает</b>
-      <ol class="section-workflow__list">
-        <li class="workflow-item workflow-item--contents">
-          <p class="workflow-item__description">Функциональное питание содержит только полезные питательные вещества.
-          </p>
-        </li>
-        <li class="workflow-item workflow-item--powder">
-          <p class="workflow-item__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </p>
-        </li>
-        <li class="workflow-item workflow-item--change">
-          <p class="workflow-item__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        </li>
-        <li class="workflow-item workflow-item--result">
-          <p class="workflow-item__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="section-live-sample">
-      <h2 class="visually-hidden">Пример эффективного приминения системы функционального питания для котов.</h2>
-      <b class="section-live-sample__title">Живой пример</b>
-      <p class="section-live-sample__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-        Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-        спит по 16 часов в день.</p>
-      <dl class="section-live-sample__infographics infographics">
-        <div class="infographics__item infographics__item--decoration">
-          <dt class="infographics__definition infographics__definition--decoration">Снижение веса</dt>
-          <dd class="infographics__value infographics__value--decoration">5 кг</dd>
-        </div>
-        <div class="infographics__item  infographics__item--decoration">
-          <dt class="infographics__definition infographics__definition--decoration">Затрачено времени</dt>
-          <dd class="infographics__value infographics__value--decoration">60 дней</dd>
-        </div>
-        <div class="infographics__item">
-          <dt class="infographics__definition">Затраты на питание:</dt>
-          <dd class="infographics__value"> 15 000 руб.</dd>
-        </div>
-      </dl>
-      <div class="section-live-sample__compare-slider-container">
-        <img src="./img/cat-before.png" width="280" height="256"
-          alt="Толстый кот — до прохождения программы Кэт Энерджи.">
-        <img src="./img/cat-after.png" width="280" height="256"
-          alt="Стройный кот — после прохождения программы Кэт Энерджи.">
-      </div>
+    <section class="section-selection-form">
+      <h2 class="visually-hidden">Форма подбора программы системы функционального питания для котов.</h2>
+      <b class="section-selection-form__title title">Подбор программы</b>
+      <p class="section-selection-form__description">Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+      <form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="selection-form__fieldset fieldset">
+          <legend class="fieldset__legend fieldset__legend--regdata">
+            <span class="visually-hidden">Регистрация пользователя.</span>
+          </legend>
+          <label class="fieldset__label" for="regdata-name">Имя:*</label>
+          <input class="fieldset__input" type="text" id="regdata-name" name="regdata-name" placeholder="Барсик"
+            required>
+          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
+          <label class="fieldset__label" for="regdata-weight">Вес(кг):*</label>
+          <input class="fieldset__input" type="number" id="regdata-weight" name="regdata-weight" placeholder="7"
+            required>
+          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
+          <label class="fieldset__label" for="regdata-age">Возраст(лет):*</label>
+          <input class="fieldset__input" type="number" id="regdata-age" name="regdata-age" placeholder="7" required>
+          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
+        </fieldset>
+        <fieldset class="selection-form__fieldset fieldset">
+          <legend class="fieldset__legend fieldset__legend--program-select">
+            <span class="visually-hidden">Выбор программы.</span>
+          </legend>
+          <ul class="fieldset__radio-list">
+            <li class="fieldset__radio-list-item">
+              <input class="fieldset__radio" type="radio" id="weight-loose" name="program-select" value="slim" checked>
+              <label class="fieldset__label" for="weight-loose">Похудение</label>
+            </li>
+            <li class="fieldset__radio-list-item">
+              <input class="fieldset__radio" type="radio" id="weight-gain" name="program-select" value="pro">
+              <label class="fieldset__label" for="weight-gain">Набор массы</label>
+            </li>
+            <li class="fieldset__radio-list-item">
+              <input class="fieldset__radio" type="radio" id="need-advise" name="program-select" value="need-advise">
+              <label class="fieldset__label" for="need-advise">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="selection-form__fieldset fieldset">
+          <legend class="fieldset__legend fieldset__legend--contacts">
+            Контактные данные. (Владелец кота)
+          </legend>
+          <label class="fieldset__label" for="contacts-email">E-mail:*</label>
+          <input class="fieldset__input" type="email" id="contacts-email" name="contacts-email"
+            placeholder="kuklachev@gmail.com" required>
+          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
+          <label class="fieldset__label" for="regdata-weight">Телефон*</label>
+          <input class="fieldset__input" type="tel" id="contacts-tel" name="contacts-tel"
+            placeholder="8 (960) 900-60-90" required>
+          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
+        </fieldset>
+        <fieldset class="selection-form__fieldset fieldset">
+          <legend class="fieldset__legend fieldset__legend--contacts">
+            Комментарий
+          </legend>
+          <label class="visually-hidden" for="comments">Расскажите обо всех повАдках кота.</label>
+          <textarea class="fieldset__input" name="comments" id="comments" cols="30"
+            rows="3">Расскажите обо всех повАдках кота</textarea>
+        </fieldset>
+        <fieldset class="selection-form__fieldset fieldset">
+          <legend class="fieldset__legend fieldset__legend--optional-goods">
+            Дополнительно
+          </legend>
+          <ul class="fieldset__checkbox-list">
+            <li class="fieldset__checkbox-list-item">
+              <input class="fieldset__checkbox" type="checkbox" id="optional-sweetener" name="optional-goods"
+                value="sweetener" checked>
+              <label for="optional-sweetener" class="fieldset__lable">сахарозаменитель</label>
+            </li>
+            <li class="fieldset__checkbox-list-item">
+              <input class="fieldset__checkbox" type="checkbox" id="optional-water" name="optional-goods" value="water">
+              <label for="optional-water" class="fieldset__lable">питьевая вода</label>
+            </li>
+            <li class="fieldset__checkbox-list-item">
+              <input class="fieldset__checkbox" type="checkbox" id="optional-mlik" name="optional-goods" value="mlik">
+              <label for="optional-mlik" class="fieldset__lable">молоко</label>
+            </li>
+            <li class="fieldset__checkbox-list-item">
+              <input class="fieldset__checkbox" type="checkbox" id="optional-vitamins" name="optional-goods"
+                value="vitamins">
+              <label for="optional-vitamins" class="fieldset__lable">витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="selection-form__submit-button button" type="submit">Отправить заявку</button>
+        <p class="selection-form__required-comment-text">* — Обязательные поля</p>
+      </form>
     </section>
 
     <section class="section-address">
@@ -138,7 +156,8 @@
 
   <footer class="main-footer">
 
-    <a class="main-footer__logo">
+    <a class="main-footer__logo" href="./index.html">
+      <span class="visually-hidden">Переход на главную страницу сайта.</span>
       <img class="logo-text" src="./img/ce-logo-text.svg" width="128" height="24" alt="Логотип компании Кэт-Энерджи.">
     </a>
     <ul class="main-footer__socials socials">

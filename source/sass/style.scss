@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+@import "./globals.scss";
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./blocks/body.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav";
+@import "./blocks/main-wrapper.scss";
+@import "./blocks/section-hero.scss";
+@import "./blocks/section-live-sample.scss";
+@import "./blocks/section-programs.scss";
+@import "./blocks/section-workflow.scss";
+@import "./blocks/page.scss";
+@import "./blocks/program.scss";
+@import "./blocks/title.scss";
+@import "./blocks/infographics.scss";
+@import "./blocks/compare-slider.scss";
+@import "./blocks/section-address.scss";

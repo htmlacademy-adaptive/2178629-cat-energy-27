@@ -1,0 +1,28 @@
+.section-workflow {
+  padding: 0 20px 49px 20px;
+}
+
+.section-workflow__title {
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+.section-workflow__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.workflow-item {
+  padding-left: 80px;
+}
+
+.workflow-item__description {
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+// @import "../variables.scss";
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  outline: auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-invert;
+  background-color: $brand-color;
+  text-decoration: none;
+}

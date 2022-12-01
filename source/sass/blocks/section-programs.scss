@@ -1,0 +1,18 @@
+// @import "../variables.scss";
+
+.section-programs {
+  padding: 0 20px 20px 20px;
+}
+
+.section-programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-programs__item {
+  padding: 30px 20px 22px 20px;
+}

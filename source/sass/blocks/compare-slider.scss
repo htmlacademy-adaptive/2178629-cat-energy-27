@@ -1,0 +1,12 @@
+.compare-slider {
+  display: block;
+  position: relative;
+}
+
+.compare-slider__secondary-image {
+  width: 280px;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  transform: translate(50%);
+}

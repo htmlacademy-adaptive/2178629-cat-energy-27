@@ -1,0 +1,85 @@
+.main-footer {
+  padding: 7px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer-item--decorated {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__logo {
+  box-sizing: border-box;
+  width: 100%;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-footer__socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  display: flex;
+  justify-content: center;
+  width: 52px;
+  height: 63px;
+}
+
+.socials__link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-footer__htmlacademy-logo {
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.htmlacademy-logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-decoration: none;
+  color: #666666;
+}
+
+.htmlacademy-logo--extended {
+  justify-content: space-between;
+}
+
+.htmlacademy-logo:hover {
+  color: green;
+}
+
+.htmlacademy-logo:active {
+  opacity: 0.3;
+}
+
+.htmlacademy-logo__text {
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  color: #444444;
+  text-decoration: inherit;
+}
+
+.htmlacademy-logo:hover .htmlacademy-logo__text {
+  color: red;
+  text-decoration: inherit;
+}

@@ -4,9 +4,10 @@
   display: block;
   box-sizing: border-box;
   outline: auto;
+  width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
-  line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: $text-invert;
   background-color: $brand-color;
   text-decoration: none;

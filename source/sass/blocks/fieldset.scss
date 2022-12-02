@@ -1,0 +1,103 @@
+.fieldset {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0 20px 24px;
+}
+
+.fieldset__content {
+  display: flex;
+  flex-direction: column;
+  // align-items: flex-start;
+  gap: 14px;
+}
+
+// .test::after {
+//   position: absolute;
+//   content: "";
+//   height: 3px;
+//   top: 15px;
+//   left: 100px;
+//   right: 0;
+//   background-color: $brand-color;
+//   z-index: -1;
+// }
+
+.fieldset--decorated {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 35px;
+}
+
+.fieldset__input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.fieldset__label {
+  @include accented-text(16px, 18px, uppercase);
+  width: max-content;
+}
+
+.fieldset__input {
+  @include accented-text(16px, 18px, uppercase);
+  flex-grow: 1;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+}
+.fieldset__input--textarea {
+  @include accented-text(16px, 18px, uppercase);
+  flex-grow: 1;
+  padding-top: 9px;
+  padding-right: 14px;
+  padding-left: 14px;
+  height: 150px;
+}
+
+.fieldset__radio-list,
+.fieldset__checkbox-list {
+  @include reset-list;
+  margin-top: 22px;
+}
+
+.fieldset__legend {
+  margin-bottom: 35px;
+}
+
+.fieldset__legend-styling {
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  // background-color: red;
+  // box-shadow: 20px 0 red, -20px 0 red;
+}
+
+.fieldset--submit {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: center;
+  padding-bottom: 32px;
+  }
+
+.fieldset__submit-button {
+  font-size: 14px;
+  line-height: 26px;
+  padding: 7px;
+}
+
+.fieldset__required-comment-text {
+  margin: 0;
+  padding: 0;
+}
+
+
+.fieldset__legend--contacts,
+.fieldset__legend--comments,
+.fieldset__legend--optional-goods {
+}

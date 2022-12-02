@@ -1,6 +1,7 @@
 @import "./globals.scss";
 @import "./fonts.scss";
 @import "./variables.scss";
+@import "./mixins.scss";
 @import "./blocks/body.scss";
 @import "./blocks/button.scss";
 @import "./blocks/main-footer.scss";
@@ -17,3 +18,5 @@
 @import "./blocks/infographics.scss";
 @import "./blocks/compare-slider.scss";
 @import "./blocks/section-address.scss";
+@import "./blocks/fieldset.scss";
+@import "./blocks/section-selection-form.scss";

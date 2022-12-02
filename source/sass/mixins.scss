@@ -1,0 +1,13 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin accented-text($size, $line-height, $text-case) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $line-height;
+  text-transform: $text-case;
+}

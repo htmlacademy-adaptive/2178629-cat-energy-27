@@ -51,30 +51,34 @@
     <h1 class="visually-hidden">Подбор программы системы функционального питания для котов.</h1>
 
     <section class="section-selection-form">
-      <h2 class="visually-hidden">Форма подбора программы системы функционального питания для котов.</h2>
-      <b class="section-selection-form__title title">Подбор программы</b>
-      <p class="section-selection-form__description">Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
+      <div class="section-selection-form__header">
+        <h2 class="visually-hidden">Форма подбора программы системы функционального питания для котов.</h2>
+        <b class="section-selection-form__title title">Подбор программы</b>
+        <p class="section-selection-form__description title">Заполните анкету, и мы подберем программу&#160;питания для вашего кота
+        </p>
+      </div>
       <form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="selection-form__fieldset fieldset">
-          <legend class="fieldset__legend fieldset__legend--regdata">
-            <span class="visually-hidden">Регистрация пользователя.</span>
+          <legend class="visually-hidden">Регистрация пользователя.</span>
           </legend>
-          <label class="fieldset__label" for="regdata-name">Имя:*</label>
-          <input class="fieldset__input" type="text" id="regdata-name" name="regdata-name" placeholder="Барсик"
-            required>
-          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
-          <label class="fieldset__label" for="regdata-weight">Вес(кг):*</label>
-          <input class="fieldset__input" type="number" id="regdata-weight" name="regdata-weight" placeholder="7"
-            required>
-          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
-          <label class="fieldset__label" for="regdata-age">Возраст(лет):*</label>
-          <input class="fieldset__input" type="number" id="regdata-age" name="regdata-age" placeholder="7" required>
-          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
+          <div class="fieldset__content">
+            <label class="fieldset__input-container" for="regdata-name">
+              <span class="fieldset__label">Имя:*</span>
+              <input class="fieldset__input" type="text" id="regdata-name" name="regdata-name" placeholder="Барсик" required>
+            </label>
+            <label class="fieldset__input-container" for="regdata-name">
+              <span class="fieldset__label">Вес (кг):*</span>
+              <input class="fieldset__input" type="text" id="regdata-name" name="regdata-name" placeholder="7" required>
+            </label>
+            <label class="fieldset__input-container" for="regdata-name">
+              <span class="fieldset__label">Возраст (лет):*</span>
+              <input class="fieldset__input" type="text" id="regdata-name" name="regdata-name" placeholder="7" required>
+            </label>
+          </div>
         </fieldset>
-        <fieldset class="selection-form__fieldset fieldset">
-          <legend class="fieldset__legend fieldset__legend--program-select">
-            <span class="visually-hidden">Выбор программы.</span>
+        <fieldset class="selection-form__fieldset fieldset fieldset--decorated">
+          <legend class="visually-hidden">
+            Выбор программы.
           </legend>
           <ul class="fieldset__radio-list">
             <li class="fieldset__radio-list-item">
@@ -91,64 +95,74 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="selection-form__fieldset fieldset">
-          <legend class="fieldset__legend fieldset__legend--contacts">
-            Контактные данные. (Владелец кота)
-          </legend>
-          <label class="fieldset__label" for="contacts-email">E-mail:*</label>
-          <input class="fieldset__input" type="email" id="contacts-email" name="contacts-email"
-            placeholder="kuklachev@gmail.com" required>
-          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
-          <label class="fieldset__label" for="regdata-weight">Телефон*</label>
-          <input class="fieldset__input" type="tel" id="contacts-tel" name="contacts-tel"
-            placeholder="8 (960) 900-60-90" required>
-          <p class="fieldset__warning-message">Поле должно быть обязательно заполнено</p>
+        <fieldset class="selection-form__fieldset fieldset fieldset--accented">
+          <legend class="visually-hidden">Контактные данные владельца кота.</legend>
+          <div class="fieldset__legend">
+            <span class="fieldset__legend-styling title">Контактные&#160;данные (владелец&#160;кота)</span>
+          </div>
+          <div class="fieldset__content">
+            <label class="fieldset__input-container" for="contacts-email">
+              <span class="fieldset__label">E-mail:*</span>
+              <input class="fieldset__input" type="email" id="contacts-email" name="contacts-email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="fieldset__input-container" for="regdata-weight">
+              <span class="fieldset__label">Телефон*</span>
+              <input class="fieldset__input" type="tel" id="contacts-tel" name="contacts-tel"
+              placeholder="8 (960) 900-60-90" required>
+            </label>
+          </div>
         </fieldset>
-        <fieldset class="selection-form__fieldset fieldset">
-          <legend class="fieldset__legend fieldset__legend--contacts">
-            Комментарий
-          </legend>
-          <label class="visually-hidden" for="comments">Расскажите обо всех повАдках кота.</label>
-          <textarea class="fieldset__input" name="comments" id="comments" cols="30"
+        <fieldset class="selection-form__fieldset fieldset fieldset--accented">
+          <legend class="visually-hidden">Комментарий.</legend>
+          <div class="fieldset__legend">
+            <span class="fieldset__legend-styling title">Комментарий</span>
+          </div>
+          <div class="fieldset__content">
+            <label class="visually-hidden" for="comments">Расскажите обо всех повАдках кота.</label>
+          <textarea class="fieldset__input fieldset__input--textarea" name="comments" id="comments" cols="30"
             rows="3">Расскажите обо всех повАдках кота</textarea>
+          </div>
         </fieldset>
-        <fieldset class="selection-form__fieldset fieldset">
-          <legend class="fieldset__legend fieldset__legend--optional-goods">
-            Дополнительно
-          </legend>
+        <fieldset class="selection-form__fieldset fieldset fieldset--accented">
+          <legend class="visually-hidden">Дополнительно.</legend>
+          <div class="fieldset__legend">
+            <span class="fieldset__legend-styling title">Дополнительно</span>
+          </div>
           <ul class="fieldset__checkbox-list">
             <li class="fieldset__checkbox-list-item">
               <input class="fieldset__checkbox" type="checkbox" id="optional-sweetener" name="optional-goods"
                 value="sweetener" checked>
-              <label for="optional-sweetener" class="fieldset__lable">сахарозаменитель</label>
+              <label for="optional-sweetener" class="fieldset__label">сахарозаменитель</label>
             </li>
             <li class="fieldset__checkbox-list-item">
               <input class="fieldset__checkbox" type="checkbox" id="optional-water" name="optional-goods" value="water">
-              <label for="optional-water" class="fieldset__lable">питьевая вода</label>
+              <label for="optional-water" class="fieldset__label">питьевая вода</label>
             </li>
             <li class="fieldset__checkbox-list-item">
               <input class="fieldset__checkbox" type="checkbox" id="optional-mlik" name="optional-goods" value="mlik">
-              <label for="optional-mlik" class="fieldset__lable">молоко</label>
+              <label for="optional-mlik" class="fieldset__label">молоко</label>
             </li>
             <li class="fieldset__checkbox-list-item">
               <input class="fieldset__checkbox" type="checkbox" id="optional-vitamins" name="optional-goods"
                 value="vitamins">
-              <label for="optional-vitamins" class="fieldset__lable">витамины</label>
+              <label for="optional-vitamins" class="fieldset__label">витамины</label>
             </li>
           </ul>
         </fieldset>
-        <button class="selection-form__submit-button button" type="submit">Отправить заявку</button>
-        <p class="selection-form__required-comment-text">* — Обязательные поля</p>
+        <div class="fieldset fieldset--submit">
+          <button class="fieldset__submit-button button" type="submit">Отправить заявку</button>
+          <p class="fieldset__required-comment-text">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
 
     <section class="section-address">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="section-address__invitation invitation">
-        <p class="invitation__text">Приглашаем к сотрудничеству дилеров!</p>
+      <div class="section-address__invitation invitation invitation--background">
+        <p class="invitation__text title">Приглашаем к&#160;сотрудничеству дилеров!</p>
         <p class="invitation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <iframe class="section-address__map"
+      <iframe class="section-address__map" frameBorder="none"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac73c773355661d4ad1f7f6566c411e0f16d2d41f51f743cf585d747337a2fc40&amp;source=constructor">
       </iframe>
     </section>
@@ -157,8 +171,7 @@
 
   <footer class="main-footer">
 
-    <a class="main-footer__logo main-footer-item--decorated" href="./index.html">
-      <span class="visually-hidden">Переход на главную страницу сайта.</span>
+    <a class="main-footer__logo-text main-footer-item--decorated">
       <img class="logo-text" src="./img/ce-logo-text.svg" width="128" height="24" alt="Логотип компании Кэт-Энерджи.">
     </a>
     <ul class="main-footer__socials socials main-footer-item--decorated">

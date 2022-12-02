@@ -3,12 +3,17 @@
 .button {
   display: block;
   box-sizing: border-box;
-  outline: auto;
   width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   color: $text-invert;
   background-color: $brand-color;
-  text-decoration: none;
+  border: none;
+}
+
+.button--secondary {
+  color: $text-special;
+  background-color: $brand-background;
 }

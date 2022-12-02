@@ -11,7 +11,8 @@
 <body class="page__body">
 
   <header class="main-header">
-    <a class="main-header__logo-sign-mobile" href="./index.html">
+    <div class="main-header__permanent-header">
+      <a class="main-header__logo-sign-mobile" href="./index.html">
       <img class="logo-sign-mobile" src="./img/ce-logo-sign-mobile.svg" width="34" height="38"
         alt="Логотип компании Кэт-Энерджи.">
       <span class="visually-hidden">Переход на главную страницу сайта.</span>
@@ -20,10 +21,11 @@
       <img class="logo-text" src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
       <span class="visually-hidden">Переход на главную страницу сайта.</span>
     </a>
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню.</span>
+    </button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
       <div class="main-nav__container main-nav__container--hidden">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -59,20 +61,19 @@
       </div>
       <form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="selection-form__fieldset fieldset">
-          <legend class="visually-hidden">Регистрация пользователя.</span>
-          </legend>
+          <legend class="visually-hidden">Регистрация пользователя.</legend>
           <div class="fieldset__content">
-            <label class="fieldset__input-container" for="regdata-name">
+            <label class="fieldset__input-container">
               <span class="fieldset__label">Имя:*</span>
-              <input class="fieldset__input" type="text" id="regdata-name" name="regdata-name" placeholder="Барсик" required>
+              <input class="fieldset__input" type="text" name="regdata-name" placeholder="Барсик" required>
             </label>
-            <label class="fieldset__input-container" for="regdata-name">
+            <label class="fieldset__input-container">
               <span class="fieldset__label">Вес (кг):*</span>
-              <input class="fieldset__input" type="text" id="regdata-name" name="regdata-name" placeholder="7" required>
+              <input class="fieldset__input" type="text" name="regdata-name" placeholder="7" required>
             </label>
-            <label class="fieldset__input-container" for="regdata-name">
+            <label class="fieldset__input-container">
               <span class="fieldset__label">Возраст (лет):*</span>
-              <input class="fieldset__input" type="text" id="regdata-name" name="regdata-name" placeholder="7" required>
+              <input class="fieldset__input" type="text" name="regdata-name" placeholder="7" required>
             </label>
           </div>
         </fieldset>
@@ -101,13 +102,13 @@
             <span class="fieldset__legend-styling title">Контактные&#160;данные (владелец&#160;кота)</span>
           </div>
           <div class="fieldset__content">
-            <label class="fieldset__input-container" for="contacts-email">
+            <label class="fieldset__input-container">
               <span class="fieldset__label">E-mail:*</span>
-              <input class="fieldset__input" type="email" id="contacts-email" name="contacts-email" placeholder="kuklachev@gmail.com" required>
+              <input class="fieldset__input" type="email" name="contacts-email" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label class="fieldset__input-container" for="regdata-weight">
+            <label class="fieldset__input-container">
               <span class="fieldset__label">Телефон*</span>
-              <input class="fieldset__input" type="tel" id="contacts-tel" name="contacts-tel"
+              <input class="fieldset__input" type="tel" name="contacts-tel"
               placeholder="8 (960) 900-60-90" required>
             </label>
           </div>

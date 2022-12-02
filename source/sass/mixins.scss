@@ -11,3 +11,8 @@
   line-height: $line-height;
   text-transform: $text-case;
 }
+
+@mixin reset-link {
+  text-decoration: none;
+  color: inherit;
+}

@@ -48,6 +48,7 @@
   padding-bottom: 13px;
   padding-left: 20px;
 }
+
 .fieldset__input--textarea {
   @include accented-text(16px, 18px, uppercase);
   flex-grow: 1;
@@ -83,7 +84,7 @@
   gap: 21px;
   align-items: center;
   padding-bottom: 32px;
-  }
+}
 
 .fieldset__submit-button {
   font-size: 14px;
@@ -94,10 +95,4 @@
 .fieldset__required-comment-text {
   margin: 0;
   padding: 0;
-}
-
-
-.fieldset__legend--contacts,
-.fieldset__legend--comments,
-.fieldset__legend--optional-goods {
 }

@@ -1,0 +1,18 @@
+.promotion__promotion-card {
+  padding: 35px 20px;
+}
+
+.promotion-card__content {
+  display: block;
+  padding: 187px 60px 43px 60px;
+  background-color: $brand-color;
+}
+
+.promotion-card__description {
+  color: $text-invert;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+}

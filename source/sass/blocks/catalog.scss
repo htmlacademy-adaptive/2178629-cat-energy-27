@@ -1,0 +1,35 @@
+.catalog {
+  border-top: 1px solid #d9d9d9;
+}
+
+.catalog__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 20px 41px 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.catalog-optional-goods-and-promos {
+  padding-top: 25px;
+}
+
+.catalog-optional-goods-and-promos__title {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 36px;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.cards-wrapper {
+  @include reset-list;
+}
+
+.optional-goods__cards-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  // border-top: 1px solid #d9d9d9;
+}

@@ -1,5 +1,7 @@
+@use "../variables.scss" as var;
+
 .section-live-sample {
-  background-color: $brand-background;
+  background-color: var.$brand-background;
   padding: 25px 20px 40px 20px;
 }
 

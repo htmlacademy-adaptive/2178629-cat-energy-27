@@ -1,3 +1,5 @@
+@use "../variables.scss" as var;
+
 .main-footer {
   padding: 7px 20px 0 20px;
   display: flex;
@@ -66,7 +68,7 @@
 }
 
 .htmlacademy-logo:hover {
-  color: $brand-color;
+  color: var.$brand-color;
 }
 
 .htmlacademy-logo:active {
@@ -82,6 +84,6 @@
 }
 
 .htmlacademy-logo:hover .htmlacademy-logo__text {
-  color: $text-special;
+  color: var.$text-special;
   text-decoration: inherit;
 }

@@ -1,3 +1,5 @@
+@use "../variables.scss" as var;
+
 .promotion__promotion-card {
   padding: 35px 20px;
 }
@@ -5,11 +7,11 @@
 .promotion-card__content {
   display: block;
   padding: 187px 60px 43px 60px;
-  background-color: $brand-color;
+  background-color: var.$brand-color;
 }
 
 .promotion-card__description {
-  color: $text-invert;
+  color: var.$text-invert;
   text-align: center;
   margin: 0;
   padding: 0;

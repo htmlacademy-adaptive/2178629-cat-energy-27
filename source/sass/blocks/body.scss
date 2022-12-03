@@ -1,10 +1,10 @@
-// @import "../variables.scss";
+@use "../variables.scss" as var;
 
 .page__body {
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $text-common;
+  color: var.$text-common;
   margin: 0;
 }

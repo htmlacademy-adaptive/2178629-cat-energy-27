@@ -1,3 +1,5 @@
+@use "../mixins.scss" as mixvar;
+
 .catalog {
   border-top: 1px solid #d9d9d9;
 }
@@ -25,7 +27,7 @@
 }
 
 .cards-wrapper {
-  @include reset-list;
+  @include mixvar.reset-list;
 }
 
 .optional-goods__cards-wrapper {

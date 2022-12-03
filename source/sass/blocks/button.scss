@@ -1,4 +1,4 @@
-// @import "../variables.scss";
+@use "../variables.scss" as var;
 
 .button {
   display: block;
@@ -8,12 +8,12 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: $text-invert;
-  background-color: $brand-color;
+  color: var.$text-invert;
+  background-color: var.$brand-color;
   border: none;
 }
 
 .button--secondary {
-  color: $text-special;
-  background-color: $brand-background;
+  color: var.$text-special;
+  background-color: var.$brand-background;
 }

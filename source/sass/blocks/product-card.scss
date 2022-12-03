@@ -1,3 +1,6 @@
+@use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
+
 .product-card {
   padding: 20px;
   padding-bottom: 25px;
@@ -19,15 +22,15 @@
 }
 
 .product-card__title {
-  @include accented-text(16px, 20px, uppercase);
+  @include mixvar.accented-text(16px, 20px, uppercase);
   text-decoration: none;
-  color: $text-common;
+  color: var.$text-common;
   margin: 0;
   padding: 0;
 }
 
 .product-card__description-table {
-  @include reset-list;
+  @include mixvar.reset-list;
 }
 
 .description-table__item {

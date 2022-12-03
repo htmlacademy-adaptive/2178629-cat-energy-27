@@ -1,3 +1,4 @@
+@use "../variables.scss" as var;
 
 .main-nav__container {
   // position: absolute;
@@ -15,13 +16,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: $white;
+  background-color: var.$white;
 }
 
 .main-nav__item {
   height: 66px;
-  background-color: $white;
-  border-top: 1px solid $decoration;
+  background-color: var.$white;
+  border-top: 1px solid var.$decoration;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +32,7 @@
   font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  color: $text-common;
+  color: var.$text-common;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;

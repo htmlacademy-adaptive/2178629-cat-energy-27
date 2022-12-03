@@ -1,5 +1,7 @@
+@use "../variables.scss" as var;
+
 .program {
-  background-color: $brand-background;
+  background-color: var.$brand-background;
 }
 
 .program__title {
@@ -24,7 +26,7 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $text-common;
+  color: var.$text-common;
   padding-top: 19px;
   border-top: 1px solid #d9d9d9;
 }

@@ -1,3 +1,5 @@
+@use "../mixins.scss" as mixvar;
+
 .fieldset {
   position: relative;
   border: none;
@@ -37,12 +39,12 @@
 }
 
 .fieldset__label {
-  @include accented-text(16px, 18px, uppercase);
+  @include mixvar.accented-text(16px, 18px, uppercase);
   width: max-content;
 }
 
 .fieldset__input {
-  @include accented-text(16px, 18px, uppercase);
+  @include mixvar.accented-text(16px, 18px, uppercase);
   flex-grow: 1;
   padding-top: 14px;
   padding-bottom: 13px;
@@ -50,7 +52,7 @@
 }
 
 .fieldset__input--textarea {
-  @include accented-text(16px, 18px, uppercase);
+  @include mixvar.accented-text(16px, 18px, uppercase);
   flex-grow: 1;
   padding-top: 9px;
   padding-right: 14px;
@@ -60,7 +62,7 @@
 
 .fieldset__radio-list,
 .fieldset__checkbox-list {
-  @include reset-list;
+  @include mixvar.reset-list;
   margin-top: 22px;
 }
 

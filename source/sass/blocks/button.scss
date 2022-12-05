@@ -11,9 +11,9 @@
   color: var.$text-invert;
   background-color: var.$brand-color;
   border: none;
-}
 
-.button--secondary {
-  color: var.$text-special;
-  background-color: var.$brand-background;
+  &--secondary {
+    color: var.$text-special;
+    background-color: var.$brand-background;
+  }
 }

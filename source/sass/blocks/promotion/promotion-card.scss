@@ -1,8 +1,4 @@
-@use "../variables.scss" as var;
-
-.promotion__promotion-card {
-  padding: 35px 20px;
-}
+@use "../../variables.scss" as var;
 
 .promotion-card__content {
   display: block;

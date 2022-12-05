@@ -54,36 +54,3 @@
   padding-top: 22px;
   padding-bottom: 22px;
 }
-
-.htmlacademy-logo {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  text-decoration: none;
-  color: #666666;
-}
-
-.htmlacademy-logo--extended {
-  justify-content: space-between;
-}
-
-.htmlacademy-logo:hover {
-  color: var.$brand-color;
-}
-
-.htmlacademy-logo:active {
-  opacity: 0.3;
-}
-
-.htmlacademy-logo__text {
-  font-size: 16px;
-  line-height: 19px;
-  margin: 0;
-  color: #444444;
-  text-decoration: inherit;
-}
-
-.htmlacademy-logo:hover .htmlacademy-logo__text {
-  color: var.$text-special;
-  text-decoration: inherit;
-}

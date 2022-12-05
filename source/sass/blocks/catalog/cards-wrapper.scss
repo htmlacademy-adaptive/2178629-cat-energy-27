@@ -1,0 +1,5 @@
+@use "../../mixins.scss" as mixvar;
+
+.cards-wrapper {
+  @include mixvar.reset-list;
+}

@@ -11,19 +11,19 @@
 <body class="page__body">
 
   <header class="main-header">
-    <div class="main-header__permanent-header">
-      <a class="main-header__logo-sign-mobile" href="./index.html">
-      <img class="logo-sign-mobile" src="./img/ce-logo-sign-mobile.svg" width="34" height="38"
-        alt="Логотип компании Кэт-Энерджи.">
-      <span class="visually-hidden">Переход на главную страницу сайта.</span>
-    </a>
-    <a class="main-header__logo-text" href="./index.html">
-      <img class="logo-text" src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
-      <span class="visually-hidden">Переход на главную страницу сайта.</span>
-    </a>
-    <button class="main-header__nav-toggle" type="button">
-      <span class="visually-hidden">Открыть меню.</span>
-    </button>
+    <div class="main-header__logo-header-container logo-header-container">
+      <a class="logo-header-container__logo logo" href="./index.html">
+        <div class="logo__logo-sign">
+          <img src="./img/ce-logo-sign-mobile.svg" width="34" height="38"
+            alt="Логотип компании Кэт-Энерджи.">
+        </div>
+        <div class="logo__logo-text logo-text">
+          <img src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
+        </div>
+      </a>
+      <button class="main-header__nav-toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
     </div>
     <nav class="main-nav">
       <div class="main-nav__container main-nav__container--hidden">
@@ -172,7 +172,7 @@
 
   <footer class="main-footer">
 
-    <a class="main-footer__logo-text main-footer__item main-footer__item--decorated">
+    <a class="main-footer__logo logo-text main-footer__item main-footer__item--decorated" href="./index.html">
       <img class="logo-text" src="./img/ce-logo-text.svg" width="128" height="24" alt="Логотип компании Кэт-Энерджи.">
     </a>
     <ul class="main-footer__socials socials main-footer__item main-footer__item--decorated">

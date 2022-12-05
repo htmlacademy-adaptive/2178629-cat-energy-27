@@ -1,0 +1,32 @@
+@use "../variables.scss" as var;
+
+.program {
+  background-color: var.$brand-background;
+}
+
+.program__title {
+  padding-left: 71px;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.program__desription {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.program__to-catalog-link {
+  display: block;
+  box-sizing: border-box;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var.$text-common;
+  padding-top: 19px;
+  border-top: 1px solid #d9d9d9;
+}

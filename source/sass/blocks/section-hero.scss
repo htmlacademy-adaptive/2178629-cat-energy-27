@@ -1,0 +1,38 @@
+@use "../variables.scss" as var;
+
+.section-hero {
+  background: linear-gradient(var.$brand-color 302px, var.$white 302px);
+  padding: 27px 20px 20px 20px;
+  text-align: center;
+}
+
+.section-hero__title {
+  display: block;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: inherit;
+  color: var.$white;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.section-hero__subtitle {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: inherit;
+  color: var.$white;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.section-hero__image {
+  margin-bottom: 3px;
+}
+
+.section-hero__button {
+  font-size: 14px;
+  line-height: 26px;
+  padding: 7px;
+}

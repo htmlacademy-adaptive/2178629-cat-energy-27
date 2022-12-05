@@ -1,0 +1,39 @@
+@use "../variables.scss" as var;
+
+.main-nav__container {
+  // position: absolute;
+  left: 0;
+  right: 0;
+  top: 66px;
+}
+
+.main-nav__container--hidden {
+  // display: none;
+}
+
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var.$white;
+}
+
+.main-nav__item {
+  height: 66px;
+  background-color: var.$white;
+  border-top: 1px solid var.$decoration;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__link {
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var.$text-common;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}

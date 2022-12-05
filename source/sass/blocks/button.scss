@@ -1,0 +1,19 @@
+@use "../variables.scss" as var;
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: var.$text-invert;
+  background-color: var.$brand-color;
+  border: none;
+
+  &--secondary {
+    color: var.$text-special;
+    background-color: var.$brand-background;
+  }
+}

@@ -1,0 +1,68 @@
+@use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
+
+.product-card {
+  padding: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.product-card--show-more-card {
+  text-align: center;
+}
+
+.product-card--optional-goods {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+}
+
+.product-card--optional-goods:first-child {
+  border-top: 1px solid #d9d9d9;
+}
+
+.product-card__title {
+  @include mixvar.accented-text(16px, 20px, uppercase);
+  text-decoration: none;
+  color: var.$text-common;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card__description-table {
+  @include mixvar.reset-list;
+}
+
+.description-table__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.description-table__item--optional-goods {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+
+.description-table__description,
+.description-table__value {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.product-card__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product-card__description {
+  font-size: 12px;
+  line-height: 16px;
+}

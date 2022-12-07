@@ -1,0 +1,7 @@
+@use "../../variables.scss" as var;
+
+.catalog-main-goods__cards-wrapper {
+  @media (min-width: var.$tablet-width) {
+    padding: 30px 30px;
+  }
+}

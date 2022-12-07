@@ -1,6 +1,8 @@
+@use "../variables.scss" as var;
+
 .infographics {
-  margin: 0;
-  margin-bottom: 20px;
+  max-width: 340px;
+  margin: 0 auto 20px;
   display: flex;
   justify-content: space-between;
   align-content: space-between;
@@ -8,11 +10,23 @@
   flex-wrap: wrap;
   gap: 20px;
   background-color: inherit;
+
+  @media (min-width: var.$tablet-width) {
+    max-width: 100%;
+    justify-content: none;
+    gap: 0;
+  }
 }
 
 .infographics__item {
   display: flex;
   margin: auto;
+
+  @media (min-width: var.$tablet-width) {
+    display: inline;
+    text-align: right;
+    margin: auto 0 auto auto;
+  }
 
   &--decoration {
     box-sizing: border-box;
@@ -23,6 +37,13 @@
     border-radius: 3px;
     display: flex;
     background-color: inherit;
+    margin: 0;
+
+    @media (min-width: var.$tablet-width) {
+      margin-right: 42px;
+      width: 162px;
+      height: 72px;
+    }
   }
 }
 
@@ -31,6 +52,11 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 
   &--decoration {
     font-family: "Lato", "Arial", sans-serif;
@@ -45,6 +71,11 @@
     bottom: -16px;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (min-width: var.$tablet-width) {
+      width: max-content;
+      bottom: -6px;
+    }
   }
 }
 
@@ -56,9 +87,19 @@
   white-space: pre;
   margin: 0;
 
+  @media (min-width: var.$tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
   &--decoration {
     font-size: 24px;
     line-height: 24px;
     margin: auto;
+
+    @media (min-width: var.$tablet-width) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 }

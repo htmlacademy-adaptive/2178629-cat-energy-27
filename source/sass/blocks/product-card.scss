@@ -2,19 +2,37 @@
 @use "../mixins.scss" as mixvar;
 
 .product-card {
-  padding: 20px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  padding: 25px 20px;
+
+  @media (max-width: var.$mobile-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    box-sizing: border-box;
+    min-height: 511px;
+    padding: 0 39px 39px 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, var.$brand-background 430px, var.$white 430px);
+  }
+
+  &--optional-goods {
+    padding: 15px 0 18px;
+
+    @media (min-width: var.$tablet-width) {
+      padding: 26px 30px 28px;
+      min-height: fit-content;
+      border: 1px solid #cdcdcd;
+      border-top: none;
+    }
+  }
 }
 
 .product-card--show-more-card {
   text-align: center;
-}
-
-.product-card--optional-goods {
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 20px;
 }
 
 .product-card--optional-goods:first-child {

@@ -7,4 +7,9 @@
   line-height: 18px;
   color: var.$text-common;
   margin: 0;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

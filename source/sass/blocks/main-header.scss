@@ -1,7 +1,27 @@
+@use "../variables.scss" as var;
+
+.main-header {
+  @media (min-width: var.$tablet-width) {
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .main-header__logo-header-container {
   position: relative;
-  padding: 10px 20px 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: var.$mobile-width-only) {
+    padding: 10px 20px 17px 20px;
+  }
+}
+
+.main-header__nav-toggle {
+  @media (min-width: var.$tablet-width) {
+    display: none;
+  }
 }

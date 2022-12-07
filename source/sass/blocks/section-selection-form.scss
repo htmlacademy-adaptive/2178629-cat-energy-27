@@ -1,11 +1,22 @@
+@use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
+
 .section-selection-form {
   padding-top: 27px;
-  border-top: 1px solid #d9d9d9;
+
+  @media (max-width: var.$mobile-width-only) {
+    border-top: 1px solid #d9d9d9;
+  }
 }
 
 .section-selection-form__header {
   padding: 0 20px;
   margin-bottom: 39px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 69px;
+    margin-bottom: 66px;
+  }
 }
 
 .section-selection-form__title {
@@ -13,11 +24,20 @@
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 37px;
+
+  @media (min-width: var.$tablet-width) {
+    @include mixvar.accented-text(60px, 60px, none);
+    margin-bottom: 55px;
+  }
 }
 
 .section-selection-form__description {
   margin: 0;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
+
+  @include mixvar.accented-text(14px, 18px, uppercase);
+
+  @media (min-width: var.$tablet-width) {
+    @include mixvar.accented-text(20px, 30px, uppercase);
+    width: 60%;
+  }
 }

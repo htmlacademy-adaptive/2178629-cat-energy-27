@@ -1,7 +1,11 @@
-// @import "../variables.scss";
+@use "../variables.scss" as var;
 
 .section-programs {
   padding: 0 20px 20px 20px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 30px 45px 30px;
+  }
 }
 
 .section-programs__list {
@@ -10,9 +14,13 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .section-programs__item {
-  padding: 30px 20px 22px 20px;
+  padding: 30px 20px 18px 20px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 77px 316px 52px 52px;
+  }
 }

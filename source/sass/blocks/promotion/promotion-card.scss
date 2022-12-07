@@ -2,8 +2,12 @@
 
 .promotion-card__content {
   display: block;
-  padding: 187px 60px 43px 60px;
+  padding: 200px 60px 45px 60px;
   background-color: var.$brand-color;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 70px 154px 70px 420px;
+  }
 }
 
 .promotion-card__description {

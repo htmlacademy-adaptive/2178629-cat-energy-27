@@ -4,6 +4,12 @@
   background: linear-gradient(var.$brand-color 302px, var.$white 302px);
   padding: 27px 20px 20px 20px;
   text-align: center;
+
+  @media (min-width: var.$tablet-width) {
+    background: none;
+    padding: 64px 117px 526px 117px;
+    text-align: left;
+  }
 }
 
 .section-hero__title {
@@ -14,10 +20,19 @@
   color: var.$white;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: var.$tablet-width) {
+    color: inherit;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
 }
 
 .section-hero__subtitle {
+  position: relative;
   display: block;
+  z-index: 1;
   font-size: 14px;
   line-height: 14px;
   text-align: inherit;
@@ -25,14 +40,37 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: var.$tablet-width) {
+    color: inherit;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+  }
 }
 
 .section-hero__image {
   margin-bottom: 3px;
+
+  @media (min-width: var.$tablet-width) {
+    position: absolute;
+    height: 609px;
+    top: 350px;
+    // transform: translateX(50%);
+  }
 }
 
 .section-hero__button {
   font-size: 14px;
   line-height: 26px;
   padding: 7px;
+  z-index: 1;
+
+  @media (min-width: var.$tablet-width) {
+    position: relative;
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px;
+  }
 }

@@ -1,5 +1,24 @@
+@use "../../variables.scss" as var;
 @use "../../mixins.scss" as mixvar;
 
 .cards-wrapper {
   @include mixvar.reset-list;
+
+  @media (min-width: var.$tablet-width) {
+    // padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  &--optional-goods {
+    padding: 0 20px;
+
+    @media (min-width: var.$tablet-width) {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-top: 1px solid #cdcdcd;
+    }
+  }
 }

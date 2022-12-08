@@ -7,6 +7,18 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: var.$desktop-width) {
+    box-sizing: border-box;
+    padding: 55px 110px 20px 110px;
+    width: 100%;
+  }
+
+  &--index-page {
+    @media (min-width: var.$desktop-width) {
+      position: absolute;
+    }
+  }
 }
 
 .main-header__logo-header-container {

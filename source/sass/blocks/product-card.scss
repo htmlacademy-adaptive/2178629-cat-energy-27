@@ -19,8 +19,20 @@
     background: linear-gradient(to top, var.$brand-background 430px, var.$white 430px);
   }
 
+  &--functional {
+    text-align: center;
+
+    @media (min-width: var.$tablet-width) {
+      min-height: 430px;
+      background: none;
+      border: 1px solid var.$brand-background;
+      align-self: flex-end;
+    }
+  }
+
   &--optional-goods {
     padding: 15px 0 18px;
+    background: none;
 
     @media (min-width: var.$tablet-width) {
       padding: 26px 30px 28px;
@@ -29,14 +41,10 @@
       border-top: none;
     }
   }
-}
 
-.product-card--show-more-card {
-  text-align: center;
-}
-
-.product-card--optional-goods:first-child {
-  border-top: 1px solid #d9d9d9;
+  &--optional-goods:first-child {
+    border-top: 1px solid #d9d9d9;
+  }
 }
 
 .product-card__title {

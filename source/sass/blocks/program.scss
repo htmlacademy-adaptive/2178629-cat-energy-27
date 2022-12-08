@@ -17,6 +17,11 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: var.$desktop-width) {
+    padding-left: 160px;
+    margin-bottom: 73px;
+  }
 }
 
 .program__desription {
@@ -25,6 +30,10 @@
 
   @media (min-width: var.$tablet-width) {
     margin-bottom: 48px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin-bottom: 23px;
   }
 }
 

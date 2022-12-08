@@ -17,4 +17,12 @@
   padding: 0;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: var.$tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    text-align: center;
+  }
 }

@@ -60,48 +60,50 @@
         </p>
       </div>
       <form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="selection-form__fieldset fieldset">
-          <legend class="visually-hidden">Регистрация пользователя.</legend>
-          <div class="fieldset__content">
-            <label class="fieldset__input-container">
-              <span class="fieldset__label">Имя:*</span>
-              <input class="fieldset__input" type="text" name="regdata-name" placeholder="Барсик" required>
-            </label>
-            <label class="fieldset__input-container">
-              <span class="fieldset__label">Вес (кг):*</span>
-              <input class="fieldset__input" type="text" name="regdata-name" placeholder="7" required>
-            </label>
-            <label class="fieldset__input-container">
-              <span class="fieldset__label">Возраст (лет):*</span>
-              <input class="fieldset__input" type="text" name="regdata-name" placeholder="7" required>
-            </label>
-          </div>
-        </fieldset>
-        <fieldset class="selection-form__fieldset fieldset fieldset--decorated">
-          <legend class="visually-hidden">
-            Выбор программы.
-          </legend>
-          <ul class="fieldset__radio-list">
-            <li class="fieldset__radio-list-item">
-              <input class="fieldset__radio" type="radio" id="weight-loose" name="program-select" value="slim" checked>
-              <label class="fieldset__label" for="weight-loose">Похудение</label>
-            </li>
-            <li class="fieldset__radio-list-item">
-              <input class="fieldset__radio" type="radio" id="weight-gain" name="program-select" value="pro">
-              <label class="fieldset__label" for="weight-gain">Набор массы</label>
-            </li>
-            <li class="fieldset__radio-list-item">
-              <input class="fieldset__radio" type="radio" id="need-advise" name="program-select" value="need-advise">
-              <label class="fieldset__label" for="need-advise">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="selection-form__fieldsets-grouped">
+          <fieldset class="selection-form__fieldset fieldset">
+            <legend class="visually-hidden">Регистрация пользователя.</legend>
+            <div class="fieldset__content fieldset__content--registration">
+              <label class="fieldset__input-container">
+                <span class="fieldset__label">Имя:*</span>
+                <input class="fieldset__input" type="text" name="regdata-name" placeholder="Барсик" required>
+              </label>
+              <label class="fieldset__input-container">
+                <span class="fieldset__label">Вес (кг):*</span>
+                <input class="fieldset__input" type="text" name="regdata-name" placeholder="7" required>
+              </label>
+              <label class="fieldset__input-container">
+                <span class="fieldset__label">Возраст (лет):*</span>
+                <input class="fieldset__input" type="text" name="regdata-name" placeholder="7" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="selection-form__fieldset fieldset fieldset--decorated">
+            <legend class="visually-hidden">
+              Выбор программы.
+            </legend>
+            <ul class="fieldset__radio-list">
+              <li class="fieldset__radio-list-item">
+                <input class="fieldset__radio" type="radio" id="weight-loose" name="program-select" value="slim" checked>
+                <label class="fieldset__label" for="weight-loose">Похудение</label>
+              </li>
+              <li class="fieldset__radio-list-item">
+                <input class="fieldset__radio" type="radio" id="weight-gain" name="program-select" value="pro">
+                <label class="fieldset__label" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="fieldset__radio-list-item">
+                <input class="fieldset__radio" type="radio" id="need-advise" name="program-select" value="need-advise">
+                <label class="fieldset__label" for="need-advise">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="selection-form__fieldset fieldset fieldset--accented">
           <legend class="visually-hidden">Контактные данные владельца кота.</legend>
           <div class="fieldset__legend">
             <span class="fieldset__legend-styling title">Контактные&#160;данные (владелец&#160;кота)</span>
           </div>
-          <div class="fieldset__content">
+          <div class="fieldset__content fieldset__content--contacts">
             <label class="fieldset__input-container">
               <span class="fieldset__label">E-mail:*</span>
               <input class="fieldset__input" type="email" name="contacts-email" placeholder="kuklachev@gmail.com" required>
@@ -118,7 +120,7 @@
           <div class="fieldset__legend">
             <span class="fieldset__legend-styling title">Комментарий</span>
           </div>
-          <div class="fieldset__content">
+          <div class="fieldset__content fieldset__content--comments">
             <label class="visually-hidden" for="comments">Расскажите обо всех повАдках кота.</label>
           <textarea class="fieldset__input fieldset__input--textarea" name="comments" id="comments" cols="30" rows="3">Расскажите обо всех повАдках кота</textarea>
           </div>

@@ -1,12 +1,28 @@
 @use "../../variables.scss" as var;
 
 .invitation {
+  box-sizing: border-box;
   padding: 26px 20px;
   display: flex;
-  align-items: center;
   gap: 2px;
+  align-items: center;
+  background-color: var.$white;
 
   @media (min-width: var.$tablet-width) {
+    padding: 56px 70px;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    position: absolute;
+    left: 110px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 565px;
+    height: 198px;
     padding: 56px 70px;
     justify-content: space-between;
     gap: 0;
@@ -15,6 +31,10 @@
 
 .invitation--background {
   background-color: #f2f2f2;
+
+  @media (min-width: var.$desktop-width) {
+    background-color: var.$white;
+  }
 }
 
 .invitation__text {
@@ -33,7 +53,7 @@
 }
 
 .invitation__address {
-  width: calc(100% / 2 - 1px);
+  width: 75%;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
@@ -41,5 +61,11 @@
   @media (min-width: var.$tablet-width) {
     text-align: right;
     font-size: 16px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

@@ -18,7 +18,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: var.$white;
+
+
+  @media (max-width: var.$mobile-width-only) {
+    background-color: var.$white;
+  }
 
   @media (min-width: var.$tablet-width) {
     display: flex;
@@ -56,9 +60,27 @@
     padding-bottom: 10px;
   }
 
+  @media (min-width: var.$desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 8px;
+  }
+
+  &--index-page {
+    @media (min-width: var.$desktop-width) {
+      color: var.$text-invert;
+    }
+  }
+
   &--current {
     @media (min-width: var.$tablet-width) {
       border-bottom: 2px solid var.$brand-color;
+    }
+  }
+
+  &--index-page-current {
+    @media (min-width: var.$desktop-width) {
+      border-bottom: 2px solid var.$white;
     }
   }
 }

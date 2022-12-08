@@ -10,6 +10,12 @@
     background-color: var.$white;
     padding: 43px 30px 101px 30px;
   }
+
+  @media (min-width: var.$desktop-width) {
+    position: relative;
+    background-color: var.$brand-background;
+    padding: 0px 110px 75px 110px;
+  }
 }
 
 .section-live-sample::before {
@@ -22,6 +28,15 @@
     left: 0;
     bottom: 0;
   }
+
+  @media (min-width: var.$desktop-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 136px;
+    background-color: var.$white;
+    top: 0;
+  }
 }
 
 
@@ -33,14 +48,29 @@
   margin-bottom: 40px;
 
   @media (min-width: var.$tablet-width) {
-    @include mixvar.accented-text(60px, 6px, none);
+    @include mixvar.accented-text(60px, 60px, none);
     margin-bottom: 63px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    position: relative;
+    @include mixvar.accented-text(60px, 60px, none);
+    margin-bottom: 146px;
+    z-index: 1;
   }
 }
 
 .section-live-sample__description {
+  position: relative;
+  display: block;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: var.$desktop-width) {
+    display: block;
+    width: 460px;
+    margin-bottom: 69px;
+  }
 }
 
 .section-live-sample__compare-slider-container {
@@ -49,6 +79,16 @@
   width: 280px;
 
   @media (min-width: var.$tablet-width) {
+    width: 590px;
+    height: 512px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 0;
+    // padding: 0;
+    position: absolute;
+    top: 0;
+    right: 110px;
     width: 590px;
     height: 512px;
   }

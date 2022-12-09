@@ -14,7 +14,7 @@
   @media (min-width: var.$desktop-width) {
     position: relative;
     background-color: var.$brand-background;
-    padding: 0px 110px 75px 110px;
+    padding: 0 110px 75px 110px;
   }
 }
 
@@ -54,6 +54,7 @@
 
   @media (min-width: var.$desktop-width) {
     position: relative;
+
     @include mixvar.accented-text(60px, 60px, none);
     margin-bottom: 146px;
     z-index: 1;

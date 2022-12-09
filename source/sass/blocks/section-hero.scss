@@ -1,7 +1,7 @@
 @use "../variables.scss" as var;
 
 .section-hero {
-  background: linear-gradient(var.$brand-color-85 302px, var.$white 302px),   url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% - 30px) -35px / auto 360px,;
+  background: linear-gradient(var.$brand-color-85 302px, var.$white 302px), url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% - 30px) -35px / auto 360px,;
   padding: 27px 20px 20px 20px;
   text-align: center;
 
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%),   url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% + 530px) center / auto 100%;
+    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% + 530px) center / auto 100%;
     padding: 140px 190px 185px 117px;
   }
 }

@@ -25,13 +25,21 @@
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(60px, 60px, none);
-    margin-bottom: 82px;
-    padding: 0 69px;
+    @include mixvar.cup-tablet(82px);
+  }
+
+  @media (min-width: var.$desktop-width) {
+    @include mixvar.accented-text(60px, 60px, none);
+    @include mixvar.cup-desktop;
   }
 }
 
 .catalog__catalog-main-goods {
   @media (min-width: var.$tablet-width) {
     padding: 0 30px 68px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    @include mixvar.cup-desktop(68px);
   }
 }

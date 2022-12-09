@@ -8,6 +8,10 @@
   @media (min-width: var.$tablet-width) {
     padding: 70px 154px 70px 420px;
   }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 184px 40px 42px;
+  }
 }
 
 .promotion-card__description {

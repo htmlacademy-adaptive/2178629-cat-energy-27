@@ -18,10 +18,11 @@
       border-bottom: 1px solid #d9d9d9;
       margin-bottom: 30px;
     }
-    @media (min-width: var.$tablet-width) and (max-width: var.$desktop-width - 1px ) {
-      @include mixvar.cup-tablet;
+
+    @media (min-width: var.$tablet-width) and (max-width: (var.$desktop-width - 1px)) {
+      @include mixvar.cup-tablet--form;
     }
- }
+  }
 
   &--submit {
     @include mixvar.cup-mobile;
@@ -32,7 +33,7 @@
     padding-bottom: 32px;
 
     @media (min-width: var.$tablet-width) {
-      @include mixvar.cup-tablet;
+      @include mixvar.cup-tablet--form;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 60px;
@@ -63,8 +64,8 @@
       @include mixvar.cup-mobile;
     }
 
-    @media (min-width: var.$tablet-width) and (max-width: var.$desktop-width - 1px ) {
-      @include mixvar.cup-tablet;
+    @media (min-width: var.$tablet-width) and (max-width: (var.$desktop-width - 1px)) {
+      @include mixvar.cup-tablet--form;
     }
   }
 
@@ -74,7 +75,8 @@
 
     @media (min-width: var.$tablet-width) {
       gap: 20px;
-      @include mixvar.cup-tablet;
+
+      @include mixvar.cup-tablet--form;
     }
 
     @media (min-width: var.$desktop-width) {
@@ -89,7 +91,7 @@
 
 
     @media (min-width: var.$tablet-width) {
-      @include mixvar.cup-tablet;
+      @include mixvar.cup-tablet--form;
     }
 
     @media (min-width: var.$desktop-width) {
@@ -145,6 +147,7 @@
 
   @media (max-width: var.$mobile-width-only) {
     margin-top: 22px;
+
     @include mixvar.cup-mobile(22px);
   }
 
@@ -167,7 +170,7 @@
   @include mixvar.cup-mobile;
 
   @media (min-width: var.$tablet-width) {
-    @include mixvar.cup-tablet;
+    @include mixvar.cup-tablet--form;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 32px;
@@ -194,7 +197,7 @@
   @include mixvar.cup-mobile(35px);
 
   @media (min-width: var.$tablet-width) {
-    @include mixvar.cup-tablet(76px);
+    @include mixvar.cup-tablet--form(76px);
   }
 
   @media (min-width: var.$desktop-width) {

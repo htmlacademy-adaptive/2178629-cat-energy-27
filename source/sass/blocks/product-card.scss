@@ -40,6 +40,16 @@
       border: 1px solid #cdcdcd;
       border-top: none;
     }
+
+    @media (min-width: var.$desktop-width) {
+      padding: 15px 0;
+      min-height: fit-content;
+      display: grid;
+      grid-template-columns: 284px 1fr 244px;
+      gap: 40px;
+      border-left: none;
+      border-right: none;
+    }
   }
 
   &--optional-goods:first-child {

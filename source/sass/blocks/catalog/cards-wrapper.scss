@@ -11,6 +11,13 @@
     gap: 60px;
   }
 
+  @media (min-width: var.$desktop-width) {
+    // padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
+
   &--optional-goods {
     padding: 0 20px;
 

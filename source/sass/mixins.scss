@@ -38,7 +38,11 @@
 }
 
 @mixin cup-tablet ($bottom: 76px) {
-  padding: 0 70px $bottom;
+  padding: 0 30px $bottom;
+}
+
+@mixin cup-tablet--form ($bottom: 76px) {
+  padding: 0 67px $bottom 71px;
 }
 
 @mixin cup-desktop ($bottom: 60px) {

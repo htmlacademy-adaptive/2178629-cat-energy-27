@@ -5,14 +5,13 @@
   left: 0;
   right: 0;
   top: 66px;
-}
 
-.main-nav__container--hidden {
-  @media (max-width: var.$mobile-width-only) {
-    display: none;
+  &--hidden {
+    @media (max-width: var.$mobile-width-only) {
+      display: none;
+    }
   }
 }
-
 
 .main-nav__list {
   margin: 0;

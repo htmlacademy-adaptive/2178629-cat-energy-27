@@ -18,8 +18,7 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    padding: 0 110px;
-    margin-bottom: 66px;
+    @include mixvar.cup-desktop(66px);
   }
 }
 

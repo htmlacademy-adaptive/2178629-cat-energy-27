@@ -2,9 +2,17 @@
 @use "../../mixins.scss" as mixvar;
 
 .selection-form__fieldsets-grouped {
+  @media (min-width: var.$tablet-width) {
+    @include mixvar.cup-tablet--form;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+
   @media (min-width: var.$desktop-width) {
     @include mixvar.cup-desktop;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
   }
 }

@@ -20,17 +20,16 @@
     }
 
     @media (min-width: var.$tablet-width) and (max-width: (var.$desktop-width - 1px)) {
-      @include mixvar.cup-tablet--form;
+      // @include mixvar.cup-tablet--form;
     }
   }
 
   &--submit {
-    @include mixvar.cup-mobile;
+    @include mixvar.cup-mobile(32px);
     display: flex;
     flex-direction: column;
     gap: 21px;
     align-items: center;
-    padding-bottom: 32px;
 
     @media (min-width: var.$tablet-width) {
       @include mixvar.cup-tablet--form;
@@ -65,7 +64,7 @@
     }
 
     @media (min-width: var.$tablet-width) and (max-width: (var.$desktop-width - 1px)) {
-      @include mixvar.cup-tablet--form;
+      // @include mixvar.cup-tablet--form;
     }
   }
 
@@ -80,9 +79,9 @@
     }
 
     @media (min-width: var.$desktop-width) {
+      @include mixvar.cup-desktop(60px);
       flex-direction: row;
       gap: 80px;
-      padding: 0 110px 60px;
     }
   }
 

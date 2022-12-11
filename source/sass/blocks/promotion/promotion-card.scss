@@ -1,5 +1,10 @@
 @use "../../variables.scss" as var;
 
+.promotion-card {
+  display: block;
+  height: 100%;
+}
+
 .promotion-card__content {
   display: block;
   padding: 200px 60px 45px 60px;
@@ -10,7 +15,7 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    padding: 184px 40px 42px;
+    padding: 184px 50px 42px;
   }
 }
 

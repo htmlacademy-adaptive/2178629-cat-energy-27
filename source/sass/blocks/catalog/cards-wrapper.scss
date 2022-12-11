@@ -4,11 +4,17 @@
 .cards-wrapper {
   @include mixvar.reset-list;
 
+  @media (max-width: var.$mobile-width-only) {
+    border-top: 1px solid #d9d9d9;
+  }
+
+
   @media (min-width: var.$tablet-width) {
     // padding: 0 30px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    align-items: end;
   }
 
   @media (min-width: var.$desktop-width) {
@@ -19,7 +25,7 @@
   }
 
   &--optional-goods {
-    padding: 0 20px;
+    // padding: 0 20px;
 
     @media (min-width: var.$tablet-width) {
       display: flex;
@@ -28,4 +34,8 @@
       border-top: 1px solid #cdcdcd;
     }
   }
+}
+
+.cards-wrapper__product-card {
+  border-bottom: 1px solid #d9d9d9;
 }

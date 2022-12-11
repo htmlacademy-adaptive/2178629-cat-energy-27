@@ -1,24 +1,20 @@
 @use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
 
 .section-hero {
   background: linear-gradient(var.$brand-color-85 302px, var.$white 302px), url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% - 30px) -35px / auto 360px,;
-  padding: 27px 20px 20px 20px;
-  text-align: center;
 
   @media (min-width: var.$tablet-width) {
     background: none;
-    padding: 64px 117px 526px 117px;
     text-align: left;
   }
 
   @media (min-width: var.$desktop-width) {
     background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% + 530px) center / auto 100%;
-    padding: 140px 190px 185px 117px;
   }
 }
 
 .section-hero__title {
-  max-width: 500px;
   display: block;
   font-size: 36px;
   line-height: 36px;
@@ -26,6 +22,11 @@
   color: var.$white;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (max-width: var.$mobile-width-only) {
+    text-align: center;
+    padding-top: 27px;
+  }
 
   @media (min-width: var.$tablet-width) {
     color: inherit;
@@ -35,6 +36,7 @@
   }
 
   @media (min-width: var.$desktop-width) {
+    max-width: 550px;
     padding-top: 84px;
   }
 }
@@ -45,11 +47,14 @@
   z-index: 1;
   font-size: 14px;
   line-height: 14px;
-  text-align: inherit;
   color: var.$white;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (max-width: var.$mobile-width-only) {
+    text-align: center;
+  }
 
   @media (min-width: var.$tablet-width) {
     color: inherit;
@@ -65,15 +70,14 @@
   @media (min-width: var.$tablet-width) {
     position: absolute;
     height: 609px;
-    top: 350px;
-    // transform: translateX(50%);
+    top: 250px;
   }
 
   @media (min-width: var.$desktop-width) {
     position: absolute;
-    height: 499px;
+    height: 450px;
     top: 141px;
-    left: 50%;
+    left: 49%;
     transform: translateX(-25%);
   }
 }

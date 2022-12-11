@@ -3,48 +3,23 @@
 
 .section-live-sample {
   background-color: var.$brand-background;
-  padding: 25px 20px 40px 20px;
 
   @media (min-width: var.$tablet-width) {
     position: relative;
-    background-color: var.$white;
-    padding: 43px 30px 101px 30px;
+    background: linear-gradient(to top, var.$brand-background 462px, var.$white 462px);
   }
 
   @media (min-width: var.$desktop-width) {
     position: relative;
-    background-color: var.$brand-background;
-    padding: 0 110px 75px 110px;
   }
 }
-
-.section-live-sample::before {
-  @media (min-width: var.$tablet-width) {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 462px;
-    background-color: var.$brand-background;
-    left: 0;
-    bottom: 0;
-  }
-
-  @media (min-width: var.$desktop-width) {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 136px;
-    background-color: var.$white;
-    top: 0;
-  }
-}
-
 
 .section-live-sample__title {
   display: block;
   font-size: 36px;
   line-height: 40px;
   margin: 0;
+  padding-top: 25px;
   margin-bottom: 40px;
 
   @media (min-width: var.$tablet-width) {
@@ -54,6 +29,7 @@
 
   @media (min-width: var.$desktop-width) {
     position: relative;
+    padding-top: 0;
 
     @include mixvar.accented-text(60px, 60px, none);
     margin-bottom: 146px;

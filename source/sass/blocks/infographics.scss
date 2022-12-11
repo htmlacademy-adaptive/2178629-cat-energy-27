@@ -15,6 +15,7 @@
     max-width: 100%;
     justify-content: none;
     gap: 0;
+    background-color: var.$white;
   }
 
   @media (min-width: var.$desktop-width) {
@@ -26,6 +27,7 @@
     align-content: space-between;
     min-height: 152px;
     gap: 20px;
+    background-color: var.$brand-background;
   }
 }
 

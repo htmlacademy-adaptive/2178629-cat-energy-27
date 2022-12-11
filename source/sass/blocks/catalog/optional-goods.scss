@@ -3,11 +3,13 @@
 
 .optional-goods__cards-wrapper {
   @include mixvar.reset-list;
-  padding-left: 20px;
-  padding-right: 20px;
+  @include mixvar.cup-mobile;
 
   @media (min-width: var.$tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
+    @include mixvar.cup-tablet;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 0;
   }
 }

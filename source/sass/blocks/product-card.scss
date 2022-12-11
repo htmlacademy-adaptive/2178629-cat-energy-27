@@ -4,10 +4,10 @@
 
 .product-card {
   box-sizing: border-box;
-  padding: 25px 20px;
+  // padding: 25px 20px;
 
   @media (max-width: var.$mobile-width-only) {
-    border-bottom: 1px solid #d9d9d9;
+    @include mixvar.cup-mobile(25px, 20px);
   }
 
   @media (min-width: var.$tablet-width) {
@@ -32,14 +32,16 @@
   }
 
   &--optional-goods {
-    padding: 15px 0 18px;
-    background: none;
+    box-sizing: border-box;
+    padding: 12px 0 20px;
+    border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: var.$tablet-width) {
       padding: 26px 30px 28px;
       min-height: fit-content;
       border: 1px solid #cdcdcd;
       border-top: none;
+      background: none;
     }
 
     @media (min-width: var.$desktop-width) {

@@ -1,15 +1,37 @@
 @use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
 @forward "./section-address/invitation.scss";
 
 .section-address {
   position: relative;
+  background-color: var.$brand-background;
+
+  &--alternate-background {
+    background-color: var.$white;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .section-address__map {
   width: 100%;
   height: 362px;
 
-  @media (min-width: var.$desktop-width) {
+  @media (min-width: var.$tablet-width) {
     height: 400px;
+  }
+}
+
+.section-address__invitation {
+  // @include mixvar.cup-mobile(26px, 26px);
+
+  @media (min-width: var.$tablet-width) {
+    // @include mixvar.cup-tablet(56px, 60px);
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 59px 80px;
   }
 }

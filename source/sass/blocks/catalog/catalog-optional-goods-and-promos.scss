@@ -8,22 +8,18 @@
 }
 
 .catalog-optional-goods-and-promos__title {
+  @include mixvar.cup-mobile(36px);
   display: block;
   position: relative;
-  // width: 100%;
-  padding-bottom: 36px;
-  padding-left: 20px;
   font-size: 24px;
   line-height: 24px;
 
   @media (min-width: var.$tablet-width) {
-    padding-left: 69px;
-
     @include mixvar.accented-text(36px, 36px, none);
-    padding-bottom: 80px;
+    @include mixvar.cup-tablet(80px);
   }
 
-  @media (min-width: var.$tablet-width) {
+  @media (min-width: var.$desktop-width) {
     @include mixvar.cup-desktop;
   }
 }
@@ -42,15 +38,11 @@
   padding-top: 0;
 
   @media (min-width: var.$tablet-width) {
-    padding: 0 30px 69px;
+    // fill
   }
 
   @media (min-width: var.$desktop-width) {
     padding: 0;
     grid-area: goods;
   }
-}
-
-.catalog-optional-goods-and-promos__promotion {
-  height: 100%;
 }

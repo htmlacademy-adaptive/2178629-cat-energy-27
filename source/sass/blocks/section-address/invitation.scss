@@ -1,31 +1,24 @@
 @use "../../variables.scss" as var;
+@use "../../mixins.scss" as mixvar;
 
 .invitation {
   box-sizing: border-box;
-  padding: 26px 20px;
   display: flex;
   gap: 2px;
-  align-items: center;
-  background-color: var.$white;
+  // align-items: center;
 
   @media (min-width: var.$tablet-width) {
-    padding: 56px 70px;
+    padding-left: 40px;
+    padding-right: 40px;
     justify-content: space-between;
     gap: 0;
   }
 
   @media (min-width: var.$desktop-width) {
-    position: absolute;
-    left: 110px;
-    top: 0;
-    bottom: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 565px;
-    height: 198px;
-    padding: 56px 70px;
     justify-content: space-between;
+    align-content: center;
     gap: 0;
+    background-color: var.$white;
   }
 }
 
@@ -41,7 +34,8 @@
   display: block;
   line-height: 20px;
   padding-right: 30px;
-  width: calc(100% / 2 - 1px);
+  width: min-content;
+  // width: calc(100% / 2 - 1px);
   margin: 0;
   text-transform: uppercase;
 
@@ -53,12 +47,13 @@
 }
 
 .invitation__address {
-  width: 75%;
+  // width: 75%;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
 
   @media (min-width: var.$tablet-width) {
+    width: min-content;
     text-align: right;
     font-size: 16px;
   }

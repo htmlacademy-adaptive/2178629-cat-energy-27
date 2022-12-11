@@ -1,4 +1,5 @@
 @use "../../variables.scss" as var;
+@use "../../mixins.scss" as mixvar;
 
 .catalog-main-goods__cards-wrapper {
   @media (min-width: var.$tablet-width) {

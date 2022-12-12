@@ -1,17 +1,26 @@
 @use "../variables.scss" as var;
 
+.logo {
+  height: 38px;
+
+  @media (min-width: var.$tablet-width) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
 .logo__logo-sign {
-  display: inline-block;
+  height: 38px;
 }
 
 .logo__logo-text {
-  display: inline-block;
+  height: 18px;
 
   @media (max-width: var.$mobile-width-only) {
     position: absolute;
-    height: 18px;
-    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

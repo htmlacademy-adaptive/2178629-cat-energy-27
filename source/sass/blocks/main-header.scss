@@ -2,8 +2,6 @@
 @use "../mixins.scss" as mixvar;
 
 .main-header {
-  @include mixvar.cup-mobile(17px, 10px);
-
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet(20px, 20px);
     // padding: 20px 30px 20px 30px;
@@ -37,9 +35,9 @@
   justify-content: space-between;
   align-items: center;
 
-  // @media (max-width: var.$mobile-width-only) {
-  //   padding: 10px 20px 17px 20px;
-  // }
+  @media (max-width: var.$mobile-width-only) {
+    @include mixvar.cup-mobile(17px, 10px);
+  }
 }
 
 .main-header__nav-toggle {

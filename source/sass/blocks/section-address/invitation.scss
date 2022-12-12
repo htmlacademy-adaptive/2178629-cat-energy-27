@@ -1,22 +1,66 @@
+@use "../../variables.scss" as var;
+@use "../../mixins.scss" as mixvar;
+
 .invitation {
-  padding: 26px 20px;
+  box-sizing: border-box;
   display: flex;
   gap: 2px;
+  // align-items: center;
+
+  @media (min-width: var.$tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    justify-content: space-between;
+    align-content: center;
+    gap: 0;
+    background-color: var.$white;
+  }
 }
 
 .invitation--background {
   background-color: #f2f2f2;
+
+  @media (min-width: var.$desktop-width) {
+    background-color: var.$white;
+  }
 }
 
 .invitation__text {
+  display: block;
   line-height: 20px;
-  min-width: calc(100% / 2 - 1px);
+  padding-right: 30px;
+  width: min-content;
+  // width: calc(100% / 2 - 1px);
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: var.$tablet-width) {
+    width: min-content;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .invitation__address {
+  // width: 75%;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+
+  @media (min-width: var.$tablet-width) {
+    width: min-content;
+    text-align: right;
+    font-size: 16px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

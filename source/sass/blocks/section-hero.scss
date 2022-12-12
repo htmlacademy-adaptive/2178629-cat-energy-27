@@ -1,9 +1,17 @@
 @use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
 
 .section-hero {
-  background: linear-gradient(var.$brand-color 302px, var.$white 302px);
-  padding: 27px 20px 20px 20px;
-  text-align: center;
+  background: linear-gradient(var.$brand-color-85 302px, var.$white 302px), url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% - 30px) -35px / auto 360px,;
+
+  @media (min-width: var.$tablet-width) {
+    background: none;
+    text-align: left;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% + 530px) center / auto 100%;
+  }
 }
 
 .section-hero__title {
@@ -14,25 +22,77 @@
   color: var.$white;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (max-width: var.$mobile-width-only) {
+    text-align: center;
+    padding-top: 27px;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    color: inherit;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    max-width: 550px;
+    padding-top: 84px;
+  }
 }
 
 .section-hero__subtitle {
+  position: relative;
   display: block;
+  z-index: 1;
   font-size: 14px;
   line-height: 14px;
-  text-align: inherit;
   color: var.$white;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (max-width: var.$mobile-width-only) {
+    text-align: center;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    color: inherit;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+  }
 }
 
 .section-hero__image {
   margin-bottom: 3px;
+
+  @media (min-width: var.$tablet-width) {
+    position: absolute;
+    height: 609px;
+    top: 250px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    position: absolute;
+    height: 450px;
+    top: 141px;
+    left: 49%;
+    transform: translateX(-25%);
+  }
 }
 
 .section-hero__button {
   font-size: 14px;
   line-height: 26px;
   padding: 7px;
+  z-index: 1;
+
+  @media (min-width: var.$tablet-width) {
+    position: relative;
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px;
+  }
 }

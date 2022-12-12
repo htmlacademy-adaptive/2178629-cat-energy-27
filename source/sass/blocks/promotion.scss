@@ -1,5 +1,19 @@
+@use "../variables.scss" as var ;
+@use "../mixins.scss" as mixvar ;
 @forward "./promotion/promotion-card.scss";
 
 .promotion__promotion-card {
-  padding: 35px 20px;
+  box-sizing: border-box;
+
+  @include mixvar.cup-mobile;
+  text-align: left;
+
+  @media (min-width: var.$tablet-width) {
+    @include mixvar.cup-tablet;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
 }

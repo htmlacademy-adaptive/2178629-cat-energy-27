@@ -1,4 +1,15 @@
+@use "../../variables.scss" as var;
+@use "../../mixins.scss" as mixvar;
+
 .optional-goods__cards-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include mixvar.reset-list;
+  @include mixvar.cup-mobile;
+
+  @media (min-width: var.$tablet-width) {
+    @include mixvar.cup-tablet;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 0;
+  }
 }

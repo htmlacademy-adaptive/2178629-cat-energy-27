@@ -8,7 +8,9 @@
   color: #666666;
 
   &--extended {
-    justify-content: space-between;
+    @media (max-width: var.$mobile-width-only) {
+      justify-content: space-between;
+    }
   }
 }
 
@@ -23,6 +25,7 @@
 .htmlacademy-logo__text {
   font-size: 16px;
   line-height: 19px;
+  width: max-content;
   margin: 0;
   color: #444444;
   text-decoration: inherit;

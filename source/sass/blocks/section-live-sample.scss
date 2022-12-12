@@ -1,8 +1,17 @@
 @use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
 
 .section-live-sample {
   background-color: var.$brand-background;
-  padding: 25px 20px 40px 20px;
+
+  @media (min-width: var.$tablet-width) {
+    position: relative;
+    background: linear-gradient(to top, var.$brand-background 462px, var.$white 462px);
+  }
+
+  @media (min-width: var.$desktop-width) {
+    position: relative;
+  }
 }
 
 .section-live-sample__title {
@@ -10,16 +19,54 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
+  padding-top: 25px;
   margin-bottom: 40px;
+
+  @media (min-width: var.$tablet-width) {
+    @include mixvar.accented-text(60px, 60px, none);
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    position: relative;
+    padding-top: 0;
+
+    @include mixvar.accented-text(60px, 60px, none);
+    margin-bottom: 146px;
+    z-index: 1;
+  }
 }
 
 .section-live-sample__description {
+  position: relative;
+  display: block;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: var.$desktop-width) {
+    display: block;
+    width: 460px;
+    margin-bottom: 69px;
+  }
 }
 
 .section-live-sample__compare-slider-container {
   margin-left: auto;
   margin-right: auto;
   width: 280px;
+
+  @media (min-width: var.$tablet-width) {
+    width: 590px;
+    height: 512px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 0;
+    // padding: 0;
+    position: absolute;
+    top: 0;
+    right: 110px;
+    width: 590px;
+    height: 512px;
+  }
 }

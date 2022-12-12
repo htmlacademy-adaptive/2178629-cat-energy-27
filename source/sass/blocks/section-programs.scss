@@ -1,7 +1,17 @@
-// @import "../variables.scss";
+@use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
 
 .section-programs {
-  padding: 0 20px 20px 20px;
+  // padding: 0 20px 20px 20px;
+
+  @media (min-width: var.$tablet-width) {
+    // @include: mixvar.cup-tablet(45px)
+    // padding: 0 30px 45px 30px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    // padding top: 82px;
+  }
 }
 
 .section-programs__list {
@@ -10,9 +20,24 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+
+  @media (min-width: var.$desktop-width) {
+    // @include mixvar.cup-desktop(50px, 82px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .section-programs__item {
-  padding: 30px 20px 22px 20px;
+  padding: 30px 20px 18px 20px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 77px 316px 52px 52px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 77px 52px 55px 52px;
+  }
 }

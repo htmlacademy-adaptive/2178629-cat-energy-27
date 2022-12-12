@@ -1,30 +1,42 @@
 @use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
 
 .main-footer {
-  padding: 7px 20px 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f2f2f2;
+  background-color: var.$brand-background;
+
+  @media (min-width: var.$tablet-width) {
+    // padding: 58px 30px 58px 30px;
+  }
 }
 
 .main-footer__item--decorated {
-  border-bottom: 1px solid #d9d9d9;
+  @media (max-width: var.$mobile-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+  }
 }
 
-.main-footer__logo-text {
+.main-footer__logo {
   box-sizing: border-box;
   width: 100%;
   height: 95px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: var.$tablet-width) {
+    width: fit-content;
+    height: fit-content;
+  }
 }
 
 .main-footer__socials {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: var.$tablet-width) {
+    width: fit-content;
+  }
 }
 
 
@@ -39,6 +51,10 @@
   justify-content: center;
   width: 52px;
   height: 63px;
+
+  @media (min-width: var.$tablet-width) {
+    height: fit-content;
+  }
 }
 
 .socials__link {
@@ -53,4 +69,9 @@
   width: 100%;
   padding-top: 22px;
   padding-bottom: 22px;
+
+  @media (min-width: var.$tablet-width) {
+    width: max-content;
+    padding: 0;
+  }
 }

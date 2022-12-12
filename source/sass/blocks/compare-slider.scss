@@ -1,6 +1,19 @@
+@use "../variables.scss" as var;
+
 .compare-slider {
   display: block;
   position: relative;
+}
+
+.compare-slider__primary-image {
+  width: 280px;
+  top: 0;
+  left: 0;
+
+  @media (min-width: var.$tablet-width) {
+    width: 560px;
+    height: auto;
+  }
 }
 
 .compare-slider__secondary-image {
@@ -9,4 +22,9 @@
   top: 0;
   left: -50%;
   transform: translate(50%);
+
+  @media (min-width: var.$tablet-width) {
+    width: 560px;
+    height: auto;
+  }
 }

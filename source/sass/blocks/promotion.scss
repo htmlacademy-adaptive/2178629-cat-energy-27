@@ -3,8 +3,6 @@
 @forward "./promotion/promotion-card.scss";
 
 .promotion__promotion-card {
-  box-sizing: border-box;
-
   @include mixvar.cup-mobile;
   text-align: left;
 
@@ -13,7 +11,8 @@
   }
 
   @media (min-width: var.$desktop-width) {
+    min-width: unset;
     padding: 0;
-    margin: 0;
+    height: 100%;
   }
 }

@@ -30,11 +30,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "goods goods goods promos";
-    gap: 60px;
+    gap: 80px;
   }
 }
 
 .catalog-optional-goods-and-promos__optional-goods {
+  box-sizing: border-box;
   padding-top: 0;
 
   @media (min-width: var.$tablet-width) {
@@ -45,4 +46,9 @@
     padding: 0;
     grid-area: goods;
   }
+}
+
+.catalog-optional-goods-and-promos__promotion {
+  min-width: unset;
+  padding: 0;
 }

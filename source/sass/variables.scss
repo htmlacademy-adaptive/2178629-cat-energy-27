@@ -1,7 +1,7 @@
 // Colors
 
 $brand-color: #68b738;
-$brand-color-85: rgba(104, 183, 56, 0.85);
+$brand-color-85: rgba($brand-color, 0.85);
 $brand-background: #f2f2f2;
 $white: #ffffff;
 $text-common: #000000;

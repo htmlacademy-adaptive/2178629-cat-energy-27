@@ -43,7 +43,44 @@
 }
 
 .main-header__nav-toggle {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+
   @media (min-width: var.$tablet-width) {
     display: none;
+  }
+
+  &--closed::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    top: 14px;
+    left: 21px;
+    background-color: var.$text-common;
+    box-shadow: 0 8px 0 0 var.$text-common, 0 16px 0 0 var.$text-common;
+  }
+
+  &--opened::before,
+  &--opened::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    top: 22px;
+    left: 21px;
+    background-color: var.$text-common;
+  }
+
+  &--opened::before {
+    transform: rotate(45deg);
+  }
+
+  &--opened::after {
+    transform: rotate(-45deg);
   }
 }

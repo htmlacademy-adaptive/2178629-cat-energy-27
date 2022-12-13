@@ -1,4 +1,5 @@
 @use "../variables.scss" as var;
+@use "../mixins.scss" as mixvar;
 
 .main-nav__container {
   // position: absolute;
@@ -48,6 +49,12 @@
   font-weight: 400;
   line-height: 24px;
   color: var.$text-common;
+  cursor: pointer;
+
+  @media (max-width: var.$mobile-width-only) {
+    @include mixvar.cup-mobile(23px, 23px);
+    text-align: center;
+  }
 
   @media (max-width: var.$mobile-width-only) {
     font-size: 20px;

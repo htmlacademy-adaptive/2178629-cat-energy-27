@@ -1,7 +1,7 @@
 @use "../variables.scss" as var;
 
 .logo {
-  height: 38px;
+  align-self: flex-start;
 
   @media (min-width: var.$tablet-width) {
     display: flex;

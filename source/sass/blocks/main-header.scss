@@ -36,7 +36,9 @@
   align-items: center;
 
   @media (max-width: var.$mobile-width-only) {
-    @include mixvar.cup-mobile(17px, 10px);
+    min-height: 65px;
+
+    @include mixvar.cup-mobile(10px, 10px);
   }
 }
 

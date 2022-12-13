@@ -2,6 +2,10 @@
 @use "../mixins.scss" as mixvar;
 
 .main-header {
+  @media (max-width: var.$mobile-width-only) {
+    border-bottom: 1px solid var.$header-border;
+  }
+
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet(20px, 20px);
     // padding: 20px 30px 20px 30px;
@@ -18,6 +22,8 @@
   }
 
   &--index-page {
+    border-bottom: unset;
+
     @media (min-width: var.$desktop-width) {
       position: absolute;
       z-index: 1;
@@ -50,10 +56,6 @@
   border: none;
   cursor: pointer;
 
-  @media (min-width: var.$tablet-width) {
-    display: none;
-  }
-
   &--closed::before {
     position: absolute;
     content: "";
@@ -82,5 +84,13 @@
 
   &--opened::after {
     transform: rotate(-45deg);
+  }
+
+  &--no-js {
+    display: none;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    display: none;
   }
 }

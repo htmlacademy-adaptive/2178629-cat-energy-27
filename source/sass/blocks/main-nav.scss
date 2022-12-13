@@ -1,15 +1,27 @@
 @use "../variables.scss" as var;
 @use "../mixins.scss" as mixvar;
 
-.main-nav__container {
-  // position: absolute;
-  left: 0;
-  right: 0;
-  top: 66px;
+.main-nav {
+  @media (max-width: var.$mobile-width-only) {
+    border-bottom: 1px solid var.$decoration;
 
-  &--hidden {
-    @media (max-width: var.$mobile-width-only) {
+    &--opened {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 65px;
+      z-index: 5;
+    }
+
+    &--closed {
       display: none;
+    }
+
+    &--no-js {
+      display: block;
+      position: relative;
+      top: unset;
     }
   }
 }
@@ -18,7 +30,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
 
   @media (max-width: var.$mobile-width-only) {
     background-color: var.$white;

@@ -1,7 +1,64 @@
 @use "../variables.scss" as var;
 
 .program {
+  position: relative;
   background-color: var.$brand-background;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 49px;
+    left: 47px;
+    background-color: var.$brand-color;
+
+    @media (min-width: var.$tablet-width) {
+      width: 200px;
+      height: 200px;
+      transform: translate(50%, -50%);
+      top: 192px;
+      left: unset;
+      right: 162px;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      width: 100px;
+      height: 100px;
+      transform: translate(-50%, -50%);
+      top: 97px;
+      left: 102px;
+      right: unset;
+    }
+  }
+
+  &--slim::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 49px;
+    left: 47px;
+    background-color: var.$text-common;
+
+    @media (min-width: var.$tablet-width) {
+      transform: translate(50%, -50%);
+      top: 192px;
+      left: unset;
+      right: 162px;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      transform: translate(-50%, -50%);
+      top: 97px;
+      left: 102px;
+      right: unset;
+    }
+  }
 }
 
 .program__title {
@@ -54,5 +111,20 @@
     border: none;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 14px;
+    margin-left: 15px;
+    background: url('data:image/svg+xml,\<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 12">\<path d="m24 6-6.8 5.2V.8L24 6zM0 5h17.2v2H0z"/>\</svg>') no-repeat center / contain;
+
+    @media (min-width: var.$tablet-width) {
+      // width: 30px;
+      height: 18px;
+      margin-left: 25px;
+    }
   }
 }

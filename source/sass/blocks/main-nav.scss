@@ -74,6 +74,7 @@
   }
 
   @media (min-width: var.$tablet-width) {
+    padding-top: 10px;
     padding-bottom: 10px;
   }
 
@@ -90,7 +91,11 @@
   }
 
   &--current {
+    opacity: 0.3;
+    cursor: default;
+
     @media (min-width: var.$tablet-width) {
+      opacity: 1;
       border-bottom: 2px solid var.$brand-color;
     }
   }

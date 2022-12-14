@@ -65,7 +65,9 @@
 }
 
 .section-hero__image {
-  margin-bottom: 3px;
+  // margin-bottom: 3px;
+  display: block;
+  margin: auto;
 
   @media (min-width: var.$tablet-width) {
     position: absolute;

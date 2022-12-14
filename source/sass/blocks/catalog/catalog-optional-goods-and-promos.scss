@@ -2,8 +2,10 @@
 @use "../../mixins.scss" as mixvar;
 
 .catalog-optional-goods-and-promos {
+  position: relative;
+
   @media (max-width: var.$mobile-width-only) {
-    padding-top: 25px;
+    // padding-top: 25px;
   }
 }
 

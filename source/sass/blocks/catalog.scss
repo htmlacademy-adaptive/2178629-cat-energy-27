@@ -34,8 +34,11 @@
 }
 
 .catalog__catalog-main-goods {
+  margin-bottom: 25px;
+
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet;
+    margin-bottom: unset;
   }
 
   @media (min-width: var.$desktop-width) {

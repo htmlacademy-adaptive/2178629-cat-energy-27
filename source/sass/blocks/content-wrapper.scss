@@ -46,8 +46,16 @@
   }
 
   &--programs {
+    padding-bottom: 45px;
+
     @media (min-width: var.$desktop-width) {
       padding-top: 82px;
+    }
+  }
+
+  &--workflow {
+    @media (min-width: var.$tablet-width) {
+      padding-bottom: 47px;
     }
   }
 

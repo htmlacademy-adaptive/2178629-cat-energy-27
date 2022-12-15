@@ -27,6 +27,14 @@
     width: fit-content;
     height: fit-content;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__socials {
@@ -63,6 +71,14 @@
   justify-content: center;
   align-items: center;
   color: #666666;
+
+  &:hover {
+    color: var.$brand-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__htmlacademy-logo {

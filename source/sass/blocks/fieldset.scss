@@ -1,6 +1,7 @@
 @use "../variables.scss" as var;
 @use "../mixins.scss" as mixvar;
 
+
 .fieldset {
   box-sizing: border-box;
   position: relative;
@@ -157,6 +158,11 @@
   &--radio::before {
     border-radius: 50%;
   }
+
+  &--radio:hover::before,
+  &--checkbox:hover::before {
+    border-color: var.$input-border-hover;
+  }
 }
 
 .fieldset__input {
@@ -182,6 +188,22 @@
     padding-right: 14px;
     padding-left: 14px;
     height: 150px;
+  }
+
+  &:hover {
+    border-color: var.$input-border-hover;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid var.$input-border-focus;
+    outline-offset: -2px;
+    // border: 2px solid red;
+  }
+
+  &--error {
+    outline: 2px solid var.$error;
+    outline-offset: -2px;
   }
 }
 
@@ -283,6 +305,22 @@
     width: 24px;
     height: 19px;
   }
+}
+
+.fieldset__radio:disabled + .fieldset__label,
+.fieldset__checkbox:disabled + .fieldset__label {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.fieldset__radio:disabled + .fieldset__label::before,
+.fieldset__checkbox:disabled + .fieldset__label::before {
+  border-color: var.$input-border-hover;
+}
+
+.fieldset__radio-list-item:focus-within .fieldset__label::before,
+.fieldset__checkbox-list-item:focus-within .fieldset__label::before {
+  outline: 2px solid var.$input-border-focus;
 }
 
 .fieldset__legend {

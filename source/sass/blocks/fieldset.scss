@@ -80,8 +80,8 @@
       @include mixvar.cup-mobile;
     }
 
-    @media (min-width: var.$tablet-width) and (max-width: (var.$desktop-width - 1px)) {
-      // @include mixvar.cup-tablet--form;
+    @media (min-width: var.$desktop-width) {
+      gap: 20px;
     }
   }
 
@@ -123,11 +123,39 @@
 }
 
 .fieldset__label {
+  cursor: pointer;
+
   @include mixvar.accented-text(16px, 18px, uppercase);
   width: max-content;
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(20px, 30px, uppercase);
+  }
+
+  &--radio,
+  &--checkbox {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      border: 1px solid var.$input-border;
+
+      @media (min-width: var.$tablet-width) {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &--radio::before {
+    border-radius: 50%;
   }
 }
 
@@ -161,9 +189,7 @@
   @include mixvar.reset-list;
 
   @media (max-width: var.$mobile-width-only) {
-    margin-top: 22px;
-
-    @include mixvar.cup-mobile(22px);
+    @include mixvar.cup-mobile(19px, 22px);
   }
 
   @media (min-width: var.$tablet-width) {
@@ -180,9 +206,16 @@
   }
 }
 
+.fieldset__radio-list-item + .fieldset__radio-list-item {
+  padding-top: 13px;
+}
+
 .fieldset__checkbox-list {
   @include mixvar.reset-list;
   @include mixvar.cup-mobile;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet--form;
@@ -205,6 +238,50 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 60px;
+  }
+}
+
+.fieldset__radio,
+.fieldset__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.fieldset__radio:checked + .fieldset__label::after,
+.fieldset__checkbox:checked + .fieldset__label::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  transform: translate(-50%, -50%);
+  top: 15px;
+  left: 15px;
+
+  @media (min-width: var.$tablet-width) {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.fieldset__radio:checked + .fieldset__label::after {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var.$brand-color;
+
+  @media (min-width: var.$tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.fieldset__checkbox:checked + .fieldset__label::after {
+  width: 18px;
+  height: 14px;
+  background: url("../../img/check-sign.svg") no-repeat center / contain;
+
+  @media (min-width: var.$tablet-width) {
+    width: 24px;
+    height: 19px;
   }
 }
 

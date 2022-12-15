@@ -119,7 +119,7 @@
     width: 24px;
     height: 14px;
     margin-left: 15px;
-    background: url('data:image/svg+xml,\<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 12">\<path d="m24 6-6.8 5.2V.8L24 6zM0 5h17.2v2H0z"/>\</svg>') no-repeat center / contain;
+    background: url('data:image/svg+xml,\<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 12">\< fill="currentColor" path d="m24 6-6.8 5.2V.8L24 6zM0 5h17.2v2H0z"/>\</svg>') no-repeat center / contain;
 
     @media (min-width: var.$tablet-width) {
       // width: 30px;

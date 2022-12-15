@@ -118,6 +118,7 @@
 
 .fieldset__input-container {
   width: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   gap: 13px;
@@ -205,6 +206,20 @@
     outline: 2px solid var.$error;
     outline-offset: -2px;
   }
+}
+
+.fieldset__input-icon {
+  position: absolute;
+  right: 17px;
+  color: var.$input-icon-stroke;
+}
+
+.fieldset__input--error + .fieldset__input-icon {
+  color: var.$error;
+}
+
+.fieldset__input-container:focus-within .fieldset__input-icon {
+  color: var.$brand-color;
 }
 
 .fieldset__radio-list {

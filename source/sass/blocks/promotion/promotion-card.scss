@@ -3,7 +3,7 @@
 .promotion-card {
   min-height: 290px;
   padding: 65px 60px 45px 60px;
-  background-color: var.$brand-color;
+  background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../../../img/cat-case.jpg") center / cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,6 +13,7 @@
     min-height: 200px;
     padding: 20px 124px 20px 77px;
     flex-direction: row;
+    background-position-y: 60%;
   }
 
   @media (min-width: var.$desktop-width) {
@@ -25,7 +26,13 @@
     content: "";
     width: 78px;
     height: 80px;
-    background-color: var.$white;
+    background: url("../../../img/icon-gift.svg") no-repeat center / 97.5%;
+
+    @media (min-width: var.$tablet-width) {
+      width: 80px;
+      height: 83px;
+      background: url("../../../img/icon-gift.svg") no-repeat center / 100%;
+    }
   }
 }
 

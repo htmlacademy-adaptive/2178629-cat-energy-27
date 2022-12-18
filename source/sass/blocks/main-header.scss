@@ -2,7 +2,9 @@
 @use "../mixins.scss" as mixvar;
 
 .main-header {
-  @include mixvar.cup-mobile(17px, 10px);
+  @media (max-width: var.$mobile-width-only) {
+    border-bottom: 1px solid var.$header-border;
+  }
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet(20px, 20px);
@@ -20,6 +22,8 @@
   }
 
   &--index-page {
+    border-bottom: unset;
+
     @media (min-width: var.$desktop-width) {
       position: absolute;
       z-index: 1;
@@ -37,12 +41,55 @@
   justify-content: space-between;
   align-items: center;
 
-  // @media (max-width: var.$mobile-width-only) {
-  //   padding: 10px 20px 17px 20px;
-  // }
+  @media (max-width: var.$mobile-width-only) {
+    min-height: 65px;
+
+    @include mixvar.cup-mobile(10px, 10px);
+  }
 }
 
 .main-header__nav-toggle {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+
+  &--closed::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    top: 14px;
+    left: 21px;
+    background-color: var.$text-common;
+    box-shadow: 0 8px 0 0 var.$text-common, 0 16px 0 0 var.$text-common;
+  }
+
+  &--opened::before,
+  &--opened::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    top: 22px;
+    left: 21px;
+    background-color: var.$text-common;
+  }
+
+  &--opened::before {
+    transform: rotate(45deg);
+  }
+
+  &--opened::after {
+    transform: rotate(-45deg);
+  }
+
+  &--no-js {
+    display: none;
+  }
+
   @media (min-width: var.$tablet-width) {
     display: none;
   }

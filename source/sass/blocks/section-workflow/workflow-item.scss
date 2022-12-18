@@ -13,32 +13,47 @@
     padding: 40px 70px 40px 0;
     min-height: 280px;
   }
-}
 
-.workflow-item::before {
-  flex-shrink: 0;
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-color: var.$brand-color;
+  &::before {
+    flex-shrink: 0;
+    content: "";
+    width: 60px;
+    height: 60px;
 
-  @media (min-width: var.$tablet-width) {
-    display: block;
-    width: 80px;
-    height: 80px;
+    @media (min-width: var.$tablet-width) {
+      display: block;
+      width: 80px;
+      height: 80px;
+    }
   }
-}
 
-.workflow-item::after {
-  @media (min-width: var.$tablet-width) {
-    content: counter(workflowCounter);
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
-    color: var.$brand-background;
-    position: absolute;
-    top: 0;
-    left: 115px;
+  &::after {
+    @media (min-width: var.$tablet-width) {
+      content: counter(workflowCounter);
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: var.$brand-background;
+      position: absolute;
+      top: 0;
+      left: 115px;
+    }
+  }
+
+  &--contents::before {
+    background: var.$brand-color url("../../../img/workflow-icon-contents.svg") no-repeat center;
+  }
+
+  &--powder::before {
+    background: var.$brand-color url("../../../img/workflow-icon-powder.svg") no-repeat center;
+  }
+
+  &--change::before {
+    background: var.$brand-color url("../../../img/workflow-icon-change.svg") no-repeat center;
+  }
+
+  &--result::before {
+    background: var.$brand-color url("../../../img/workflow-icon-result.svg") no-repeat center;
   }
 }
 

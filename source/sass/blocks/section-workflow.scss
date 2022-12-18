@@ -25,6 +25,7 @@
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(60px, 60px, none);
+    margin-bottom: 32px;
   }
 }
 

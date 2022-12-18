@@ -21,12 +21,12 @@
           <img src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
         </div>
       </a>
-      <button class="main-header__nav-toggle" type="button">
+      <button class="main-header__nav-toggle main-header__nav-toggle--closed main-header__nav-toggle--no-js" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
     </div>
-    <nav class="main-nav">
-      <div class="main-nav__container main-nav__container--hidden">
+    <nav class="main-nav main-nav--closed main-nav--no-js">
+      <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="./index.html">
@@ -85,33 +85,35 @@
             <ul class="fieldset__radio-list">
               <li class="fieldset__radio-list-item">
                 <input class="fieldset__radio" type="radio" id="weight-loose" name="program-select" value="slim" checked>
-                <label class="fieldset__label" for="weight-loose">Похудение</label>
+                <label class="fieldset__label fieldset__label--radio" for="weight-loose">Похудение</label>
               </li>
               <li class="fieldset__radio-list-item">
                 <input class="fieldset__radio" type="radio" id="weight-gain" name="program-select" value="pro">
-                <label class="fieldset__label" for="weight-gain">Набор массы</label>
+                <label class="fieldset__label  fieldset__label--radio" for="weight-gain">Набор массы</label>
               </li>
               <li class="fieldset__radio-list-item">
                 <input class="fieldset__radio" type="radio" id="need-advise" name="program-select" value="need-advise">
-                <label class="fieldset__label" for="need-advise">Не знаю (Нужен ваш совет)</label>
+                <label class="fieldset__label fieldset__label--radio" for="need-advise">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <fieldset class="selection-form__fieldset fieldset fieldset--accented">
+        <fieldset class="selection-form__fieldset fieldset fieldset--accented ">
           <legend class="visually-hidden">Контактные данные владельца кота.</legend>
           <div class="fieldset__legend">
-            <span class="fieldset__legend-styling title">Контактные&#160;данные (владелец&#160;кота)</span>
+            <span class="fieldset__legend-styling title fieldset__legend-styling--kludge">Контактные&#160;данные (владелец&#160;кота)</span>
           </div>
           <div class="fieldset__content fieldset__content--contacts">
             <label class="fieldset__input-container">
               <span class="fieldset__label">E-mail:*</span>
               <input class="fieldset__input" type="email" name="contacts-email" placeholder="kuklachev@gmail.com" required>
+              <svg class="fieldset__input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="14" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M.5 5.5v8h17v-8M.5.5h17v2L9 8.5l-8.5-6v-2Z"/></svg>
             </label>
             <label class="fieldset__input-container">
               <span class="fieldset__label">Телефон*</span>
               <input class="fieldset__input" type="tel" name="contacts-tel"
               placeholder="8 (960) 900-60-90" required>
+              <svg class="fieldset__input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7 8h8.5m0 0L13 5.5M15.5 8 13 10.5M5.5.5v5h-3v5h3v5H3c-1.5 0-2.5-1-2.5-2.5V3C.5 1.5 1.5.5 3 .5h2.5Z"/></svg>
             </label>
           </div>
         </fieldset>
@@ -134,20 +136,20 @@
             <li class="fieldset__checkbox-list-item">
               <input class="fieldset__checkbox" type="checkbox" id="optional-sweetener" name="optional-goods"
                 value="sweetener" checked>
-              <label for="optional-sweetener" class="fieldset__label">сахарозаменитель</label>
+              <label for="optional-sweetener" class="fieldset__label fieldset__label--checkbox">сахарозаменитель</label>
             </li>
             <li class="fieldset__checkbox-list-item">
               <input class="fieldset__checkbox" type="checkbox" id="optional-water" name="optional-goods" value="water">
-              <label for="optional-water" class="fieldset__label">питьевая вода</label>
+              <label for="optional-water" class="fieldset__label  fieldset__label--checkbox">питьевая вода</label>
             </li>
             <li class="fieldset__checkbox-list-item">
               <input class="fieldset__checkbox" type="checkbox" id="optional-mlik" name="optional-goods" value="mlik">
-              <label for="optional-mlik" class="fieldset__label">молоко</label>
+              <label for="optional-mlik" class="fieldset__label fieldset__label--checkbox">молоко</label>
             </li>
             <li class="fieldset__checkbox-list-item">
               <input class="fieldset__checkbox" type="checkbox" id="optional-vitamins" name="optional-goods"
                 value="vitamins">
-              <label for="optional-vitamins" class="fieldset__label">витамины</label>
+              <label for="optional-vitamins" class="fieldset__label fieldset__label--checkbox">витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -226,6 +228,8 @@
     </div>
 
   </footer>
+
+  <script src="./js/script.js"></script>
 
 </body>
 

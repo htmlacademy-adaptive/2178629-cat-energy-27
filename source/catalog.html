@@ -21,12 +21,12 @@
           <img src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
         </div>
       </a>
-      <button class="main-header__nav-toggle" type="button">
+      <button class="main-header__nav-toggle main-header__nav-toggle--closed main-header__nav-toggle--no-js" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
     </div>
-    <nav class="main-nav">
-      <div class="main-nav__container main-nav__container--hidden">
+    <nav class="main-nav main-nav--closed main-nav--no-js">
+      <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="./index.html">
@@ -61,7 +61,7 @@
           <li class="cards-wrapper__product-card">
             <div class="product-card">
               <h4 class="product-card__title title">
-                <a class="title__link" href="#" id="first-pro-product">Cat Energy PRO 500 г</a>
+                <a class="title__link" href="#" id="first-pro-product">Cat Energy <br class="product-card__title-br"> PRO 500 г</a>
               </h4>
               <img class="product-card__img" src="./img/catalog/ce-energy-pro-500-chicken-s.png" width="68" height="86"
               alt="Банка функционального питания для котов.">
@@ -86,7 +86,7 @@
           <li class="cards-wrapper__product-card">
             <div class="product-card">
               <h4 class="product-card__title title">
-                <a class="title__link" class="product-card__title title" href="#">Cat Energy PRO 1000 г</a>
+                <a class="title__link" class="product-card__title title" href="#">Cat Energy <br class="product-card__title-br"> PRO 1000 г</a>
               </h4>
               <img class="product-card__img" src="./img/catalog/ce-energy-pro-1000-chicken-s.png" width="84" height="100"
               alt="Банка функционального питания для котов.">
@@ -111,7 +111,7 @@
           <li class="cards-wrapper__product-card">
             <div class="product-card">
               <h4 class="product-card__title title">
-                <a class="title__link" href="#">Cat Energy PRO 500 г</a>
+                <a class="title__link" href="#">Cat Energy<br class="product-card__title-br"> PRO 500 г</a>
               </h4>
               <img class="product-card__img" src="./img/catalog/ce-energy-pro-500-fish-s.png" width="68" height="78"
                 alt="Банка функционального питания для котов.">
@@ -136,7 +136,7 @@
           <li class="cards-wrapper__product-card">
             <div class="product-card">
               <h4 class="product-card__title title">
-                <a class="title__link" class="product-card__title title" href="#">Cat Energy pro 1000 г</a>
+                <a class="title__link" class="product-card__title title" href="#">Cat Energy <br class="product-card__title-br"> pro 1000 г</a>
               </h4>
               <img class="product-card__img" src="./img/catalog/ce-energy-pro-1000-fish-s.png" width="84" height="100"
                 alt="Банка функционального питания для котов.">
@@ -161,7 +161,7 @@
           <li class="cards-wrapper__product-card">
             <div class="product-card">
               <h4 class="product-card__title title">
-                <a class="title__link" href="#" id="first-slim-product">Cat Energy slim 500 г</a>
+                <a class="title__link" href="#" id="first-slim-product">Cat Energy <br class="product-card__title-br"> slim 500 г</a>
               </h4>
               <img class="product-card__img" src="./img/catalog/ce-energy-slim-500-buckwheat-s.png" width="68" height="78"
                 alt="Банка функционального питания для котов.">
@@ -186,7 +186,7 @@
           <li class="cards-wrapper__product-card">
             <div class="product-card">
               <h4 class="product-card__title title">
-                <a class="title__link" href="#">Cat Energy slim 1000 г</a>
+                <a class="title__link" href="#">Cat Energy <br class="product-card__title-br"> slim 1000 г</a>
               </h4>
               <img class="product-card__img" src="./img/catalog/ce-energy-slim-1000-buckwheat-s.png" width="84"
                 height="100" alt="Банка функционального питания для котов.">
@@ -211,7 +211,7 @@
           <li class="cards-wrapper__product-card">
             <div class="product-card">
               <h4 class="product-card__title title">
-                <a class="title__link" href="#">Cat Energy slim 500 г</a>
+                <a class="title__link" href="#">Cat Energy <br class="product-card__title-br"> slim 500 г</a>
               </h4>
               <img class="product-card__img" src="./img/catalog/ce-energy-slim-500-rice-s.png" width="72" height="84"
                 alt="Банка функционального питания для котов.">
@@ -235,7 +235,7 @@
 
           <li class="cards-wrapper__product-card">
             <div class="product-card  product-card--functional">
-              <b class="product-card__title title">Показать еще 100500 товаров</b>
+              <b class="product-card__title title product-card__title--functional">Показать еще 100500 товаров</b>
               <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
               <a href="#" class="product-card__button button button--secondary">показать все</a>
             </div>
@@ -244,10 +244,9 @@
         </ul>
     </div>
 
-      <div class="catalog-optional-goods-and-promos">
+      <div class="catalog-optional-goods-and-promos accented-group">
         <h3 class="visually-hidden">Каталог дополнительной продукции и промо-акции.</h3>
-        <b class="catalog-optional-goods-and-promos__title title">Дополнительные товары.</b>
-
+        <b class="catalog-optional-goods-and-promos__title title"><span class="title--accented-group">Дополнительные товары.</span></b>
         <div class="catalog-optional-goods-and-promos__group">
           <div class="catalog-optional-goods-and-promos__optional-goods optional-goods">
             <h4 class="visually-hidden">Дополнительная продукция.</h4>
@@ -256,7 +255,7 @@
 
               <li class="optional-goods__product-card">
                 <div class="product-card product-card--optional-goods">
-                  <h5 class="product-card__title title">
+                  <h5 class="product-card__title title product-card__title--optional-goods">
                     <a class="title__link" href="#" id="first-pro-product">Сахарозаменитель</a>
                   </h5>
                   <dl class="product-card__description-table description-table">
@@ -270,7 +269,7 @@
               </li>
 
               <li class="optional-goods__product-card product-card product-card--optional-goods">
-                <h5 class="product-card__title title">
+                <h5 class="product-card__title title product-card__title--optional-goods">
                   <a class="title__link" href="#" id="first-pro-product">Питьевая вода</a>
                 </h5>
                 <dl class="product-card__description-table description-table">
@@ -283,7 +282,7 @@
               </li>
 
               <li class="optional-goods__product-card product-card product-card--optional-goods">
-                <h5 class="product-card__title title">
+                <h5 class="product-card__title title product-card__title--optional-goods">
                   <a class="title__link" href="#" id="first-pro-product">Молоко</a>
                 </h5>
                 <dl class="product-card__description-table description-table">
@@ -296,7 +295,7 @@
               </li>
 
               <li class="optional-goods__product-card product-card product-card--optional-goods">
-                <h5 class="product-card__title title">
+                <h5 class="product-card__title title product-card__title--optional-goods">
                   <a class="title__link" href="#" id="first-pro-product">Витамины</a>
                 </h5>
                 <dl class="product-card__description-table description-table">
@@ -314,10 +313,13 @@
 
           <div class="catalog-optional-goods-and-promos__promotion promotion">
             <h4 class="visually-hidden">Промо-акции.</h4>
-            <div class="promotion__promotion-card promotion-card">
-              <div class="promotion-card__content">
-              <h5 class="visually-hidden">Подарок за покупку всех наименований дополнительных товаров.</h5>
-              <p class="promotion-card__description">Закажите все и получите чехол для кота в подарок!</p>
+            <div class="promotion__promotion-card">
+              <div class="promotion-card">
+                <div class="promotion-card__content">
+                  <h5 class="visually-hidden">Подарок за покупку всех наименований дополнительных товаров.</h5>
+                  <p class="promotion-card__description">Закажите все и получите чехол для кота в подарок!</p>
+                </div>
+              </div>
             </div>
             </div>
           </div>
@@ -393,6 +395,8 @@
     </div>
 
   </footer>
+
+  <script src="./js/script.js"></script>
 
 </body>
 

@@ -1,12 +1,30 @@
 @use "../variables.scss" as var;
 @use "../mixins.scss" as mixvar;
 
+
 .fieldset {
   box-sizing: border-box;
   position: relative;
   border: none;
   margin: 0;
   padding: 0;
+
+  &--accented::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 2px;
+    top: 14px;
+    left: 30%;
+    right: 0;
+    background-color: var.$brand-color;
+    z-index: -2;
+
+    @media (min-width: var.$tablet-width) {
+      top: 21px;
+      left: 0;
+    }
+  }
 
   @media (min-width: var.$tablet-width) {
     // padding: 0 70px 72px;
@@ -63,14 +81,13 @@
       @include mixvar.cup-mobile;
     }
 
-    @media (min-width: var.$tablet-width) and (max-width: (var.$desktop-width - 1px)) {
-      // @include mixvar.cup-tablet--form;
+    @media (min-width: var.$desktop-width) {
+      gap: 20px;
     }
   }
 
   &--contacts {
     @include mixvar.cup-mobile;
-
 
     @media (min-width: var.$tablet-width) {
       gap: 20px;
@@ -101,17 +118,51 @@
 
 .fieldset__input-container {
   width: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   gap: 13px;
 }
 
 .fieldset__label {
+  cursor: pointer;
+
   @include mixvar.accented-text(16px, 18px, uppercase);
   width: max-content;
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(20px, 30px, uppercase);
+  }
+
+  &--radio,
+  &--checkbox {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      border: 1px solid var.$input-border;
+
+      @media (min-width: var.$tablet-width) {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &--radio::before {
+    border-radius: 50%;
+  }
+
+  &--radio:hover::before,
+  &--checkbox:hover::before {
+    border-color: var.$input-border-hover;
   }
 }
 
@@ -139,15 +190,43 @@
     padding-left: 14px;
     height: 150px;
   }
+
+  &:hover {
+    border-color: var.$input-border-hover;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid var.$input-border-focus;
+    outline-offset: -2px;
+    // border: 2px solid red;
+  }
+
+  &--error {
+    outline: 2px solid var.$error;
+    outline-offset: -2px;
+  }
+}
+
+.fieldset__input-icon {
+  position: absolute;
+  right: 17px;
+  color: var.$input-icon-stroke;
+}
+
+.fieldset__input--error + .fieldset__input-icon {
+  color: var.$error;
+}
+
+.fieldset__input-container:focus-within .fieldset__input-icon {
+  color: var.$brand-color;
 }
 
 .fieldset__radio-list {
   @include mixvar.reset-list;
 
   @media (max-width: var.$mobile-width-only) {
-    margin-top: 22px;
-
-    @include mixvar.cup-mobile(22px);
+    @include mixvar.cup-mobile(19px, 22px);
   }
 
   @media (min-width: var.$tablet-width) {
@@ -164,9 +243,16 @@
   }
 }
 
+.fieldset__radio-list-item + .fieldset__radio-list-item {
+  padding-top: 13px;
+}
+
 .fieldset__checkbox-list {
   @include mixvar.reset-list;
   @include mixvar.cup-mobile;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet--form;
@@ -192,6 +278,66 @@
   }
 }
 
+.fieldset__radio,
+.fieldset__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.fieldset__radio:checked + .fieldset__label::after,
+.fieldset__checkbox:checked + .fieldset__label::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  transform: translate(-50%, -50%);
+  top: 15px;
+  left: 15px;
+
+  @media (min-width: var.$tablet-width) {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.fieldset__radio:checked + .fieldset__label::after {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var.$brand-color;
+
+  @media (min-width: var.$tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.fieldset__checkbox:checked + .fieldset__label::after {
+  width: 18px;
+  height: 14px;
+  background: url("../../img/check-sign.svg") no-repeat center / contain;
+
+  @media (min-width: var.$tablet-width) {
+    width: 24px;
+    height: 19px;
+  }
+}
+
+.fieldset__radio:disabled + .fieldset__label,
+.fieldset__checkbox:disabled + .fieldset__label {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.fieldset__radio:disabled + .fieldset__label::before,
+.fieldset__checkbox:disabled + .fieldset__label::before {
+  border-color: var.$input-border-hover;
+}
+
+.fieldset__radio-list-item:focus-within .fieldset__label::before,
+.fieldset__checkbox-list-item:focus-within .fieldset__label::before {
+  outline: 2px solid var.$input-border-focus;
+}
+
 .fieldset__legend {
   @include mixvar.cup-mobile(35px);
 
@@ -207,14 +353,33 @@
 .fieldset__legend-styling {
   position: relative;
 
+  &--kludge {
+    @media (max-width: 389px) {
+      display: block;
+      width: min-content;
+    }
+  }
+
   @include mixvar.accented-text(24px, 24px, none);
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(36px, 36px, none);
   }
 
-  // background-color: red;
-  // box-shadow: 20px 0 red, -20px 0 red;
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var.$white;
+    z-index: -1;
+    box-shadow: 20px 0 var.$white, -38px 0 var.$white;
+
+    @media (min-width: var.$tablet-width) {
+      box-shadow: 40px 0 var.$white, -40px 0 var.$white;
+    }
+  }
 }
 
 .fieldset__submit-button {

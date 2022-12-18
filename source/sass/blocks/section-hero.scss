@@ -2,7 +2,7 @@
 @use "../mixins.scss" as mixvar;
 
 .section-hero {
-  background: linear-gradient(var.$brand-color-85 302px, var.$white 302px), url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% - 30px) -35px / auto 360px,;
+  background: linear-gradient(var.$brand-color-85 302px, var.$white 302px), url("../../img/cat-hero.jpg") no-repeat calc(50% - 30px) -35px / auto 360px, linear-gradient(#505155 302px, #505155 302px);
 
   @media (min-width: var.$tablet-width) {
     background: none;
@@ -10,7 +10,7 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), url("../../img/unoptimized/4570a4a08306b2efdaf0011db30cbec6.jpg") no-repeat calc(50% + 530px) center / auto 100%;
+    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#505155, 0) calc(50% + 800px), #505155 calc(60% + 800px)), url("../../img/cat-hero.jpg") no-repeat left calc(450px + 55%) center / auto 105%, linear-gradient(#505155 302px, #505155 302px);
   }
 }
 
@@ -65,7 +65,9 @@
 }
 
 .section-hero__image {
-  margin-bottom: 3px;
+  // margin-bottom: 3px;
+  display: block;
+  margin: auto;
 
   @media (min-width: var.$tablet-width) {
     position: absolute;

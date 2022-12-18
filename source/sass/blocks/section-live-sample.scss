@@ -1,5 +1,6 @@
 @use "../variables.scss" as var;
 @use "../mixins.scss" as mixvar;
+@forward "./section-live-sample/compare-slider.scss";
 
 .section-live-sample {
   background-color: var.$brand-background;
@@ -24,6 +25,7 @@
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(60px, 60px, none);
+    padding-top: 43px;
     margin-bottom: 63px;
   }
 
@@ -43,6 +45,10 @@
   margin: 0;
   margin-bottom: 20px;
 
+  @media (min-width: var.$tablet-width) {
+    margin-bottom: 54px;
+  }
+
   @media (min-width: var.$desktop-width) {
     display: block;
     width: 460px;
@@ -50,10 +56,20 @@
   }
 }
 
+.section-live-sample__infographics {
+  @include mixvar.reset-list;
+  margin-bottom: 20px;
+
+  @media (min-width: var.$tablet-width) {
+    margin-bottom: 99px;
+  }
+}
+
 .section-live-sample__compare-slider-container {
   margin-left: auto;
   margin-right: auto;
   width: 280px;
+  height: 256px;
 
   @media (min-width: var.$tablet-width) {
     width: 590px;

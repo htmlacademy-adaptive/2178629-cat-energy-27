@@ -21,12 +21,12 @@
           <img src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
         </div>
       </a>
-      <button class="main-header__nav-toggle" type="button">
+      <button class="main-header__nav-toggle main-header__nav-toggle--closed main-header__nav-toggle--no-js" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
     </div>
-    <nav class="main-nav">
-      <div class="main-nav__container main-nav__container--hidden">
+    <nav class="main-nav main-nav--closed main-nav--index-page main-nav--no-js">
+      <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current main-nav__link--index-page main-nav__link--index-page-current">
@@ -83,7 +83,7 @@
 
     <section class="section-workflow">
       <h2 class="visually-hidden">Описание действия программ функционального питания котов.</h2>
-      <div class="content-wrapper">
+      <div class="content-wrapper content-wrapper--workflow">
         <b class="section-workflow__title title">Как это работает</b>
         <ol class="section-workflow__list">
           <li class="section-workflow__item workflow-item workflow-item--contents">
@@ -124,11 +124,13 @@
           </div>
         </dl>
         <div class="section-live-sample__compare-slider-container ">
-          <div class="compare-slider">
-          <img class="compare-slider__primary-image" src="./img/cat-before.png" width="280" height="256"
-            alt="Толстый кот — до прохождения программы Кэт Энерджи.">
-          <img class="compare-slider__secondary-image" src="./img/cat-after.png" width="280" height="256"
-            alt="Стройный кот — после прохождения программы Кэт Энерджи.">
+          <div class="compare-slider" style="--knob-position: 50%;">
+          <button class="compare-slider__control-knob-group">
+            <span class="visually-hidden">Сравнение кота - до и после прохождения программы. Интерактивная иллюстрация.</span>
+            <svg class="compare-slider__control-knob" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><rect width="38" height="38" x="1" y="1" fill="#fff" rx="19"/><path fill="currentColor" d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/><rect width="38" height="38" x="1" y="1" stroke="currentColor" stroke-width="2" rx="19"/></svg>
+          </button>
+          <div class="compare-slider__primary-image"></div>
+          <div class="compare-slider__secondary-image"></div>
           </div>
         </div>
       </div>
@@ -142,8 +144,8 @@
           <p class="invitation__address">ул. Большая Конюшенная, д.&#160;19/8 Санкт&#8209;Петербург</p>
         </div>
       </div>
-      <iframe class="section-address__map" frameBorder="none"
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac73c773355661d4ad1f7f6566c411e0f16d2d41f51f743cf585d747337a2fc40&amp;source=constructor">
+      <iframe class="section-address__map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac73c773355661d4ad1f7f6566c411e0f16d2d41f51f743cf585d747337a2fc40&amp;source=constructor" title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
       </iframe>
     </section>
 
@@ -202,6 +204,8 @@
     </div>
 
   </footer>
+
+  <script src="./js/script.js"></script>
 
 </body>
 

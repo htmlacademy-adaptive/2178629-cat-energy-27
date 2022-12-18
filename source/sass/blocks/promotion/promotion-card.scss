@@ -1,37 +1,68 @@
 @use "../../variables.scss" as var;
 
 .promotion-card {
-  display: block;
-  height: 100%;
-}
-
-.promotion-card__content {
-  display: block;
-  padding: 200px 60px 45px 60px;
-  background-color: var.$brand-color;
+  min-height: 290px;
+  padding: 65px 60px 45px 60px;
+  background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../../../img/cat-case.jpg") center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: var.$tablet-width) {
-    padding: 70px 154px 70px 420px;
+    min-height: 200px;
+    padding: 20px 124px 20px 77px;
+    flex-direction: row;
+    background-position-y: 60%;
   }
 
   @media (min-width: var.$desktop-width) {
-    padding: 184px 50px 42px;
+    height: 100%;
+    padding: 62px 30px 42px 30px;
+    flex-direction: column;
+  }
+
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background: url("../../../img/icon-gift.svg") no-repeat center / 97.5%;
+
+    @media (min-width: var.$tablet-width) {
+      width: 80px;
+      height: 83px;
+      background: url("../../../img/icon-gift.svg") no-repeat center / 100%;
+    }
   }
 }
 
+// .promotion-card__content {
+//   height: 100%;
+
+//   @media (min-width: var.$tablet-width) {
+//     margin-bottom: auto;
+//   }
+
+//   @media (min-width: var.$desktop-width) {
+//     padding: 184px 50px 42px;
+//   }
+// }
+
 .promotion-card__description {
+  margin: 0;
+  margin-top: auto;
   color: var.$text-invert;
   text-align: center;
-  margin: 0;
-  padding: 0;
   font-size: 16px;
   line-height: 20px;
 
   @media (min-width: var.$tablet-width) {
+    width: 180px;
     text-align: left;
   }
 
   @media (min-width: var.$desktop-width) {
+    width: fit-content;
     text-align: center;
   }
 }

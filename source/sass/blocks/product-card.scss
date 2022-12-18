@@ -4,7 +4,13 @@
 
 .product-card {
   box-sizing: border-box;
-  // padding: 25px 20px;
+  min-height: 205px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 55px 1fr auto;
+  grid-template-areas: "img title"
+    "img description"
+    "btn btn";
 
   @media (max-width: var.$mobile-width-only) {
     @include mixvar.cup-mobile(25px, 20px);
@@ -13,27 +19,41 @@
   @media (min-width: var.$tablet-width) {
     box-sizing: border-box;
     min-height: 511px;
+    width: 100%;
     padding: 0 39px 39px 39px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 68px auto 40px;
+    grid-template-areas: "img" "title" "description" "btn";
     background: linear-gradient(to top, var.$brand-background 430px, var.$white 430px);
   }
 
   &--functional {
-    text-align: center;
+    min-height: 208px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 62px 30px auto 40px;
+    grid-template-areas: "img" "title" "description" "btn";
+
 
     @media (min-width: var.$tablet-width) {
       min-height: 430px;
       background: none;
       border: 1px solid var.$brand-background;
-      align-self: flex-end;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 160px 68px auto 40px;
+      grid-template-areas: "img" "title" "description" "btn";
     }
   }
 
   &--optional-goods {
+    display: block;
+    grid: none;
     box-sizing: border-box;
-    padding: 12px 0 20px;
+    min-width: 240px;
+    min-height: unset;
+    padding: 12px 0 18px;
     border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: var.$tablet-width) {
@@ -42,6 +62,12 @@
       border: 1px solid #cdcdcd;
       border-top: none;
       background: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 39px;
+      grid-template-areas: "title description" "btn btn";
+      row-gap: 25px;
+      align-items: end;
     }
 
     @media (min-width: var.$desktop-width) {
@@ -49,7 +75,10 @@
       min-height: fit-content;
       display: grid;
       grid-template-columns: 284px 1fr 244px;
+      grid-template-rows: none;
+      grid-template-areas: "title description btn";
       gap: 40px;
+      align-items: baseline;
       border-left: none;
       border-right: none;
     }
@@ -61,18 +90,59 @@
 }
 
 .product-card__title {
+  grid-area: title;
+  text-align: left;
+
   @include mixvar.accented-text(16px, 20px, uppercase);
   text-decoration: none;
   color: var.$text-common;
   margin: 0;
   padding: 0;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &--functional {
+    text-align: center;
+  }
+
+  &--optional-goods {
+    line-height: 16px;
+    margin-bottom: 13px;
+    text-align: left;
+
+    @media (min-width: var.$tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+}
+
+.product-card__title-br {
+  @media (min-width: var.$tablet-width) and (max-width: var.$desktop-width - 1px) {
+    display: none;
+  }
 }
 
 .product-card__description-table {
+  grid-area: description;
+
   @include mixvar.reset-list;
 }
 
+.product-card__img {
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+}
+
 .product-card__button {
+  grid-area: btn;
   font-size: 16px;
   line-height: 20px;
   padding-top: 10px;
@@ -80,6 +150,17 @@
 }
 
 .product-card__description {
+  margin: 0;
+  grid-area: description;
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 50px 0 50px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 0 10px 0 10px;
+  }
 }

@@ -1,0 +1,65 @@
+@use "../../variables.scss" as var;
+
+.compare-slider {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: var(--knob-position) 1fr;
+}
+
+.compare-slider__control-knob-group {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  padding: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var.$control-knob;
+  color: var.$control-knob;
+  border: none;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  margin-left: var(--knob-position);
+  z-index: 2;
+
+  &:hover {
+    background-color: var.$brand-color;
+    color: var.$brand-color;
+  }
+
+  &:active {
+    background-color: var.$control-knob-active;
+    color: var.$control-knob-active;
+  }
+}
+
+.compare-slider__control-knob {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  color: inherit;
+
+  &:hover {
+    color: var.$brand-color;
+  }
+
+  &:active {
+    color: var.$control-knob-active;
+  }
+}
+
+.compare-slider__primary-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  width: 100%;
+  background: url("../../../img/cat-before.png") no-repeat left 50% / auto 100%;
+}
+
+.compare-slider__secondary-image {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  background: url("../../../img/cat-after.png") no-repeat right 50% / auto 100%;
+}

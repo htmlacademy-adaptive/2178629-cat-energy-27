@@ -58,7 +58,19 @@
   content: "";
   width: 100%;
   height: auto;
-  background: url("../../../img/cat-before.png") no-repeat left / cover;
+  background: url("../../../img/cat-before_mobile.png") no-repeat left 10% / cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../../img/cat-before-mobile@2x.png") no-repeat lef 10% / cover;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    background: url("../../../img/cat-before-xl.png") no-repeat left 15% / cover;
+  }
+
+  @media (min-width: var.$tablet-width) and (min-resolution: 2dppx) {
+    background: url("../../../img/cat-before-xl@2x.png") no-repeat left 15% / cover;
+  }
 }
 
 .compare-slider::after {
@@ -67,5 +79,17 @@
   content: "";
   width: 100%;
   height: auto;
-  background: url("../../../img/cat-after.png") no-repeat right / cover;
+  background: url("../../../img/cat-after-mobile.png") no-repeat right / cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../../img/cat-after-mobile@2x.png") no-repeat right / cover;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    background: url("../../../img/cat-after-xl.png") no-repeat right / cover;
+  }
+
+  @media (min-width: var.$tablet-width) and (min-resolution: 2dppx) {
+    background: url("../../../img/cat-after-xl@2x.png") no-repeat right / cover;
+  }
 }

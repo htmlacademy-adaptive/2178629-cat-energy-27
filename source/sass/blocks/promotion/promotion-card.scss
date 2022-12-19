@@ -3,23 +3,36 @@
 .promotion-card {
   min-height: 290px;
   padding: 65px 60px 45px 60px;
-  background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../../../img/cat-case.jpg") center / cover;
+  background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../../../img/cat-case-mobile.jpg") center / cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../../../img/cat-case-mobile@2x.jpg") center / cover;
+  }
+
   @media (min-width: var.$tablet-width) {
     min-height: 200px;
     padding: 20px 124px 20px 77px;
     flex-direction: row;
-    background-position-y: 60%;
+    background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../../../img/cat-case-tablet.jpg") center / cover;
+  }
+
+  @media (min-width: var.$tablet-width) and (min-resolution: 2dppx) {
+    background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../../../img/cat-case-tablet@2x.jpg") center / cover;
   }
 
   @media (min-width: var.$desktop-width) {
     height: 100%;
     padding: 62px 30px 42px 30px;
     flex-direction: column;
+    background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../../../img/cat-case-xl.jpg") center / cover;
+  }
+
+  @media (min-width: var.$desktop-width) and (min-resolution: 2dppx) {
+    background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../../../img/cat-case-xl@2x.jpg") center / cover;
   }
 
   &::before {

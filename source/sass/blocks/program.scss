@@ -40,7 +40,7 @@
     transform: translate(-50%, -50%) scale(25%);
     top: 46px;
     left: 48px;
-    background: url("../../img/cat-icon-slim.svg")  no-repeat center;
+    background: url("../img/cat-icon-slim.svg")  no-repeat center;
 
     @media (min-width: var.$tablet-width) {
       transform: translate(50%, -50%);
@@ -60,7 +60,7 @@
   &--slim::after {
     width: 140px;
     height: 194px;
-    background: url("../../img/cat-icon-slim.svg")  no-repeat center;
+    background: url("../img/cat-icon-slim.svg")  no-repeat center;
     top: 46px;
     left: 48px;
 
@@ -83,7 +83,7 @@
     height: 112px;
     top: 48px;
     left: 47px;
-    background: url("../../img/cat-icon-pro.svg")  no-repeat center;
+    background: url("../img/cat-icon-pro.svg")  no-repeat center;
 
     @media (min-width: var.$tablet-width) {
       top: 190px;
@@ -157,7 +157,7 @@
     width: 32px;
     height: 14px;
     margin-left: 15px;
-    background: url("../../img/program-arrow.svg") no-repeat -8px/ contain;
+    background: url("../img/program-arrow.svg") no-repeat -8px/ contain;
 
 
     @media (min-width: var.$tablet-width) {
@@ -168,7 +168,7 @@
   }
 
   &:hover::after {
-    background: url("../../img/program-arrow.svg") no-repeat center / contain;
+    background: url("../img/program-arrow.svg") no-repeat center / contain;
 
     @media (min-width: var.$tablet-width) {
       // width: 30px;

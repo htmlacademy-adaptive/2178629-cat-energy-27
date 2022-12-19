@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -14,11 +18,15 @@
     <div class="main-header__logo-header-container logo-header-container">
       <a class="logo-header-container__logo logo" href="#">
         <div class="logo__logo-sign">
-          <img src="./img/ce-logo-sign-mobile.svg" width="34" height="38"
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/ce-logo-sign-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/ce-logo-sign-tablet.svg">
+            <img class="logo__logo-sign-img" src="img/ce-logo-sign-mobile.svg" width="34" height="38"
             alt="Логотип компании Кэт-Энерджи.">
+          </picture>
         </div>
         <div class="logo__logo-text logo-text">
-          <img src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
+          <img src="img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
         </div>
       </a>
       <button class="main-header__nav-toggle main-header__nav-toggle--closed main-header__nav-toggle--no-js" type="button">
@@ -34,12 +42,12 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--index-page" href="./catalog.html">
+            <a class="main-nav__link main-nav__link--index-page" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--index-page" href="./form.html">
+            <a class="main-nav__link main-nav__link--index-page" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -57,9 +65,14 @@
       <div class="content-wrapper content-wrapper--hero">
         <span class="section-hero__title title">Функциональное питание для&#160;котов</span>
         <p class="section-hero__subtitle title">Занялся собой? Займись котом!</p>
-        <img class="section-hero__image" src="./img/index-can-mobile.png"
-          alt="Упаковка питания для котов серии Кэт Энерджи Про, курица, весом 500 грамм.">
-        <a class="section-hero__button button" href="./form.html">Подобрать программу</a>
+
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+          <img class="section-hero__image" srcset="img/index-can-mobile@2x.png 2x" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Упаковка питания для котов серии Кэт Энерджи Про весом 500 грамм со вкусом курицы.">
+        </picture>
+
+        <a class="section-hero__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
 
@@ -70,12 +83,12 @@
           <li class="section-programs__item program program--slim">
             <h3 class="program__title title">Похудение</h3>
             <p class="program__desription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program__to-catalog-link" href="./catalog.html#first-slim-product">Каталог Slim</a>
+            <a class="program__to-catalog-link" href="catalog.html#first-slim-product">Каталог Slim</a>
           </li>
           <li class="section-programs__item program program--pro">
             <h3 class="program__title title">Набор массы</h3>
             <p class="program__desription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program__to-catalog-link" href="./catalog.html#first-pro-product">Каталог Pro</a>
+            <a class="program__to-catalog-link" href="catalog.html#first-pro-product">Каталог Pro</a>
           </li>
         </ul>
       </div>
@@ -125,12 +138,10 @@
         </dl>
         <div class="section-live-sample__compare-slider-container ">
           <div class="compare-slider" style="--knob-position: 50%;">
-          <button class="compare-slider__control-knob-group">
-            <span class="visually-hidden">Сравнение кота - до и после прохождения программы. Интерактивная иллюстрация.</span>
-            <svg class="compare-slider__control-knob" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><rect width="38" height="38" x="1" y="1" fill="#fff" rx="19"/><path fill="currentColor" d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/><rect width="38" height="38" x="1" y="1" stroke="currentColor" stroke-width="2" rx="19"/></svg>
-          </button>
-          <div class="compare-slider__primary-image"></div>
-          <div class="compare-slider__secondary-image"></div>
+            <button class="compare-slider__control-knob-group">
+              <span class="visually-hidden">Сравнение кота - до и после прохождения программы. Интерактивная иллюстрация.</span>
+              <svg class="compare-slider__control-knob" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><rect width="38" height="38" x="1" y="1" fill="#fff" rx="19"/><path fill="currentColor" d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/><rect width="38" height="38" x="1" y="1" stroke="currentColor" stroke-width="2" rx="19"/></svg>
+            </button>
           </div>
         </div>
       </div>
@@ -154,7 +165,7 @@
   <footer class="main-footer">
     <div class="content-wrapper content-wrapper--main-footer">
       <a class="main-footer__logo logo-text main-footer__item main-footer__item--decorated" href="#">
-        <img class="logo-text" src="./img/ce-logo-text.svg" width="128" height="24" alt="Логотип компании Кэт-Энерджи.">
+        <img class="logo-text" src="img/ce-logo-text.svg" width="128" height="24" alt="Логотип компании Кэт-Энерджи.">
       </a>
       <ul class="main-footer__socials socials main-footer__item main-footer__item--decorated">
         <li class="socials__item">
@@ -205,7 +216,7 @@
 
   </footer>
 
-  <script src="./js/script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

@@ -20,6 +20,28 @@
 
 .logo__logo-sign {
   height: 38px;
+
+  @media (min-width: var.$tablet-width) {
+    height: 55px;
+    width: 60px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    height: 65px;
+    width: 70px;
+  }
+}
+
+.logo__logo-sign-img {
+  @media (min-width: var.$tablet-width) {
+    height: 50px;
+    width: 60px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    height: 59px;
+    width: 70px;
+  }
 }
 
 .logo__logo-text {

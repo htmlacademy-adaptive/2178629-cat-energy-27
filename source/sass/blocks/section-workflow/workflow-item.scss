@@ -41,19 +41,19 @@
   }
 
   &--contents::before {
-    background: var.$brand-color url("/img/workflow-icon-contents.svg") no-repeat center;
+    background: var.$brand-color url("../../../img/workflow-icon-contents.svg") no-repeat center;
   }
 
   &--powder::before {
-    background: var.$brand-color url("/img/workflow-icon-powder.svg") no-repeat center;
+    background: var.$brand-color url("../../../img/workflow-icon-powder.svg") no-repeat center;
   }
 
   &--change::before {
-    background: var.$brand-color url("/img/workflow-icon-change.svg") no-repeat center;
+    background: var.$brand-color url("../../../img/workflow-icon-change.svg") no-repeat center;
   }
 
   &--result::before {
-    background: var.$brand-color url("/img/workflow-icon-result.svg") no-repeat center;
+    background: var.$brand-color url("../../../img/workflow-icon-result.svg") no-repeat center;
   }
 }
 

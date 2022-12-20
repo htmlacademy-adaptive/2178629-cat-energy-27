@@ -72,7 +72,7 @@
   height: 256px;
 
   @media (min-width: var.$tablet-width) {
-    width: 590px;
+    width: 560px;
     height: 512px;
   }
 
@@ -82,7 +82,5 @@
     position: absolute;
     top: 0;
     right: 110px;
-    width: 590px;
-    height: 512px;
   }
 }

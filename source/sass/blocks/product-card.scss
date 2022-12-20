@@ -168,14 +168,14 @@
 }
 
 .product-card__image-wraper {
-  display: inline;
-  position: relative;
-  grid-area: img;
+  // display: inline;
+  // position: relative;
   // justify-self: center;
   // align-self: center;
 }
 
 .product-card__img {
+  grid-area: img;
   position: absolute;
   width: fit-content;
   height: fit-content;

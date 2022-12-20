@@ -167,28 +167,22 @@
   @include mixvar.reset-list;
 }
 
-.product-card__image-wraper {
-  // display: inline;
-  // position: relative;
-  // justify-self: center;
-  // align-self: center;
-}
-
 .product-card__img {
   grid-area: img;
   position: absolute;
-  width: fit-content;
-  height: fit-content;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
 
   @media (min-resolution: 2dppx) {
+    width: unset;
+    height: unset;
     transform: translate(-50%, -50%) scale(50%);
   }
 
-  @media (min-width: var.$tablet-width) and (min-resolution: 2dppx) {
-    transform: translate(-50%, -50%) scale(50%);
+  @media (min-width: var.$tablet-width) {
+    width: unset;
+    height: unset;
   }
 
   &--tilted {

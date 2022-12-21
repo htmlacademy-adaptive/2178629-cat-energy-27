@@ -58,18 +58,18 @@
   content: "";
   width: 100%;
   height: auto;
-  background: url("../../../img/cat-before_mobile.png") no-repeat left / auto 100%;
+  background: url("../img/cat-before_mobile.png") no-repeat left / auto 100%;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../../img/cat-before-mobile@2x.png") no-repeat left / auto 100%;
+    background: url("../img/cat-before-mobile@2x.png") no-repeat left / auto 100%;
   }
 
   @media (min-width: var.$tablet-width) {
-    background: url("../../../img/cat-before-xl.png") no-repeat left / auto 100%;
+    background: url("../img/cat-before-xl.png") no-repeat left / auto 100%;
   }
 
   @media (min-width: var.$tablet-width) and (min-resolution: 2dppx) {
-    background: url("../../../img/cat-before-xl@2x.png") no-repeat left / auto 100%;
+    background: url("../img/cat-before-xl@2x.png") no-repeat left / auto 100%;
   }
 }
 
@@ -79,17 +79,17 @@
   content: "";
   width: 100%;
   height: auto;
-  background: url("../../../img/cat-after-mobile.png") no-repeat right / auto 100%;
+  background: url("../img/cat-after-mobile.png") no-repeat right / auto 100%;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../../img/cat-after-mobile@2x.png") no-repeat right / auto 100%;
+    background: url("../img/cat-after-mobile@2x.png") no-repeat right / auto 100%;
   }
 
   @media (min-width: var.$tablet-width) {
-    background: url("../../../img/cat-after-xl.png") no-repeat right / auto 100%;
+    background: url("../img/cat-after-xl.png") no-repeat right / auto 100%;
   }
 
   @media (min-width: var.$tablet-width) and (min-resolution: 2dppx) {
-    background: url("../../../img/cat-after-xl@2x.png") no-repeat right / auto 100%;
+    background: url("../img/cat-after-xl@2x.png") no-repeat right / auto 100%;
   }
 }

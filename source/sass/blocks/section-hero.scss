@@ -3,10 +3,10 @@
 
 .section-hero {
   position: relative;
-  background: linear-gradient(var.$brand-color-85 302px, var.$white 302px), linear-gradient(to right, rgba(#3f3e43, 0) 66%, #3f3e43 71%) center / 1200px, url("../../img/cat-hero-mobile.jpg") no-repeat calc(50% - 30px) top / auto 302px, linear-gradient(#505155 302px, #505155 302px);
+  background: linear-gradient(var.$brand-color-85 302px, var.$white 302px), linear-gradient(to right, rgba(#3f3e43, 0) 66%, #3f3e43 71%) center / 1200px, url("../img/cat-hero-mobile.jpg") no-repeat calc(50% - 30px) top / auto 302px, linear-gradient(#505155 302px, #505155 302px);
 
   @media (min-resolution: 2dppx) {
-    background: linear-gradient(var.$brand-color-85 302px, var.$white 302px), linear-gradient(to right, rgba(#3f3e43, 0) 66%, #3f3e43 71%) center / 1200px, url("../../img/cat-hero-mobile@2x.jpg") no-repeat calc(50% - 30px) top / auto 302px, linear-gradient(#505155 302px, #505155 302px);
+    background: linear-gradient(var.$brand-color-85 302px, var.$white 302px), linear-gradient(to right, rgba(#3f3e43, 0) 66%, #3f3e43 71%) center / 1200px, url("../img/cat-hero-mobile@2x.jpg") no-repeat calc(50% - 30px) top / auto 302px, linear-gradient(#505155 302px, #505155 302px);
   }
 
   @media (min-width: var.$tablet-width) {
@@ -15,11 +15,11 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../../img/cat-hero-desktop.jpg") no-repeat left calc(450px + 55%) center / auto 105%, linear-gradient(#505155 302px, #505155 302px);
+    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop.jpg") no-repeat left calc(450px + 55%) center / auto 105%, linear-gradient(#505155 302px, #505155 302px);
   }
 
   @media (min-width: var.$desktop-width) and (min-resolution: 2dppx) {
-    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../../img/cat-hero-desktop@2x.jpg") no-repeat left calc(450px + 55%) center / auto 105%, linear-gradient(#505155 302px, #505155 302px);
+    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop@2x.jpg") no-repeat left calc(450px + 55%) center / auto 105%, linear-gradient(#505155 302px, #505155 302px);
   }
 }
 

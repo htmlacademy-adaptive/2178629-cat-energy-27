@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи. Каталог продукции</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -16,17 +16,17 @@
 
   <header class="main-header">
     <div class="main-header__logo-header-container logo-header-container">
-      <a class="logo-header-container__logo logo" href="./index.html">
+      <a class="logo-header-container__logo logo" href="index.html">
         <div class="logo__logo-sign">
           <picture>
-            <source media="(min-width: 1220px)" srcset="./img/ce-logo-sign-desktop.svg">
-            <source media="(min-width: 768px)" srcset="./img/ce-logo-sign-tablet.svg">
-            <img class="logo__logo-sign-img" src="./img/ce-logo-sign-mobile.svg" width="34" height="38"
+            <source media="(min-width: 1220px)" srcset="img/ce-logo-sign-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/ce-logo-sign-tablet.svg">
+            <img class="logo__logo-sign-img" src="img/ce-logo-sign-mobile.svg" width="34" height="38"
             alt="Логотип компании Кэт-Энерджи.">
           </picture>
         </div>
         <div class="logo__logo-text logo-text">
-          <img src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
+          <img src="img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
         </div>
       </a>
       <button class="main-header__nav-toggle main-header__nav-toggle--closed main-header__nav-toggle--no-js" type="button">
@@ -37,7 +37,7 @@
       <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="./index.html">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
@@ -47,7 +47,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="./form.html">
+            <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -73,10 +73,8 @@
               </h4>
               <a class="product-card__image-wraper" href="#">
                 <picture>
-                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-500-chicken@2x.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-pro-500-chicken.png">
-                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-500-chicken-mobile@2x.png">
-                  <img class="product-card__img" src="./img/catalog/ce-energy-pro-500-chicken-mobile.png" width="68" height="86" alt="Банка функционального питания для котов.">
+                  <source media="(min-width: 768px)" srcset="img/catalog/ce-energy-pro-500-chicken.png, img/catalog/ce-energy-pro-500-chicken@2x.png 2x">
+                  <img class="product-card__img" srcset="img/catalog/ce-energy-pro-500-chicken-mobile@2x.png 2x" src="img/catalog/ce-energy-pro-500-chicken-mobile.png" width="68" height="86" alt="Банка функционального питания для котов.">
                 </picture>
               </a>
               <dl class="product-card__description-table description-table">
@@ -93,21 +91,19 @@
                   <dd class="description-table__value">700 &#8381;</dd>
                 </div>
               </dl>
-              <a href="./form.html" class="product-card__button button">Заказать</a>
+              <a href="form.html" class="product-card__button button">Заказать</a>
             </div>
           </li>
 
           <li class="cards-wrapper__product-card">
             <div class="product-card">
               <h4 class="product-card__title title">
-                <a class="title__link" class="product-card__title title" href="#">Cat Energy <br class="product-card__title-br"> PRO 1000 г</a>
+                <a class="title__link product-card__title title" href="#">Cat Energy <br class="product-card__title-br"> PRO 1000 г</a>
               </h4>
               <a href="#">
                 <picture>
-                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-1000-chicken@2x.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-pro-1000-chicken.png">
-                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-1000-chicken-mobile@2x.png">
-                  <img class="product-card__img product-card__img--tilted" src="./img/catalog/ce-energy-pro-1000-chicken-mobile.png" width="84" height="100" alt="Банка функционального питания для котов.">
+                  <source media="(min-width: 768px)" srcset="img/catalog/ce-energy-pro-1000-chicken.png, img/catalog/ce-energy-pro-1000-chicken@2x.png 2x">
+                  <img class="product-card__img product-card__img--tilted" srcset="img/catalog/ce-energy-pro-1000-chicken-mobile@2x.png 2x" src="img/catalog/ce-energy-pro-1000-chicken-mobile.png" width="84" height="100" alt="Банка функционального питания для котов.">
                 </picture>
               </a>
               <dl class="product-card__description-table description-table">
@@ -124,7 +120,7 @@
                   <dd class="description-table__value">1000 &#8381;</dd>
                 </div>
               </dl>
-              <a href="./form.html" class="product-card__button button">Заказать</a>
+              <a href="form.html" class="product-card__button button">Заказать</a>
             </div>
           </li>
 
@@ -135,10 +131,8 @@
               </h4>
               <a href="#">
                 <picture>
-                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-500-fish@2x.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-pro-500-fish.png">
-                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-500-fish-mobile@2x.png">
-                  <img class="product-card__img" src="./img/catalog/ce-energy-pro-500-fish-mobile.png" width="68" height="78" alt="Банка функционального питания для котов.">
+                  <source media="(min-width: 768px)" srcset="img/catalog/ce-energy-pro-500-fish.png, img/catalog/ce-energy-pro-500-fish@2x.png 2x">
+                  <img class="product-card__img" srcset="img/catalog/ce-energy-pro-500-fish-mobile@2x.png 2x" src="img/catalog/ce-energy-pro-500-fish-mobile.png" width="68" height="78" alt="Банка функционального питания для котов.">
                 </picture>
               </a>
               <dl class="product-card__description-table description-table">
@@ -155,21 +149,19 @@
                   <dd class="description-table__value">700 &#8381;</dd>
                 </div>
               </dl>
-              <a href="./form.html" class="product-card__button button">Заказать</a>
+              <a href="form.html" class="product-card__button button">Заказать</a>
             </div>
           </li>
 
           <li class="cards-wrapper__product-card">
             <div class="product-card">
               <h4 class="product-card__title title">
-                <a class="title__link" class="product-card__title title" href="#">Cat Energy <br class="product-card__title-br"> pro 1000 г</a>
+                <a class="title__link product-card__title title" href="#">Cat Energy <br class="product-card__title-br"> pro 1000 г</a>
               </h4>
               <a href="#">
                 <picture>
-                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-1000-fish@2x.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-pro-1000-fish.png">
-                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-1000-fish-mobile@2x.png">
-                  <img class="product-card__img product-card__img--tilted" src="./img/catalog/ce-energy-pro-1000-fish-mobile.png" width="84" height="100" alt="Банка функционального питания для котов.">
+                  <source media="(min-width: 768px)" srcset="img/catalog/ce-energy-pro-1000-fish.png, img/catalog/ce-energy-pro-1000-fish@2x.png 2x">
+                  <img class="product-card__img product-card__img--tilted" srcset="img/catalog/ce-energy-pro-1000-fish-mobile@2x.png 2x" src="img/catalog/ce-energy-pro-1000-fish-mobile.png" width="84" height="100" alt="Банка функционального питания для котов.">
                 </picture>
               </a>
               <dl class="product-card__description-table description-table">
@@ -186,7 +178,7 @@
                   <dd class="description-table__value">1000 &#8381;</dd>
                 </div>
               </dl>
-              <a href="./form.html" class="product-card__button button">Заказать</a>
+              <a href="form.html" class="product-card__button button">Заказать</a>
             </div>
           </li>
 
@@ -197,10 +189,8 @@
               </h4>
               <a href="#">
                 <picture>
-                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-500-buckwheat@2x.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-slim-500-buckwheat.png">
-                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-500-buckwheat-mobile@2x.png">
-                  <img class="product-card__img" src="./img/catalog/ce-energy-slim-500-buckwheat-mobile.png" width="68" height="78" alt="Банка функционального питания для котов.">
+                  <source media="(min-width: 768px)" srcset="img/catalog/ce-energy-slim-500-buckwheat.png, img/catalog/ce-energy-slim-500-buckwheat@2x.png 2x">
+                  <img class="product-card__img" srcset="img/catalog/ce-energy-slim-500-buckwheat-mobile@2x.png 2x" src="img/catalog/ce-energy-slim-500-buckwheat-mobile.png" width="68" height="78" alt="Банка функционального питания для котов.">
                 </picture>
               </a>
               <dl class="product-card__description-table description-table">
@@ -217,7 +207,7 @@
                   <dd class="description-table__value">400 &#8381;</dd>
                 </div>
               </dl>
-              <a href="./form.html" class="product-card__button button">Заказать</a>
+              <a href="form.html" class="product-card__button button">Заказать</a>
             </div>
           </li>
 
@@ -228,10 +218,8 @@
               </h4>
               <a href="#">
                 <picture>
-                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-1000-buckwheat@2x.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-slim-1000-buckwheat.png">
-                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-1000-buckwheat-mobile@2x.png">
-                  <img class="product-card__img  product-card__img--tilted" src="./img/catalog/ce-energy-slim-1000-buckwheat-mobile.png" width="84" height="100" alt="Банка функционального питания для котов.">
+                  <source media="(min-width: 768px)" srcset="img/catalog/ce-energy-slim-1000-buckwheat.png, img/catalog/ce-energy-slim-1000-buckwheat@2x.png 2x">
+                  <img class="product-card__img  product-card__img--tilted" srcset="img/catalog/ce-energy-slim-1000-buckwheat-mobile@2x.png 2x" src="img/catalog/ce-energy-slim-1000-buckwheat-mobile.png" width="84" height="100" alt="Банка функционального питания для котов.">
                 </picture>
               </a>
               <dl class="product-card__description-table description-table">
@@ -248,7 +236,7 @@
                   <dd class="description-table__value">700 &#8381;</dd>
                 </div>
               </dl>
-              <a href="./form.html" class="product-card__button button">Заказать</a>
+              <a href="form.html" class="product-card__button button">Заказать</a>
             </div>
           </li>
 
@@ -259,10 +247,8 @@
               </h4>
               <a href="#">
                 <picture>
-                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-500-rice@2x.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-slim-500-rice.png">
-                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-500-rice-mobile@2x.png">
-                  <img class="product-card__img" src="./img/catalog/ce-energy-slim-500-rice-mobile.png" width="72" height="84" alt="Банка функционального питания для котов.">
+                  <source media="(min-width: 768px)" srcset="img/catalog/ce-energy-slim-500-rice.png, img/catalog/ce-energy-slim-500-rice@2x.png 2x">
+                  <img class="product-card__img" srcset="img/catalog/ce-energy-slim-500-rice-mobile@2x.png 2x" src="img/catalog/ce-energy-slim-500-rice-mobile.png" width="72" height="84" alt="Банка функционального питания для котов.">
                 </picture>
               </a>
               <dl class="product-card__description-table description-table">
@@ -279,7 +265,7 @@
                   <dd class="description-table__value">400 &#8381;</dd>
                 </div>
               </dl>
-              <a href="./form.html" class="product-card__button button">Заказать</a>
+              <a href="form.html" class="product-card__button button">Заказать</a>
             </div>
           </li>
 
@@ -306,7 +292,7 @@
               <li class="optional-goods__product-card">
                 <div class="product-card product-card--optional-goods">
                   <h5 class="product-card__title title product-card__title--optional-goods">
-                    <a class="title__link" href="#" id="first-pro-product">Сахарозаменитель</a>
+                    <a class="title__link" href="#">Сахарозаменитель</a>
                   </h5>
                   <dl class="product-card__description-table description-table">
                     <div class="description-table__item description-table__item--optional-goods">
@@ -314,13 +300,13 @@
                       <dd class="description-table__value">200 &#8381;</dd>
                     </div>
                   </dl>
-                  <a href="./form.html" class="product-card__button button">Заказать</a>
+                  <a href="form.html" class="product-card__button button">Заказать</a>
                 </div>
               </li>
 
               <li class="optional-goods__product-card product-card product-card--optional-goods">
                 <h5 class="product-card__title title product-card__title--optional-goods">
-                  <a class="title__link" href="#" id="first-pro-product">Питьевая вода</a>
+                  <a class="title__link" href="#">Питьевая вода</a>
                 </h5>
                 <dl class="product-card__description-table description-table">
                   <div class="description-table__item description-table__item--optional-goods">
@@ -328,12 +314,12 @@
                     <dd class="description-table__value">50 &#8381;</dd>
                   </div>
                 </dl>
-                <a href="./form.html" class="product-card__button button">Заказать</a>
+                <a href="form.html" class="product-card__button button">Заказать</a>
               </li>
 
               <li class="optional-goods__product-card product-card product-card--optional-goods">
                 <h5 class="product-card__title title product-card__title--optional-goods">
-                  <a class="title__link" href="#" id="first-pro-product">Молоко</a>
+                  <a class="title__link" href="#">Молоко</a>
                 </h5>
                 <dl class="product-card__description-table description-table">
                   <div class="description-table__item description-table__item--optional-goods">
@@ -341,12 +327,12 @@
                     <dd class="description-table__value">100 &#8381;</dd>
                   </div>
                 </dl>
-                <a href="./form.html" class="product-card__button button">Заказать</a>
+                <a href="form.html" class="product-card__button button">Заказать</a>
               </li>
 
               <li class="optional-goods__product-card product-card product-card--optional-goods">
                 <h5 class="product-card__title title product-card__title--optional-goods">
-                  <a class="title__link" href="#" id="first-pro-product">Витамины</a>
+                  <a class="title__link" href="#">Витамины</a>
                 </h5>
                 <dl class="product-card__description-table description-table">
                   <div class="description-table__item description-table__item--optional-goods">
@@ -354,7 +340,7 @@
                     <dd class="description-table__value">300 &#8381;</dd>
                   </div>
                 </dl>
-                <a href="./form.html" class="product-card__button button">Заказать</a>
+                <a href="form.html" class="product-card__button button">Заказать</a>
               </li>
 
             </ul>
@@ -371,7 +357,6 @@
                 </div>
               </div>
             </div>
-            </div>
           </div>
         </div>
       </div>
@@ -385,8 +370,7 @@
           <p class="invitation__address">ул. Большая Конюшенная, д.&#160;19/8 Санкт&#8209;Петербург</p>
         </div>
       </div>
-      <iframe class="section-address__map" frameBorder="none"
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac73c773355661d4ad1f7f6566c411e0f16d2d41f51f743cf585d747337a2fc40&amp;source=constructor">
+      <iframe class="section-address__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac73c773355661d4ad1f7f6566c411e0f16d2d41f51f743cf585d747337a2fc40&amp;source=constructor">
       </iframe>
     </section>
 
@@ -395,7 +379,7 @@
   <footer class="main-footer">
     <div class="content-wrapper content-wrapper--main-footer">
       <a class="main-footer__logo logo-text main-footer__item main-footer__item--decorated" href="#">
-        <img class="logo-text" src="./img/ce-logo-text.svg" width="128" height="24" alt="Логотип компании Кэт-Энерджи.">
+        <img class="logo-text" src="img/ce-logo-text.svg" width="128" height="24" alt="Логотип компании Кэт-Энерджи.">
       </a>
       <ul class="main-footer__socials socials main-footer__item main-footer__item--decorated">
         <li class="socials__item">

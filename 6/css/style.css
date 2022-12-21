@@ -617,11 +617,11 @@
 
 .section-hero {
   position: relative;
-  background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), linear-gradient(to right, rgba(63, 62, 67, 0) 66%, #3f3e43 71%) center/1200px, url("../../img/cat-hero-mobile.jpg") no-repeat calc(50% - 30px) top/auto 302px, linear-gradient(#505155 302px, #505155 302px);
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), linear-gradient(to right, rgba(63, 62, 67, 0) 66%, #3f3e43 71%) center/1200px, url("../img/cat-hero-mobile.jpg") no-repeat calc(50% - 30px) top/auto 302px, linear-gradient(#505155 302px, #505155 302px);
 }
 @media (min-resolution: 2dppx) {
   .section-hero {
-    background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), linear-gradient(to right, rgba(63, 62, 67, 0) 66%, #3f3e43 71%) center/1200px, url("../../img/cat-hero-mobile@2x.jpg") no-repeat calc(50% - 30px) top/auto 302px, linear-gradient(#505155 302px, #505155 302px);
+    background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), linear-gradient(to right, rgba(63, 62, 67, 0) 66%, #3f3e43 71%) center/1200px, url("../img/cat-hero-mobile@2x.jpg") no-repeat calc(50% - 30px) top/auto 302px, linear-gradient(#505155 302px, #505155 302px);
   }
 }
 @media (min-width: 768px) {
@@ -632,12 +632,12 @@
 }
 @media (min-width: 1220px) {
   .section-hero {
-    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), linear-gradient(to right, rgba(63, 62, 67, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../../img/cat-hero-desktop.jpg") no-repeat left calc(450px + 55%) center/auto 105%, linear-gradient(#505155 302px, #505155 302px);
+    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), linear-gradient(to right, rgba(63, 62, 67, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop.jpg") no-repeat left calc(450px + 55%) center/auto 105%, linear-gradient(#505155 302px, #505155 302px);
   }
 }
 @media (min-width: 1220px) and (min-resolution: 2dppx) {
   .section-hero {
-    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), linear-gradient(to right, rgba(63, 62, 67, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../../img/cat-hero-desktop@2x.jpg") no-repeat left calc(450px + 55%) center/auto 105%, linear-gradient(#505155 302px, #505155 302px);
+    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), linear-gradient(to right, rgba(63, 62, 67, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop@2x.jpg") no-repeat left calc(450px + 55%) center/auto 105%, linear-gradient(#505155 302px, #505155 302px);
   }
 }
 
@@ -788,21 +788,21 @@
   content: "";
   width: 100%;
   height: auto;
-  background: url("../../../img/cat-before_mobile.png") no-repeat left/auto 100%;
+  background: url("../img/cat-before_mobile.png") no-repeat left/auto 100%;
 }
 @media (min-resolution: 2dppx) {
   .compare-slider::before {
-    background: url("../../../img/cat-before-mobile@2x.png") no-repeat left/auto 100%;
+    background: url("../img/cat-before-mobile@2x.png") no-repeat left/auto 100%;
   }
 }
 @media (min-width: 768px) {
   .compare-slider::before {
-    background: url("../../../img/cat-before-xl.png") no-repeat left/auto 100%;
+    background: url("../img/cat-before-xl.png") no-repeat left/auto 100%;
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .compare-slider::before {
-    background: url("../../../img/cat-before-xl@2x.png") no-repeat left/auto 100%;
+    background: url("../img/cat-before-xl@2x.png") no-repeat left/auto 100%;
   }
 }
 
@@ -812,21 +812,21 @@
   content: "";
   width: 100%;
   height: auto;
-  background: url("../../../img/cat-after-mobile.png") no-repeat right/auto 100%;
+  background: url("../img/cat-after-mobile.png") no-repeat right/auto 100%;
 }
 @media (min-resolution: 2dppx) {
   .compare-slider::after {
-    background: url("../../../img/cat-after-mobile@2x.png") no-repeat right/auto 100%;
+    background: url("../img/cat-after-mobile@2x.png") no-repeat right/auto 100%;
   }
 }
 @media (min-width: 768px) {
   .compare-slider::after {
-    background: url("../../../img/cat-after-xl.png") no-repeat right/auto 100%;
+    background: url("../img/cat-after-xl.png") no-repeat right/auto 100%;
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .compare-slider::after {
-    background: url("../../../img/cat-after-xl@2x.png") no-repeat right/auto 100%;
+    background: url("../img/cat-after-xl@2x.png") no-repeat right/auto 100%;
   }
 }
 
@@ -1001,16 +1001,16 @@
   }
 }
 .workflow-item--contents::before {
-  background: #68b738 url("../../../img/workflow-icon-contents.svg") no-repeat center;
+  background: #68b738 url("../img/workflow-icon-contents.svg") no-repeat center;
 }
 .workflow-item--powder::before {
-  background: #68b738 url("../../../img/workflow-icon-powder.svg") no-repeat center;
+  background: #68b738 url("../img/workflow-icon-powder.svg") no-repeat center;
 }
 .workflow-item--change::before {
-  background: #68b738 url("../../../img/workflow-icon-change.svg") no-repeat center;
+  background: #68b738 url("../img/workflow-icon-change.svg") no-repeat center;
 }
 .workflow-item--result::before {
-  background: #68b738 url("../../../img/workflow-icon-result.svg") no-repeat center;
+  background: #68b738 url("../img/workflow-icon-result.svg") no-repeat center;
 }
 
 .workflow-item__description {
@@ -1114,7 +1114,7 @@
   transform: translate(-50%, -50%) scale(25%);
   top: 46px;
   left: 48px;
-  background: url("../../img/cat-icon-slim.svg") no-repeat center;
+  background: url("../img/cat-icon-slim.svg") no-repeat center;
 }
 @media (min-width: 768px) {
   .program::after {
@@ -1135,7 +1135,7 @@
 .program--slim::after {
   width: 140px;
   height: 194px;
-  background: url("../../img/cat-icon-slim.svg") no-repeat center;
+  background: url("../img/cat-icon-slim.svg") no-repeat center;
   top: 46px;
   left: 48px;
 }
@@ -1158,7 +1158,7 @@
   height: 112px;
   top: 48px;
   left: 47px;
-  background: url("../../img/cat-icon-pro.svg") no-repeat center;
+  background: url("../img/cat-icon-pro.svg") no-repeat center;
 }
 @media (min-width: 768px) {
   .program--pro::after {
@@ -1238,7 +1238,7 @@
   width: 32px;
   height: 14px;
   margin-left: 15px;
-  background: url("../../img/program-arrow.svg") no-repeat -8px/contain;
+  background: url("../img/program-arrow.svg") no-repeat -8px/contain;
 }
 @media (min-width: 768px) {
   .program__to-catalog-link::after {
@@ -1247,7 +1247,7 @@
   }
 }
 .program__to-catalog-link:hover::after {
-  background: url("../../img/program-arrow.svg") no-repeat center/contain;
+  background: url("../img/program-arrow.svg") no-repeat center/contain;
 }
 @media (min-width: 768px) {
   .program__to-catalog-link:hover::after {

@@ -174,12 +174,6 @@
   left: 50%;
   top: 50%;
 
-  @media (min-resolution: 2dppx) {
-    width: unset;
-    height: unset;
-    transform: translate(-50%, -50%) scale(50%);
-  }
-
   @media (min-width: var.$tablet-width) {
     width: unset;
     height: unset;

@@ -7,7 +7,7 @@
   }
 
   @media (min-width: var.$tablet-width) {
-    @include mixvar.cup-tablet(20px, 20px);
+    @include mixvar.cup-tablet(20px, 24px);
     // padding: 20px 30px 20px 30px;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    @include mixvar.cup-desktop(20px, 55px);
+    @include mixvar.cup-desktop(20px, 53px);
     box-sizing: border-box;
     // padding: 55px 110px 20px 110px;
     width: 100%;

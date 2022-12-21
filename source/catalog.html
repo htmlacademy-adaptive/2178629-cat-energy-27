@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи. Каталог продукции</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -14,8 +18,12 @@
     <div class="main-header__logo-header-container logo-header-container">
       <a class="logo-header-container__logo logo" href="./index.html">
         <div class="logo__logo-sign">
-          <img src="./img/ce-logo-sign-mobile.svg" width="34" height="38"
+          <picture>
+            <source media="(min-width: 1220px)" srcset="./img/ce-logo-sign-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/ce-logo-sign-tablet.svg">
+            <img class="logo__logo-sign-img" src="./img/ce-logo-sign-mobile.svg" width="34" height="38"
             alt="Логотип компании Кэт-Энерджи.">
+          </picture>
         </div>
         <div class="logo__logo-text logo-text">
           <img src="./img/ce-logo-text.svg" width="101" height="18" alt="Логотип компании Кэт-Энерджи.">
@@ -63,8 +71,14 @@
               <h4 class="product-card__title title">
                 <a class="title__link" href="#" id="first-pro-product">Cat Energy <br class="product-card__title-br"> PRO 500 г</a>
               </h4>
-              <img class="product-card__img" src="./img/catalog/ce-energy-pro-500-chicken-s.png" width="68" height="86"
-              alt="Банка функционального питания для котов.">
+              <a class="product-card__image-wraper" href="#">
+                <picture>
+                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-500-chicken@2x.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-pro-500-chicken.png">
+                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-500-chicken-mobile@2x.png">
+                  <img class="product-card__img" src="./img/catalog/ce-energy-pro-500-chicken-mobile.png" width="68" height="86" alt="Банка функционального питания для котов.">
+                </picture>
+              </a>
               <dl class="product-card__description-table description-table">
                 <div class="description-table__item">
                   <dt class="description-table__description">Масса</dt>
@@ -88,8 +102,14 @@
               <h4 class="product-card__title title">
                 <a class="title__link" class="product-card__title title" href="#">Cat Energy <br class="product-card__title-br"> PRO 1000 г</a>
               </h4>
-              <img class="product-card__img" src="./img/catalog/ce-energy-pro-1000-chicken-s.png" width="84" height="100"
-              alt="Банка функционального питания для котов.">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-1000-chicken@2x.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-pro-1000-chicken.png">
+                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-1000-chicken-mobile@2x.png">
+                  <img class="product-card__img product-card__img--tilted" src="./img/catalog/ce-energy-pro-1000-chicken-mobile.png" width="84" height="100" alt="Банка функционального питания для котов.">
+                </picture>
+              </a>
               <dl class="product-card__description-table description-table">
                 <div class="description-table__item">
                   <dt class="description-table__description">Масса</dt>
@@ -113,8 +133,14 @@
               <h4 class="product-card__title title">
                 <a class="title__link" href="#">Cat Energy<br class="product-card__title-br"> PRO 500 г</a>
               </h4>
-              <img class="product-card__img" src="./img/catalog/ce-energy-pro-500-fish-s.png" width="68" height="78"
-                alt="Банка функционального питания для котов.">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-500-fish@2x.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-pro-500-fish.png">
+                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-500-fish-mobile@2x.png">
+                  <img class="product-card__img" src="./img/catalog/ce-energy-pro-500-fish-mobile.png" width="68" height="78" alt="Банка функционального питания для котов.">
+                </picture>
+              </a>
               <dl class="product-card__description-table description-table">
                 <div class="description-table__item">
                   <dt class="description-table__description">Масса</dt>
@@ -138,8 +164,14 @@
               <h4 class="product-card__title title">
                 <a class="title__link" class="product-card__title title" href="#">Cat Energy <br class="product-card__title-br"> pro 1000 г</a>
               </h4>
-              <img class="product-card__img" src="./img/catalog/ce-energy-pro-1000-fish-s.png" width="84" height="100"
-                alt="Банка функционального питания для котов.">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-1000-fish@2x.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-pro-1000-fish.png">
+                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-pro-1000-fish-mobile@2x.png">
+                  <img class="product-card__img product-card__img--tilted" src="./img/catalog/ce-energy-pro-1000-fish-mobile.png" width="84" height="100" alt="Банка функционального питания для котов.">
+                </picture>
+              </a>
               <dl class="product-card__description-table description-table">
                 <div class="description-table__item">
                   <dt class="description-table__description">Масса</dt>
@@ -163,8 +195,14 @@
               <h4 class="product-card__title title">
                 <a class="title__link" href="#" id="first-slim-product">Cat Energy <br class="product-card__title-br"> slim 500 г</a>
               </h4>
-              <img class="product-card__img" src="./img/catalog/ce-energy-slim-500-buckwheat-s.png" width="68" height="78"
-                alt="Банка функционального питания для котов.">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-500-buckwheat@2x.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-slim-500-buckwheat.png">
+                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-500-buckwheat-mobile@2x.png">
+                  <img class="product-card__img" src="./img/catalog/ce-energy-slim-500-buckwheat-mobile.png" width="68" height="78" alt="Банка функционального питания для котов.">
+                </picture>
+              </a>
               <dl class="product-card__description-table description-table">
                 <div class="description-table__item">
                   <dt class="description-table__description">Масса</dt>
@@ -188,8 +226,14 @@
               <h4 class="product-card__title title">
                 <a class="title__link" href="#">Cat Energy <br class="product-card__title-br"> slim 1000 г</a>
               </h4>
-              <img class="product-card__img" src="./img/catalog/ce-energy-slim-1000-buckwheat-s.png" width="84"
-                height="100" alt="Банка функционального питания для котов.">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-1000-buckwheat@2x.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-slim-1000-buckwheat.png">
+                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-1000-buckwheat-mobile@2x.png">
+                  <img class="product-card__img  product-card__img--tilted" src="./img/catalog/ce-energy-slim-1000-buckwheat-mobile.png" width="84" height="100" alt="Банка функционального питания для котов.">
+                </picture>
+              </a>
               <dl class="product-card__description-table description-table">
                 <div class="description-table__item">
                   <dt class="description-table__description">Масса</dt>
@@ -213,8 +257,14 @@
               <h4 class="product-card__title title">
                 <a class="title__link" href="#">Cat Energy <br class="product-card__title-br"> slim 500 г</a>
               </h4>
-              <img class="product-card__img" src="./img/catalog/ce-energy-slim-500-rice-s.png" width="72" height="84"
-                alt="Банка функционального питания для котов.">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-500-rice@2x.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/ce-energy-slim-500-rice.png">
+                  <source media="(min-resolution: 2dppx)" srcset="./img/catalog/ce-energy-slim-500-rice-mobile@2x.png">
+                  <img class="product-card__img" src="./img/catalog/ce-energy-slim-500-rice-mobile.png" width="72" height="84" alt="Банка функционального питания для котов.">
+                </picture>
+              </a>
               <dl class="product-card__description-table description-table">
                 <div class="description-table__item">
                   <dt class="description-table__description">Масса</dt>

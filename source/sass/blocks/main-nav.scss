@@ -37,6 +37,7 @@
 
   @media (min-width: var.$tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 35px;
   }
 }

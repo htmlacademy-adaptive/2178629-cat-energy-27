@@ -67,10 +67,10 @@
 
 .socials__link {
   width: 100%;
+  color: #666666;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #666666;
 
   &:hover {
     color: var.$brand-color;
@@ -79,6 +79,13 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.socials__img {
+  box-sizing: content-box;
+  padding: 12px;
+  height: 22px;
+  width: 28px;
 }
 
 .main-footer__htmlacademy-logo {

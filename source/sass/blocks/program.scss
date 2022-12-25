@@ -158,7 +158,7 @@
     width: 32px;
     height: 12px;
     margin-left: 15px;
-    background: url("../../img/sprite.svg#program-arrow") no-repeat -8px/ contain;
+    background: url("../img/sprite.svg#program-arrow") no-repeat -8px/ contain;
     transition: 0.05s;
 
 
@@ -170,7 +170,7 @@
   }
 
   &:hover::after {
-    background: url("../img/program-arrow.svg") no-repeat center / contain;
+    background: url("../img/sprite.svg#program-arrow") no-repeat center / contain;
 
     @media (min-width: var.$tablet-width) {
       // width: 30px;

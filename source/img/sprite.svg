@@ -71,7 +71,7 @@
     <view viewBox="0 300 32 12" id="program-arrow"/>
     <path transform="translate(0, 300)" d="m32 6-6.8 5.2V.8L32 6zM0 5h25.2v2H0z"/>
 
-    <view viewBox="0 0 24 19" id="check-sign"/>
-    <path d="M9 15.499L1.4 6.90101L0 8.48485L9 18.6667L24 1.69697L22.6 0L9 15.499Z" fill="#68b738"/>
+    <view viewBox="50 300 24 19" id="check-sign"/>
+    <path transform="translate(50, 300)" d="M9 15.499L1.4 6.90101L0 8.48485L9 18.6667L24 1.69697L22.6 0L9 15.499Z" fill="#68b738"/>
 
   </svg>

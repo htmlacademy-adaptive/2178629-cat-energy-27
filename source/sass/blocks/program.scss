@@ -133,7 +133,8 @@
 }
 
 .program__to-catalog-link {
-  display: block;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -155,15 +156,15 @@
     display: inline-block;
     content: "";
     width: 32px;
-    height: 14px;
+    height: 12px;
     margin-left: 15px;
-    background: url("../img/program-arrow.svg") no-repeat -8px/ contain;
+    background: url("../../img/sprite.svg#program-arrow") no-repeat -8px/ contain;
     transition: 0.05s;
 
 
     @media (min-width: var.$tablet-width) {
       // width: 30px;
-      height: 18px;
+      // height: 18px;
       margin-left: 25px;
     }
   }
@@ -173,7 +174,7 @@
 
     @media (min-width: var.$tablet-width) {
       // width: 30px;
-      height: 18px;
+      // height: 12px;
       margin-left: 25px;
     }
   }

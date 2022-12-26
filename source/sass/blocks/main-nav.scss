@@ -24,6 +24,14 @@
       top: unset;
     }
   }
+
+  @media (min-width: var.$tablet-width) {
+    max-width: 70%;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    max-width: 48%;
+  }
 }
 
 .main-nav__list {
@@ -38,13 +46,14 @@
   @media (min-width: var.$tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 35px;
   }
 }
 
 .main-nav__item {
   @media (max-width: var.$mobile-width-only) {
-    height: 66px;
+    min-height: 66px;
     background-color: var.$white;
     border-top: 1px solid var.$decoration;
     display: flex;

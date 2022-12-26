@@ -314,7 +314,7 @@
 .fieldset__checkbox:checked + .fieldset__label::after {
   width: 18px;
   height: 14px;
-  background: url("../img/check-sign.svg") no-repeat center / contain;
+  background: url("../img/sprite.svg#check-sign") no-repeat center / contain;
 
   @media (min-width: var.$tablet-width) {
     width: 24px;

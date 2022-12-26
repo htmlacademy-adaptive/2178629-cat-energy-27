@@ -38,29 +38,29 @@
     position: absolute;
     content: "";
     transform: translate(-50%, -50%) scale(25%);
-    top: 46px;
-    left: 48px;
-    background: url("../img/cat-icon-slim.svg")  no-repeat center;
+    // top: 46px;
+    // left: 48px;
+    // background: url("../img/sprite.svg#cat-icon-slim")  no-repeat center;
 
     @media (min-width: var.$tablet-width) {
       transform: translate(50%, -50%);
-      top: 178px;
-      left: unset;
-      right: 162px;
+      // top: 178px;
+      // left: unset;
+      // right: 162px;
     }
 
     @media (min-width: var.$desktop-width) {
       transform: translate(-50%, -50%) scale(50%);
-      top: 89px;
-      left: 102px;
-      right: unset;
+      // top: 89px;
+      // left: 102px;
+      // right: unset;
     }
   }
 
   &--slim::after {
     width: 140px;
     height: 194px;
-    background: url("../img/cat-icon-slim.svg")  no-repeat center;
+    background: url("../img/sprite.svg#cat-icon-slim")  no-repeat center;
     top: 46px;
     left: 48px;
 
@@ -83,7 +83,7 @@
     height: 112px;
     top: 48px;
     left: 47px;
-    background: url("../img/cat-icon-pro.svg")  no-repeat center;
+    background: url("../img/sprite.svg#cat-icon-pro")  no-repeat center;
 
     @media (min-width: var.$tablet-width) {
       top: 190px;
@@ -133,7 +133,8 @@
 }
 
 .program__to-catalog-link {
-  display: block;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -155,24 +156,25 @@
     display: inline-block;
     content: "";
     width: 32px;
-    height: 14px;
+    height: 12px;
     margin-left: 15px;
-    background: url("../img/program-arrow.svg") no-repeat -8px/ contain;
+    background: url("../img/sprite.svg#program-arrow") no-repeat -8px/ contain;
+    transition: 0.05s;
 
 
     @media (min-width: var.$tablet-width) {
       // width: 30px;
-      height: 18px;
+      // height: 18px;
       margin-left: 25px;
     }
   }
 
   &:hover::after {
-    background: url("../img/program-arrow.svg") no-repeat center / contain;
+    background: url("../img/sprite.svg#program-arrow") no-repeat center / contain;
 
     @media (min-width: var.$tablet-width) {
       // width: 30px;
-      height: 18px;
+      // height: 12px;
       margin-left: 25px;
     }
   }

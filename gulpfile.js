@@ -7,6 +7,8 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgo';
+import svgSprite from 'gulp-svg-sprite';
 import browser from 'browser-sync';
 import terser from 'gulp-terser';
 
@@ -44,10 +46,45 @@ export const scripts = () => {
 
 // Images
 
-export const images = () => {
+export const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
+}
+
+export const copyImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(gulp.dest('build/img'))
+}
+
+// WebP
+
+export const createWebp = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh({
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/img'))
+}
+
+// SVG
+
+export const svg = () => {
+  return gulp.src(['source/img/*.svg', '!source/img/sprite.svg'])
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'));
+}
+
+export const svgStackSprite = () => {
+  return gulp.src('source/img/svg-sources/*.svg') // svg files for sprite
+  .pipe(svgSprite({
+    mode: {
+      stack: {
+        sprite: "../sprite.svg"  //sprite file name
+      }
+    },
+  }))
+  .pipe(gulp.dest('source/img/svg-sources'));
 }
 
 // Server

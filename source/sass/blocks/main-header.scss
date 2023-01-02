@@ -2,6 +2,8 @@
 @use "../mixins.scss" as mixvar;
 
 .main-header {
+  width: 100%;
+
   @media (max-width: var.$mobile-width-only) {
     border-bottom: 1px solid var.$header-border;
   }

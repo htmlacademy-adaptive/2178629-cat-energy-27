@@ -11,6 +11,10 @@
     gap: 12px;
   }
 
+  @media (min-width: var.$desktop-width) {
+    gap: 12px;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -30,22 +34,23 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    height: 65px;
-    width: 70px;
+    margin-top: -4px; // pixel-perfect
+    height: 68px;
+    width: 72px;
   }
 }
 
-.logo__logo-sign-img {
-  @media (min-width: var.$tablet-width) {
-    height: 50px;
-    width: 60px;
-  }
+// .logo__logo-sign-img {
+//   @media (min-width: var.$tablet-width) {
+//     height: 50px;
+//     width: 60px;
+//   }
 
-  @media (min-width: var.$desktop-width) {
-    height: 59px;
-    width: 70px;
-  }
-}
+//   @media (min-width: var.$desktop-width) {
+//     height: 59px;
+//     width: 70px;
+//   }
+// }
 
 .logo__logo-text {
   height: 18px;
@@ -55,5 +60,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin-top: 2px;
+    height: 22px;
+    width: 118px;
   }
 }

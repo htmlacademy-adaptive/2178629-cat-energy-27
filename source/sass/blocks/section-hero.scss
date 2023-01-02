@@ -14,12 +14,22 @@
     text-align: left;
   }
 
-  @media (min-width: var.$desktop-width) {
-    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop@1x.jpg") no-repeat left calc(450px + 55%) center / auto 105%, linear-gradient(#505155 302px, #505155 302px);
-  }
+  &::after {
+    @media (min-width: var.$desktop-width) {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: auto;
+      top: -5000px;
+      bottom: 0;
+      background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop@1x.jpg") no-repeat left calc(520px + 50%) bottom / 1050px auto, linear-gradient(#505155 302px, #505155 302px);
+      left: 0;
+      z-index: -1;
+    }
 
-  @media (min-width: var.$desktop-width) and (min-resolution: 2dppx) {
-    background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop@2x.jpg") no-repeat left calc(450px + 55%) center / auto 105%, linear-gradient(#505155 302px, #505155 302px);
+    @media (min-width: var.$desktop-width) and (min-resolution: 2dppx) {
+      background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop@2x.jpg") no-repeat left calc(450px + 60%) bottom / 65% auto, linear-gradient(#505155 302px, #505155 302px);
+    }
   }
 }
 
@@ -46,7 +56,7 @@
 
   @media (min-width: var.$desktop-width) {
     max-width: 550px;
-    padding-top: 84px;
+    padding-top: 16px;
   }
 }
 
@@ -69,7 +79,7 @@
     color: inherit;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 49px;
+    margin-bottom: 51px;
   }
 }
 
@@ -90,8 +100,8 @@
     position: absolute;
     width: 552px;
     height: 499px;
-    top: 141px;
-    left: 48.4%;
+    top: 6px;
+    left: 48.2%;
     transform: translateX(-25%);
   }
 }
@@ -108,5 +118,10 @@
     font-size: 20px;
     line-height: 20px;
     padding: 14px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    line-height: 30px;
+    padding: 12px;
   }
 }

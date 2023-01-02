@@ -83,6 +83,7 @@
   @media (min-width: var.$tablet-width) {
     padding-top: 10px;
     padding-bottom: 10px;
+    line-height: 30px;
 
     &:hover {
       opacity: 0.6;
@@ -117,6 +118,7 @@
 
   &--index-page-current {
     @media (min-width: var.$desktop-width) {
+      padding-bottom: 6px;
       border-bottom: 2px solid var.$white;
     }
   }

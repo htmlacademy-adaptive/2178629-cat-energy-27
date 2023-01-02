@@ -17,9 +17,8 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    @include mixvar.cup-desktop(20px, 53px);
+    @include mixvar.cup-desktop(20px, 52px);
     box-sizing: border-box;
-    // padding: 55px 110px 20px 110px;
     width: 100%;
   }
 
@@ -27,7 +26,7 @@
     border-bottom: unset;
 
     @media (min-width: var.$desktop-width) {
-      position: absolute;
+      // position: absolute;
       z-index: 1;
       left: 0;
       right: 0;

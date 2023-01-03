@@ -71,7 +71,7 @@ const createWebp = () => {
 // SVG
 
 const svg = () => {
-  return gulp.src(['source/img/*.svg', '!source/img/sprite.svg'])
+  return gulp.src(['source/img/*.svg', '!source/img/sprite.svg', '!source/img/ce-logo-sprite.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 }
@@ -97,7 +97,8 @@ const copy = (done) => {
     'source/*.ico',
     'source/*.webmanifest',
     'source/img/sprite.svg',
-    'source/img/favicons/*.svg'
+    'source/img/favicons/*.svg',
+    'source/img/ce-logo-sprite.svg'
   ], {
     base: 'source'
   })
@@ -125,12 +126,19 @@ const server = (done) => {
   done();
 }
 
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+  }
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // export default gulp.series(

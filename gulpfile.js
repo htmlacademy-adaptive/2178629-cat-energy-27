@@ -8,7 +8,7 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
-import svgSprite from 'gulp-svg-sprite';
+import { stacksvg } from 'gulp-stacksvg';
 import del from 'del'
 import browser from 'browser-sync';
 import terser from 'gulp-terser';
@@ -70,23 +70,19 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () => {
-  return gulp.src(['source/img/*.svg', '!source/img/sprite.svg', '!source/img/ce-logo-sprite.svg'])
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img'));
-}
+// В проекте не используется минификация отдельных svg-файлов
 
-const svgStackSprite = () => {
-  return gulp.src('source/img/svg-sources/*.svg')
-  .pipe(svgo())
-  .pipe(svgSprite({
-    mode: {
-      stack: {
-        sprite: "../sprite.svg"
-      }
-    },
-  }))
-  .pipe(gulp.dest('source/img/svg-sources/result'));
+// const svg = () => {
+//   return gulp.src(['source/img/*.svg', '!source/img/sprite.svg', '!source/img/ce-logo-sprite.svg'])
+//   .pipe(svgo())
+//   .pipe(gulp.dest('build/img'));
+// }
+
+const makeStack = () => {
+  return gulp.src(['source/img/*.svg', '!source/img/ce-logo-sprite.svg'])
+  // .pipe(svgo())
+  	.pipe(stacksvg({ output: `sprite` }))
+    .pipe(gulp.dest('build/img'));
 }
 
 // Copy
@@ -96,7 +92,7 @@ const copy = (done) => {
     'source/fonts/**/*.{woff,woff2}',
     'source/*.ico',
     'source/*.webmanifest',
-    'source/img/sprite.svg',
+    // 'source/img/sprite.svg',
     'source/img/favicons/*.svg',
     'source/img/ce-logo-sprite.svg'
   ], {
@@ -155,8 +151,8 @@ export const build = gulp.series(
     styles,
     html,
     scripts,
-    svg,
-    svgStackSprite,
+    // svg,
+    makeStack,
     createWebp
   )
 )
@@ -171,8 +167,8 @@ export default gulp.series(
     styles,
     html,
     scripts,
-    svg,
-    svgStackSprite,
+    // svg,
+    makeStack,
     createWebp
   ),
   gulp.series(

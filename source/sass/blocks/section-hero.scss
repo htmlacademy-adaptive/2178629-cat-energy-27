@@ -3,11 +3,16 @@
 
 .section-hero {
   position: relative;
-  background: linear-gradient(var.$brand-color-85 60.16%, var.$white 60.16%), linear-gradient(to right, rgba(#3f3e43, 0) 66%, #3f3e43 71%) center / 1200px, url("../img/cat-hero-mobile@1x.jpg") no-repeat calc(50% - 30px) top / auto 302px, linear-gradient(#505155 302px, #505155 302px);
-
-  @media (min-resolution: 2dppx) {
-    background: linear-gradient(var.$brand-color-85 500px, var.$white 302px), linear-gradient(to right, rgba(#3f3e43, 0) 66%, #3f3e43 71%) center / 1200px, url("../img/cat-hero-mobile@2x.jpg") no-repeat calc(50% - 30px) top / auto 302px, linear-gradient(#505155 302px, #505155 302px);
-  }
+  background: linear-gradient(var.$brand-color-85 60.16%, var.$white 60.16%),
+    linear-gradient(to right, rgba(#3f3e43, 0) 66%,
+    #3f3e43 71%) center / 1200px,
+    image-set(
+      url("../img/cat-hero-mobile@1x.webp") 1x,
+      url("../img/cat-hero-mobile@1x.jpg") 1x,
+      url("../img/cat-hero-mobile@2x.webp") 2x,
+      url("../img/cat-hero-mobile@2x.jpg") 2x)
+    no-repeat calc(50% - 30px) top / auto 302px,
+    linear-gradient(#505155 302px, #505155 302px);
 
   @media (min-width: var.$tablet-width) {
     background: none;
@@ -22,13 +27,15 @@
       height: auto;
       top: -5000px;
       bottom: 0;
-      background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop@1x.jpg") no-repeat left calc(520px + 50%) bottom / 1050px auto, linear-gradient(#505155 302px, #505155 302px);
+        background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)),
+        image-set(
+          url("../img/cat-hero-desktop@1x.webp") 1x,
+          url("../img/cat-hero-desktop@1x.jpg") 1x,
+          url("../img/cat-hero-desktop@2x.webp") 2x,
+          url("../img/cat-hero-desktop@2x.jpg") 2x)
+        no-repeat left calc(520px + 50%) bottom / 1050px auto, linear-gradient(#505155 302px, #505155 302px);
       left: 0;
       z-index: -1;
-    }
-
-    @media (min-width: var.$desktop-width) and (min-resolution: 2dppx) {
-      background: linear-gradient(to left, var.$brand-color-85 50%, var.$white 50%), linear-gradient(to right, rgba(#3f3e43, 0) calc(50% + 800px), #3f3e43 calc(60% + 800px)), url("../img/cat-hero-desktop@2x.jpg") no-repeat left calc(450px + 60%) bottom / 65% auto, linear-gradient(#505155 302px, #505155 302px);
     }
   }
 }

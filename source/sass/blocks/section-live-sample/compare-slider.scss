@@ -10,30 +10,48 @@
 }
 
 .compare-slider__control-knob-group {
+  appearance: none;
   position: relative;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  padding: 0;
-  width: 4px;
+  margin: 0;
+  width: 100%;
   height: 100%;
-  background-color: var.$control-knob;
-  color: var.$control-knob;
-  border: none;
-  border-radius: 2px;
-  transform: translateX(-50%);
-  margin-left: var(--knob-position-limit);
-  z-index: 2;
-  transition: 0.2s;
+  background-color: transparent;
+  // color: var.$control-knob;
+  // border: none;
+  // border-radius: 2px;
+  // transform: translateX(-50%);
+  // margin-left: var(--knob-position-limit);
+  // z-index: 2;
 
-  &:hover {
-    background-color: var.$brand-color;
-    color: var.$brand-color;
+  &::-webkit-slider-thumb {
+    appearance: none;
+    height: 256px;
+    width: 40px;
+    background: url("../img/sprite.svg#control-knob-256") center;
+    border: 0 solid #000000;
+    border-radius: 50px;
+    transition: 0.25s;
   }
 
-  &:active {
-    background-color: var.$control-knob-active;
-    color: var.$control-knob-active;
+  &::-webkit-slider-thumb:hover {
+    background: url("../img/sprite.svg#control-knob-256-hover") center;
   }
+
+  &::-webkit-slider-thumb:active {
+    background: url("../img/sprite.svg#control-knob-256-active") center;
+  }
+
+  // &:hover {
+  //   background-color: var.$brand-color;
+  //   color: var.$brand-color;
+  // }
+
+  // &:active {
+  //   background-color: var.$control-knob-active;
+  //   color: var.$control-knob-active;
+  // }
 }
 
 .compare-slider__control-knob {
@@ -80,11 +98,13 @@
   content: "";
   width: 100%;
   height: auto;
-  background: url("../img/cat-after-mobile.png") no-repeat right / auto 100%;
+  background: image-set(
+    url("../img/cat-after-mobile.png") 1x,
+    url("../img/cat-after-mobile@2x.png") 2x) no-repeat right / auto 100%;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/cat-after-mobile@2x.png") no-repeat right / auto 100%;
-  }
+  // @media (min-resolution: 2dppx) {
+  //   background: no-repeat right / auto 100%;
+  // }
 
   @media (min-width: var.$tablet-width) {
     background: url("../img/cat-after-xl.png") no-repeat right / auto 100%;
@@ -92,5 +112,9 @@
 
   @media (min-width: var.$tablet-width) and (min-resolution: 2dppx) {
     background: url("../img/cat-after-xl@2x.png") no-repeat right / auto 100%;
+  }
+
+  @media (min-width: var.$tablet-width) and (min-resolution: 2dppx) {
+    background: url("../img/cat-after-xl@2x.webp") no-repeat right / auto 100%;
   }
 }

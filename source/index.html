@@ -65,7 +65,7 @@
           <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1220px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-          <img class="section-hero__image" srcset="img/index-can-mobile@2x.png 2x" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Упаковка питания для котов серии Кэт Энерджи Про весом 500 грамм со вкусом курицы.">
+          <img class="section-hero__image" srcset="img/index-can-mobile@2x.png 2x, img/index-can-mobile@1x.png 1x" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Упаковка питания для котов серии Кэт Энерджи Про весом 500 грамм со вкусом курицы.">
         </picture>
 
         <a class="section-hero__button button" href="form.html">Подобрать программу</a>
@@ -134,11 +134,11 @@
         </dl>
         <div class="section-live-sample__compare-slider-container ">
           <div class="compare-slider" style="--knob-position: 50%;">
-          <button class="compare-slider__control-knob-group">
+          <input class="compare-slider__control-knob-group" type="range" min="0" max="100">
             <span class="visually-hidden">Сравнение кота - до и после прохождения программы. Интерактивная иллюстрация.</span>
-            <svg class="compare-slider__control-knob">
+            <!-- <svg class="compare-slider__control-knob">
               <use href="/img/sprite.svg#control-knob"></use>
-            </svg>
+            </svg> -->
           </button>
           </div>
         </div>

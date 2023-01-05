@@ -80,9 +80,9 @@ const createWebp = () => {
 
 const makeStack = () => {
   return gulp.src(['source/img/*.svg', '!source/img/ce-logo-sprite.svg'])
-  // .pipe(svgo())
-  	.pipe(stacksvg({ output: `sprite` }))
-    .pipe(gulp.dest('build/img'));
+  .pipe(svgo())
+  .pipe(stacksvg({ output: `sprite` }))
+  .pipe(gulp.dest('build/img'));
 }
 
 // Copy

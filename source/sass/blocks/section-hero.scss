@@ -4,7 +4,7 @@
 .section-hero {
   position: relative;
   /* stylelint-disable unit-no-unknown, value-list-comma-newline-after, function-comma-newline-after */
-  background: linear-gradient(var.$brand-color-85 60.16%, var.$white 60.16%),
+  background: linear-gradient(var.$brand-color-85 60.4%, var.$white 60.4%),
     linear-gradient(to right, rgba(#3f3e43, 0) 66%,
     #3f3e43 71%) center / 1200px,
     image-set(
@@ -100,6 +100,7 @@
   // margin-bottom: 3px;
   display: block;
   margin: auto;
+  margin-bottom: 3px;
 
   @media (min-width: var.$tablet-width) {
     position: absolute;

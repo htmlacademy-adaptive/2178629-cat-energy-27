@@ -3,6 +3,7 @@
 .workflow-item {
   position: relative;
   display: flex;
+  align-items: center;
   gap: 20px;
 
   @media (min-width: var.$tablet-width) {
@@ -60,4 +61,5 @@
 .workflow-item__description {
   margin: 0;
   z-index: 1;
+  color: var.$text-special;
 }

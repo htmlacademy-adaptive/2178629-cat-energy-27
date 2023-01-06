@@ -14,7 +14,7 @@
     display: block;
     content: "";
     height: 2px;
-    top: 14px;
+    top: 15px;
     left: 30%;
     right: 0;
     background-color: var.$brand-color;
@@ -34,7 +34,7 @@
     @media (max-width: var.$mobile-width-only) {
       border-top: 1px solid #d9d9d9;
       border-bottom: 1px solid #d9d9d9;
-      margin-bottom: 30px;
+      margin-bottom: 27px;
     }
 
     @media (min-width: var.$tablet-width) and (max-width: (var.$desktop-width - 1px)) {
@@ -43,7 +43,7 @@
   }
 
   &--submit {
-    @include mixvar.cup-mobile(32px);
+    @include mixvar.cup-mobile(30px);
     display: flex;
     flex-direction: column;
     gap: 21px;
@@ -78,7 +78,7 @@
 
   &--registration {
     @media (max-width: var.$mobile-width-only) {
-      @include mixvar.cup-mobile;
+      @include mixvar.cup-mobile(23px);
     }
 
     @media (min-width: var.$desktop-width) {
@@ -87,7 +87,7 @@
   }
 
   &--contacts {
-    @include mixvar.cup-mobile;
+    @include mixvar.cup-mobile(23px);
 
     @media (min-width: var.$tablet-width) {
       gap: 20px;
@@ -103,7 +103,7 @@
   }
 
   &--comments {
-    @include mixvar.cup-mobile;
+    @include mixvar.cup-mobile(24px);
 
 
     @media (min-width: var.$tablet-width) {
@@ -122,6 +122,10 @@
   display: flex;
   align-items: center;
   gap: 13px;
+
+  &--contacts {
+    gap: 10px;
+  }
 }
 
 .fieldset__label {
@@ -145,7 +149,7 @@
       content: "";
       width: 30px;
       height: 30px;
-      margin-right: 15px;
+      margin-right: 16px;
       border: 1px solid var.$input-border;
 
       @media (min-width: var.$tablet-width) {
@@ -171,9 +175,13 @@
   border: 1px solid var.$input-border;
 
   @include mixvar.accented-text(16px, 18px, uppercase);
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 12px;
   padding-left: 20px;
+
+  &--contacts {
+    padding-left: 14px;
+  }
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(20px, 30px, uppercase);
@@ -226,7 +234,7 @@
   @include mixvar.reset-list;
 
   @media (max-width: var.$mobile-width-only) {
-    @include mixvar.cup-mobile(19px, 22px);
+    @include mixvar.cup-mobile(18px, 22px);
   }
 
   @media (min-width: var.$tablet-width) {
@@ -249,10 +257,10 @@
 
 .fieldset__checkbox-list {
   @include mixvar.reset-list;
-  @include mixvar.cup-mobile;
+  @include mixvar.cup-mobile(35px);
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 12px;
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet--form;
@@ -341,6 +349,10 @@
 .fieldset__legend {
   @include mixvar.cup-mobile(35px);
 
+  &--optional {
+    padding-bottom: 32px;
+  }
+
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet--form(76px);
   }
@@ -360,7 +372,7 @@
     }
   }
 
-  @include mixvar.accented-text(24px, 24px, none);
+  @include mixvar.accented-text(24px, 26px, none);
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(36px, 36px, none);
@@ -374,7 +386,7 @@
     height: 100%;
     background-color: var.$white;
     z-index: -1;
-    box-shadow: 20px 0 var.$white, -38px 0 var.$white;
+    box-shadow: 23px 0 var.$white, -38px 0 var.$white;
 
     @media (min-width: var.$tablet-width) {
       box-shadow: 40px 0 var.$white, -40px 0 var.$white;
@@ -383,9 +395,9 @@
 }
 
 .fieldset__submit-button {
-  font-size: 14px;
-  line-height: 26px;
-  padding: 7px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
 
   @media (min-width: var.$tablet-width) {
     font-size: 20px;

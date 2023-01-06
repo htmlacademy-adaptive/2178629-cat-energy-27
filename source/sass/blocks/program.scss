@@ -37,7 +37,7 @@
   &::after {
     position: absolute;
     content: "";
-    transform: translate(-50%, -50%) scale(25%);
+    transform: translate(-50%, -50%);
     // top: 46px;
     // left: 48px;
     // background: url("../img/sprite.svg#cat-icon-slim")  no-repeat center;
@@ -58,11 +58,11 @@
   }
 
   &--slim::after {
-    width: 140px;
-    height: 194px;
+    width: 36px;
+    height: 50px;
     background: url("../img/sprite.svg#cat-icon-slim")  no-repeat center;
     top: 46px;
-    left: 48px;
+    left: 47px;
 
 
     @media (min-width: var.$tablet-width) {
@@ -79,9 +79,9 @@
   }
 
   &--pro::after {
-    width: 268px;
-    height: 112px;
-    top: 48px;
+    width: 67px;
+    height: 28px;
+    top: 49px;
     left: 47px;
     background: url("../img/sprite.svg#cat-icon-pro")  no-repeat center;
 
@@ -121,7 +121,8 @@
 
 .program__desription {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
+  color: var.$text-special;
 
   @media (min-width: var.$tablet-width) {
     margin-bottom: 48px;
@@ -157,7 +158,7 @@
     content: "";
     width: 32px;
     height: 12px;
-    margin-left: 15px;
+    margin-left: 16px;
     background: url("../img/sprite.svg#program-arrow") no-repeat -8px/ contain;
     transition: 0.05s;
 

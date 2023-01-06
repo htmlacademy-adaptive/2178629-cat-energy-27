@@ -94,8 +94,8 @@
     text-align: center;
     position: absolute;
     background-color: inherit;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
     bottom: -16px;
     left: 50%;
     transform: translateX(-50%);
@@ -126,6 +126,7 @@
     font-size: 24px;
     line-height: 24px;
     margin: auto;
+    transform: translateY(-2px);
 
     @media (min-width: var.$tablet-width) {
       font-size: 30px;

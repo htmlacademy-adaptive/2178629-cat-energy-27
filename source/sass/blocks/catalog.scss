@@ -19,7 +19,7 @@
   line-height: 36px;
 
   @media (max-width: var.$mobile-width-only) {
-    @include mixvar.cup-mobile(41px);
+    @include mixvar.cup-mobile(40px);
   }
 
   @media (min-width: var.$tablet-width) {
@@ -34,7 +34,7 @@
 }
 
 .catalog__catalog-main-goods {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet;

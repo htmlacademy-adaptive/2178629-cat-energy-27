@@ -4,6 +4,13 @@
 .title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+  color: var.$text-special;
+
+  &--invert {
+    @media (max-width: var.$mobile-width-only) {
+      color: var.$white;
+    }
+  }
 }
 
 .title__link {

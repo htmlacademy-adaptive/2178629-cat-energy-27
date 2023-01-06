@@ -2,7 +2,7 @@
 
 .promotion-card {
   min-height: 290px;
-  padding: 65px 60px 45px 60px;
+  padding: 59px 50px 43px 50px;
   background: linear-gradient(var.$brand-color-85, var.$brand-color-85), url("../img/cat-case-mobile@1x.jpg") center / cover;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
     content: "";
     width: 78px;
     height: 80px;
-    background: url("../img/sprite.svg#icon-gift") no-repeat center / 97.5%;
+    background: url("../img/sprite.svg#icon-gift") no-repeat center / 102%;
 
     @media (min-width: var.$tablet-width) {
       width: 80px;

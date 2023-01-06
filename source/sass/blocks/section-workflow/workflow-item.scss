@@ -11,6 +11,7 @@
     box-sizing: border-box;
     flex-direction: column;
     gap: 31px;
+    align-items: unset;
     padding: 40px 70px 40px 0;
     min-height: 280px;
   }
@@ -61,5 +62,4 @@
 .workflow-item__description {
   margin: 0;
   z-index: 1;
-  color: var.$text-special;
 }

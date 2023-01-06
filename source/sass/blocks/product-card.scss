@@ -14,7 +14,7 @@
     "btn btn";
 
   @media (max-width: var.$mobile-width-only) {
-    @include mixvar.cup-mobile(25px, 20px);
+    @include mixvar.cup-mobile(24px, 20px);
   }
 
   @media (min-width: var.$tablet-width) {
@@ -33,7 +33,7 @@
     min-height: 208px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 62px 30px auto 40px;
+    grid-template-rows: 58px 29px auto 41px;
     grid-template-areas: "img" "title" "description" "btn";
 
 
@@ -85,7 +85,7 @@
     box-sizing: border-box;
     min-width: 240px;
     min-height: unset;
-    padding: 12px 0 18px;
+    padding: 13px 0 18px;
     border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: var.$tablet-width) {
@@ -165,6 +165,10 @@
   grid-area: description;
 
   @include mixvar.reset-list;
+
+  &--main-goods {
+    padding-bottom: 21px;
+  }
 }
 
 .product-card__img {
@@ -172,7 +176,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 48%;
 
   @media (min-width: var.$tablet-width) {
     width: unset;
@@ -183,6 +187,22 @@
     @media (min-width: var.$tablet-width) {
       top: calc(50% - 12px);
     }
+  }
+
+  &--pp1 {
+    top: 45%;
+  }
+
+  &--pp3 {
+    top: 52.5%;
+  }
+
+  &--pp5 {
+    top: 55%;
+  }
+
+  &--pp7 {
+    top: 52.5%;
   }
 }
 

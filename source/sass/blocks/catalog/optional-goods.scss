@@ -3,7 +3,7 @@
 
 .optional-goods__cards-wrapper {
   @include mixvar.reset-list;
-  @include mixvar.cup-mobile;
+  @include mixvar.cup-mobile(35px);
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet;

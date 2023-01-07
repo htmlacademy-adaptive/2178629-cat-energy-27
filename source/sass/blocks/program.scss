@@ -21,7 +21,7 @@
       transform: translate(50%, -50%);
       top: 192px;
       left: unset;
-      right: 162px;
+      right: 161px;
     }
 
     @media (min-width: var.$desktop-width) {
@@ -66,9 +66,11 @@
 
 
     @media (min-width: var.$tablet-width) {
+      width: 140px;
+      height: 194px;
       top: 178px;
       left: unset;
-      right: 162px;
+      right: 161px;
     }
 
     @media (min-width: var.$desktop-width) {
@@ -86,9 +88,11 @@
     background: url("../img/sprite.svg#cat-icon-pro")  no-repeat center;
 
     @media (min-width: var.$tablet-width) {
-      top: 190px;
+      width: 268px;
+      height: 112px;
+      top: 191px;
       left: unset;
-      right: 163px;
+      right: 161px;
     }
 
     @media (min-width: var.$desktop-width) {
@@ -106,7 +110,7 @@
   color: var.$text-special;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 
   @media (min-width: var.$tablet-width) {
     padding-left: 0;
@@ -125,7 +129,7 @@
   margin-bottom: 22px;
 
   @media (min-width: var.$tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: var.$desktop-width) {

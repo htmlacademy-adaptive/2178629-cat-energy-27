@@ -25,10 +25,11 @@
     background-color: #f2f2f2;
 
     @media (min-width: var.$tablet-width) {
+      position: relative;
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 58px;
-      padding-bottom: 55px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
 
@@ -38,7 +39,7 @@
     @media (min-width: var.$tablet-width) {
       flex-direction: column;
       justify-content: space-between;
-      padding: 50px 30% 526px 90px;
+      padding: 44px 30% 526px 120px;
     }
 
     @media (min-width: var.$desktop-width) {
@@ -51,6 +52,10 @@
   &--programs {
     padding-bottom: 20px;
 
+    @media (min-width: var.$tablet-width) {
+      padding-bottom: 44px;
+    }
+
     @media (min-width: var.$desktop-width) {
       padding-top: 82px;
     }
@@ -60,12 +65,16 @@
     padding-bottom: 49px;
 
     @media (min-width: var.$tablet-width) {
-      padding-bottom: 47px;
+      padding-bottom: 44px;
     }
   }
 
   &--live-sample {
     padding-bottom: 40px;
+
+    @media (min-width: var.$tablet-width) {
+      padding-bottom: 100px;
+    }
 
     @media (min-width: var.$desktop-width) {
       padding-bottom: 75px;

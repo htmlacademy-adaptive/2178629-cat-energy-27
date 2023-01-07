@@ -34,6 +34,10 @@
   }
 }
 
+.main-nav__container {
+  padding-top: 18px;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -81,9 +85,10 @@
   }
 
   @media (min-width: var.$tablet-width) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 30px;
+    padding-top: 18px;
+    padding-bottom: 7px;
+    line-height: 24px;
+    font-size: 18px;
 
     &:hover {
       opacity: 0.6;

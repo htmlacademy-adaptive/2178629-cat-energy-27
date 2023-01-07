@@ -8,7 +8,7 @@
     display: flex;
     width: fit-content;
     align-items: center;
-    gap: 12px;
+    gap: 11px;
   }
 
   @media (min-width: var.$desktop-width) {
@@ -29,8 +29,9 @@
   height: 38px;
 
   @media (min-width: var.$tablet-width) {
-    height: 55px;
-    width: 60px;
+    height: 52px;
+    width: 63px;
+    align-self: flex-start;
   }
 
   @media (min-width: var.$desktop-width) {
@@ -48,6 +49,10 @@
     top: 49%;
     left: 50.15%;
     transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: var.$tablet-width) {
+    margin-top: 6px;
   }
 
   @media (min-width: var.$desktop-width) {

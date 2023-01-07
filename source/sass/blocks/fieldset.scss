@@ -50,7 +50,7 @@
     align-items: center;
 
     @media (min-width: var.$tablet-width) {
-      @include mixvar.cup-tablet--form;
+      @include mixvar.cup-tablet--form(72px);
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 60px;
@@ -81,6 +81,10 @@
       @include mixvar.cup-mobile(23px);
     }
 
+    @media (min-width: var.$tablet-width) {
+      gap: 20px;
+    }
+
     @media (min-width: var.$desktop-width) {
       gap: 20px;
     }
@@ -93,6 +97,7 @@
       gap: 20px;
 
       @include mixvar.cup-tablet--form;
+      padding-bottom: 66px;
     }
 
     @media (min-width: var.$desktop-width) {
@@ -107,7 +112,7 @@
 
 
     @media (min-width: var.$tablet-width) {
-      @include mixvar.cup-tablet--form;
+      @include mixvar.cup-tablet--form(65px);
     }
 
     @media (min-width: var.$desktop-width) {
@@ -125,6 +130,10 @@
 
   &--contacts {
     gap: 10px;
+
+    @media (min-width: var.$tablet-width) {
+      gap: 19px;
+    }
   }
 }
 
@@ -185,8 +194,8 @@
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(20px, 30px, uppercase);
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 20px;
   }
 
@@ -198,6 +207,14 @@
     padding-left: 14px;
     height: 150px;
     color: var.$text-common;
+
+    @media (min-width: var.$tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      padding-right: 17px;
+      padding-left: 17px;
+      height: 174px;
+    }
   }
 
   &:hover {
@@ -241,7 +258,7 @@
   @media (min-width: var.$tablet-width) {
     box-sizing: border-box;
     border: 1px solid var.$input-border;
-    padding: 25px 30px;
+    padding: 23px 27px;
   }
 
   @media (min-width: var.$desktop-width) {
@@ -264,7 +281,7 @@
   gap: 12px;
 
   @media (min-width: var.$tablet-width) {
-    @include mixvar.cup-tablet--form;
+    @include mixvar.cup-tablet--form(54px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 32px;
@@ -350,16 +367,20 @@
 .fieldset__legend {
   @include mixvar.cup-mobile(35px);
 
-  &--optional {
-    padding-bottom: 32px;
-  }
-
   @media (min-width: var.$tablet-width) {
-    @include mixvar.cup-tablet--form(76px);
+    @include mixvar.cup-tablet--form(72px);
   }
 
   @media (min-width: var.$desktop-width) {
     @include mixvar.cup-desktop(70px);
+  }
+
+  &--optional {
+    padding-bottom: 32px;
+
+    @media (min-width: var.$tablet-width) {
+      padding-bottom: 52px;
+    }
   }
 }
 
@@ -402,7 +423,7 @@
 
   @media (min-width: var.$tablet-width) {
     font-size: 20px;
-    padding: 13px;
+    padding: 16px;
   }
 
   @media (min-width: var.$desktop-width) {

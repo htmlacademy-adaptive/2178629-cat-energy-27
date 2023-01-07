@@ -4,6 +4,10 @@
 
 .section-selection-form {
   padding-top: 27px;
+
+  @media (min-width: var.$tablet-width) {
+    padding-top: 44px;
+  }
 }
 
 .section-selection-form__header {

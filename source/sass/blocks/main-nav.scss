@@ -31,7 +31,9 @@
 }
 
 .main-nav__container {
-  padding-top: 18px;
+  @media (min-width: var.$tablet-width) {
+    padding-top: 18px;
+  }
 }
 
 .main-nav__list {

@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   gap: 2px;
-  // align-items: center;
 
   @media (min-width: var.$tablet-width) {
     padding-left: 40px;
@@ -36,7 +35,6 @@
   line-height: 20px;
   padding-right: 15px;
   width: min-content;
-  // width: calc(100% / 2 - 1px);
   margin: 0;
   text-transform: uppercase;
 

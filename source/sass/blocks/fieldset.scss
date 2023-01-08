@@ -32,19 +32,11 @@
     }
   }
 
-  @media (min-width: var.$tablet-width) {
-    // padding: 0 70px 72px;
-  }
-
   &--decorated {
     @media (max-width: var.$mobile-width-only) {
       border-top: 1px solid #d9d9d9;
       border-bottom: 1px solid #d9d9d9;
       margin-bottom: 27px;
-    }
-
-    @media (min-width: (var.$desktop-width)) {
-      // padding-bottom: 50px;
     }
   }
 
@@ -80,7 +72,6 @@
 .fieldset__content {
   display: flex;
   flex-direction: column;
-  // align-items: flex-start;
   gap: 14px;
 
   &--registration {
@@ -232,7 +223,6 @@
   &:focus {
     outline: 2px solid var.$input-border-focus;
     outline-offset: -2px;
-    // border: 2px solid red;
   }
 
   &--error {

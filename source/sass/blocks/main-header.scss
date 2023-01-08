@@ -10,7 +10,6 @@
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet(20px, 0);
-    // padding: 20px 30px 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -26,11 +25,9 @@
     border-bottom: unset;
 
     @media (min-width: var.$desktop-width) {
-      // position: absolute;
       z-index: 1;
       left: 0;
       right: 0;
-      // transform: translateX(50%);
     }
   }
 }

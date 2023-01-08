@@ -8,8 +8,12 @@
 .catalog {
   padding-top: 27px;
 
-  @media (max-width: var.$mobile-width-only) {
-    // border-top: 1px solid #d9d9d9;
+  @media (min-width: var.$tablet-width) {
+    padding-top: 44px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding-top: 51px;
   }
 }
 
@@ -24,12 +28,12 @@
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(60px, 60px, none);
-    @include mixvar.cup-tablet(82px, 17px);
+    @include mixvar.cup-tablet(82px);
   }
 
   @media (min-width: var.$desktop-width) {
     @include mixvar.accented-text(60px, 60px, none);
-    @include mixvar.cup-desktop;
+    @include mixvar.cup-desktop(84px);
   }
 }
 
@@ -42,6 +46,6 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    @include mixvar.cup-desktop(68px);
+    @include mixvar.cup-desktop(78px);
   }
 }

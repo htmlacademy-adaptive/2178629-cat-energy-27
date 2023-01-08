@@ -36,11 +36,17 @@
     grid-template-rows: 58px 29px auto 41px;
     grid-template-areas: "img" "title" "description" "btn";
 
-
     @media (min-width: var.$tablet-width) {
       min-height: 430px;
       background: none;
       border: 1px solid var.$brand-background;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 160px 68px auto 40px;
+      grid-template-areas: "img" "title" "description" "btn";
+    }
+
+    @media (min-width: var.$desktop-width) {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 160px 68px auto 40px;
@@ -138,6 +144,11 @@
     padding: 0 50px;
   }
 
+  @media (min-width: var.$desktop-width) {
+    padding: 0 10px;
+    line-height: 21px;
+  }
+
   &--functional {
     text-align: center;
   }
@@ -158,7 +169,7 @@
 }
 
 .product-card__title-br {
-  @media (min-width: var.$tablet-width) and (max-width: calc(var.$desktop-width - 1px)) {
+  @media (min-width: var.$tablet-width) {
     display: none;
   }
 }
@@ -186,11 +197,25 @@
     top: 45%;
   }
 
+  @media (min-width: var.$tablet-width) {
+    top: 40%;
+  }
+
   &--pp1 {
     top: 45%;
 
     @media (min-width: var.$tablet-width) {
       top: 50%;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      top: 47%;
+    }
+  }
+
+  &--pp2 {
+    @media (min-width: var.$desktop-width) {
+      transform: translate(-50%, -50%) scale(100%, 95%);
     }
   }
 
@@ -200,6 +225,10 @@
     @media (min-width: var.$tablet-width) {
       top: 50%;
     }
+
+    @media (min-width: var.$desktop-width) {
+      top: 47%;
+    }
   }
 
   &--pp5 {
@@ -208,11 +237,19 @@
     @media (min-width: var.$tablet-width) {
       top: 50%;
     }
+
+    @media (min-width: var.$desktop-width) {
+      top: 47%;
+    }
   }
 
   &--pp6 {
     @media (min-width: var.$tablet-width) {
       top: 45%;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      top: 41%;
     }
   }
 
@@ -221,6 +258,10 @@
 
     @media (min-width: var.$tablet-width) {
       top: 50%;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      top: 47%;
     }
   }
 }

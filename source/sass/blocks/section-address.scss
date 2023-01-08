@@ -28,12 +28,6 @@
 }
 
 .section-address__invitation {
-  // @include mixvar.cup-mobile(26px, 26px);
-
-  @media (min-width: var.$tablet-width) {
-    // @include mixvar.cup-tablet(56px, 60px);
-  }
-
   @media (min-width: var.$desktop-width) {
     padding: 59px 80px;
   }

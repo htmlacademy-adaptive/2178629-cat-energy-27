@@ -3,10 +3,6 @@
 
 .catalog-optional-goods-and-promos {
   position: relative;
-
-  @media (max-width: var.$mobile-width-only) {
-    // padding-top: 25px;
-  }
 }
 
 .catalog-optional-goods-and-promos__title {
@@ -23,7 +19,7 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    @include mixvar.cup-desktop;
+    @include mixvar.cup-desktop(80px);
   }
 }
 
@@ -40,10 +36,6 @@
 .catalog-optional-goods-and-promos__optional-goods {
   box-sizing: border-box;
   padding-top: 0;
-
-  @media (min-width: var.$tablet-width) {
-    // fill
-  }
 
   @media (min-width: var.$desktop-width) {
     padding: 0;

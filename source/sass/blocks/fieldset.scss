@@ -9,6 +9,12 @@
   margin: 0;
   padding: 0;
 
+  &--accented {
+    @media (min-width: var.$desktop-width) {
+      padding-bottom: 9px;
+    }
+  }
+
   &--accented::before {
     position: absolute;
     display: block;
@@ -37,8 +43,8 @@
       margin-bottom: 27px;
     }
 
-    @media (min-width: var.$tablet-width) and (max-width: (var.$desktop-width - 1px)) {
-      // @include mixvar.cup-tablet--form;
+    @media (min-width: (var.$desktop-width)) {
+      // padding-bottom: 50px;
     }
   }
 
@@ -60,7 +66,8 @@
       @include mixvar.cup-desktop;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      gap: 85px;
+      padding-bottom: 80px;
     }
   }
 
@@ -282,13 +289,6 @@
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.cup-tablet--form(54px);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
-    column-gap: 60px;
-  }
-
-  @media (min-width: var.$tablet-width) {
     margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -300,7 +300,8 @@
     @include mixvar.cup-desktop;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 60px;
+    column-gap: 80px;
+    padding-bottom: 53px;
   }
 }
 
@@ -428,7 +429,7 @@
 
   @media (min-width: var.$desktop-width) {
     font-size: 20px;
-    padding: 13px;
+    padding: 16px;
   }
 }
 

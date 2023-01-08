@@ -8,6 +8,10 @@
   @media (min-width: var.$tablet-width) {
     padding-top: 44px;
   }
+
+  @media (min-width: var.$desktop-width) {
+    padding-top: 51px;
+  }
 }
 
 .section-selection-form__header {

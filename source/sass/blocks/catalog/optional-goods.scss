@@ -6,7 +6,7 @@
   @include mixvar.cup-mobile(35px);
 
   @media (min-width: var.$tablet-width) {
-    @include mixvar.cup-tablet;
+    @include mixvar.cup-tablet(67px);
   }
 
   @media (min-width: var.$desktop-width) {

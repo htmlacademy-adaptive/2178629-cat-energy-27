@@ -21,10 +21,10 @@
     box-sizing: border-box;
     min-height: 511px;
     width: 100%;
-    padding: 0 39px 39px 39px;
+    padding: 0 36px 39px 40px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 240px 68px auto 40px;
+    grid-template-rows: 243px 68px auto 40px;
     grid-template-areas: "img" "title" "description" "btn";
     background: linear-gradient(to top, var.$brand-background 430px, var.$white 430px);
   }
@@ -89,7 +89,7 @@
     border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: var.$tablet-width) {
-      padding: 26px 30px 28px;
+      padding: 26px 36px 28px;
       min-height: fit-content;
       border: 1px solid #cdcdcd;
       border-top: none;
@@ -135,6 +135,7 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    padding: 0 50px;
   }
 
   &--functional {
@@ -150,6 +151,7 @@
       font-size: 20px;
       line-height: 20px;
       margin-bottom: 0;
+      padding: unset;
       text-align: left;
     }
   }
@@ -181,28 +183,45 @@
   @media (min-width: var.$tablet-width) {
     width: unset;
     height: unset;
-  }
-
-  &--tilted {
-    @media (min-width: var.$tablet-width) {
-      top: calc(50% - 12px);
-    }
+    top: 45%;
   }
 
   &--pp1 {
     top: 45%;
+
+    @media (min-width: var.$tablet-width) {
+      top: 50%;
+    }
   }
 
   &--pp3 {
     top: 52.5%;
+
+    @media (min-width: var.$tablet-width) {
+      top: 50%;
+    }
   }
 
   &--pp5 {
     top: 55%;
+
+    @media (min-width: var.$tablet-width) {
+      top: 50%;
+    }
+  }
+
+  &--pp6 {
+    @media (min-width: var.$tablet-width) {
+      top: 45%;
+    }
   }
 
   &--pp7 {
     top: 52.5%;
+
+    @media (min-width: var.$tablet-width) {
+      top: 50%;
+    }
   }
 }
 
@@ -212,6 +231,10 @@
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &--secondary {
+    line-height: 25px;
+  }
 }
 
 .product-card__description {
@@ -222,7 +245,9 @@
   text-align: center;
 
   @media (min-width: var.$tablet-width) {
-    margin: 0 50px 0 50px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 20px 0 20px;
   }
 
   @media (min-width: var.$desktop-width) {

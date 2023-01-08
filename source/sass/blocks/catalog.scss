@@ -24,7 +24,7 @@
 
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(60px, 60px, none);
-    @include mixvar.cup-tablet(82px);
+    @include mixvar.cup-tablet(82px, 17px);
   }
 
   @media (min-width: var.$desktop-width) {
@@ -37,7 +37,7 @@
   margin-bottom: 24px;
 
   @media (min-width: var.$tablet-width) {
-    @include mixvar.cup-tablet;
+    @include mixvar.cup-tablet(69px);
     margin-bottom: unset;
   }
 

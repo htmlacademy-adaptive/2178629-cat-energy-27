@@ -42,9 +42,10 @@
     background: url("../img/sprite.svg#icon-gift") no-repeat center / 102%;
 
     @media (min-width: var.$tablet-width) {
-      width: 80px;
-      height: 83px;
+      width: 84px;
+      height: 84px;
       background-size: 100%;
+      background-position: center -2px;
     }
   }
 }
@@ -58,7 +59,7 @@
   line-height: 20px;
 
   @media (min-width: var.$tablet-width) {
-    width: 180px;
+    width: 161px;
     text-align: left;
   }
 

@@ -44,7 +44,7 @@
   display: block;
   margin: 0;
   margin-bottom: 20px;
-  color: var.$text-special;
+  // color: var.$text-special;
 
   @media (min-width: var.$tablet-width) {
     margin-bottom: 54px;
@@ -52,7 +52,7 @@
 
   @media (min-width: var.$desktop-width) {
     display: block;
-    width: 460px;
+    width: 433px;
     margin-bottom: 69px;
   }
 }
@@ -82,6 +82,6 @@
     // padding: 0;
     position: absolute;
     top: 0;
-    right: 110px;
+    right: 50px;
   }
 }

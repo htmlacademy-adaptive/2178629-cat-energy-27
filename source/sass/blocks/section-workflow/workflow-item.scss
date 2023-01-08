@@ -16,6 +16,10 @@
     min-height: 280px;
   }
 
+  @media (min-width: var.$desktop-width) {
+    padding-right: 0;
+  }
+
   &::before {
     flex-shrink: 0;
     content: "";

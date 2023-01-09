@@ -3,15 +3,11 @@
 @forward "./section-workflow/workflow-item.scss";
 
 .section-workflow {
-  // padding: 0 20px 49px 20px;
-
   @media (min-width: var.$tablet-width) {
-    // padding: 0 30px 49px 30px;
     border-bottom: 2px solid var.$decoration;
   }
 
   @media (min-width: var.$desktop-width) {
-    // padding: 0 110px 49px 110px;
     border-bottom: none;
   }
 }
@@ -42,7 +38,7 @@
     counter-reset: workflowCounter 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 39px;
+    row-gap: 38px;
     column-gap: 60px;
   }
 
@@ -50,6 +46,6 @@
     counter-reset: workflowCounter 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 60px;
+    column-gap: 80px;
   }
 }

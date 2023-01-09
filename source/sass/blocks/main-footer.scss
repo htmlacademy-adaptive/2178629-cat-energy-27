@@ -2,11 +2,8 @@
 @use "../mixins.scss" as mixvar;
 
 .main-footer {
+  margin-top: auto;
   background-color: var.$brand-background;
-
-  @media (min-width: var.$tablet-width) {
-    // padding: 58px 30px 58px 30px;
-  }
 }
 
 .main-footer__item--decorated {
@@ -18,14 +15,15 @@
 .main-footer__logo {
   box-sizing: border-box;
   width: 100%;
-  height: 95px;
+  height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (min-width: var.$tablet-width) {
-    width: fit-content;
-    height: fit-content;
+    width: 143px;
+    height: 26px;
+    margin-right: 37px;
   }
 
   &:hover {
@@ -34,6 +32,16 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.main-footer__logo-text {
+  width: 128px;
+  height: 24px;
+
+  @media (min-width: var.$tablet-width) {
+    width: 142px;
+    height: 26px;
   }
 }
 
@@ -51,14 +59,19 @@
 .socials {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: var.$tablet-width) {
+    max-width: 40%;
+  }
 }
 
 .socials__item {
   display: flex;
   justify-content: center;
   width: 52px;
-  height: 63px;
+  height: 61px;
 
   @media (min-width: var.$tablet-width) {
     height: fit-content;
@@ -90,11 +103,12 @@
 
 .main-footer__htmlacademy-logo {
   width: 100%;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 
   @media (min-width: var.$tablet-width) {
     width: max-content;
     padding: 0;
+    margin-left: 13px;
   }
 }

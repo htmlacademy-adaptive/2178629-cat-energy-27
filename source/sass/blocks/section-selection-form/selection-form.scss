@@ -10,7 +10,7 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    @include mixvar.cup-desktop;
+    @include mixvar.cup-desktop(69px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;

@@ -3,7 +3,7 @@
 @forward "./promotion/promotion-card.scss";
 
 .promotion__promotion-card {
-  @include mixvar.cup-mobile;
+  @include mixvar.cup-mobile(35px);
   text-align: left;
 
   @media (min-width: var.$tablet-width) {

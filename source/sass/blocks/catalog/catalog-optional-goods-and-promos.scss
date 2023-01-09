@@ -3,14 +3,10 @@
 
 .catalog-optional-goods-and-promos {
   position: relative;
-
-  @media (max-width: var.$mobile-width-only) {
-    // padding-top: 25px;
-  }
 }
 
 .catalog-optional-goods-and-promos__title {
-  @include mixvar.cup-mobile(36px);
+  @include mixvar.cup-mobile(35px);
   display: block;
   position: relative;
   font-size: 24px;
@@ -19,10 +15,11 @@
   @media (min-width: var.$tablet-width) {
     @include mixvar.accented-text(36px, 36px, none);
     @include mixvar.cup-tablet(80px);
+    padding-left: 68px;
   }
 
   @media (min-width: var.$desktop-width) {
-    @include mixvar.cup-desktop;
+    @include mixvar.cup-desktop(80px);
   }
 }
 
@@ -39,10 +36,6 @@
 .catalog-optional-goods-and-promos__optional-goods {
   box-sizing: border-box;
   padding-top: 0;
-
-  @media (min-width: var.$tablet-width) {
-    // fill
-  }
 
   @media (min-width: var.$desktop-width) {
     padding: 0;

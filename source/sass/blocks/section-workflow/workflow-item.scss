@@ -3,6 +3,7 @@
 .workflow-item {
   position: relative;
   display: flex;
+  align-items: center;
   gap: 20px;
 
   @media (min-width: var.$tablet-width) {
@@ -10,8 +11,13 @@
     box-sizing: border-box;
     flex-direction: column;
     gap: 31px;
+    align-items: unset;
     padding: 40px 70px 40px 0;
     min-height: 280px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding-right: 0;
   }
 
   &::before {

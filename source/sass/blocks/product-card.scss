@@ -14,17 +14,17 @@
     "btn btn";
 
   @media (max-width: var.$mobile-width-only) {
-    @include mixvar.cup-mobile(25px, 20px);
+    @include mixvar.cup-mobile(24px, 20px);
   }
 
   @media (min-width: var.$tablet-width) {
     box-sizing: border-box;
     min-height: 511px;
     width: 100%;
-    padding: 0 39px 39px 39px;
+    padding: 0 36px 39px 40px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 240px 68px auto 40px;
+    grid-template-rows: 243px 68px auto 40px;
     grid-template-areas: "img" "title" "description" "btn";
     background: linear-gradient(to top, var.$brand-background 430px, var.$white 430px);
   }
@@ -33,14 +33,20 @@
     min-height: 208px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 62px 30px auto 40px;
+    grid-template-rows: 58px 29px auto 41px;
     grid-template-areas: "img" "title" "description" "btn";
-
 
     @media (min-width: var.$tablet-width) {
       min-height: 430px;
       background: none;
       border: 1px solid var.$brand-background;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 160px 68px auto 40px;
+      grid-template-areas: "img" "title" "description" "btn";
+    }
+
+    @media (min-width: var.$desktop-width) {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 160px 68px auto 40px;
@@ -85,11 +91,11 @@
     box-sizing: border-box;
     min-width: 240px;
     min-height: unset;
-    padding: 12px 0 18px;
+    padding: 13px 0 18px;
     border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: var.$tablet-width) {
-      padding: 26px 30px 28px;
+      padding: 26px 36px 28px;
       min-height: fit-content;
       border: 1px solid #cdcdcd;
       border-top: none;
@@ -135,6 +141,12 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    padding: 0 50px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 0 10px;
+    line-height: 21px;
   }
 
   &--functional {
@@ -150,13 +162,14 @@
       font-size: 20px;
       line-height: 20px;
       margin-bottom: 0;
+      padding: unset;
       text-align: left;
     }
   }
 }
 
 .product-card__title-br {
-  @media (min-width: var.$tablet-width) and (max-width: calc(var.$desktop-width - 1px)) {
+  @media (min-width: var.$tablet-width) {
     display: none;
   }
 }
@@ -165,6 +178,10 @@
   grid-area: description;
 
   @include mixvar.reset-list;
+
+  &--main-goods {
+    padding-bottom: 21px;
+  }
 }
 
 .product-card__img {
@@ -172,16 +189,79 @@
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 48%;
 
   @media (min-width: var.$tablet-width) {
     width: unset;
     height: unset;
+    top: 45%;
   }
 
-  &--tilted {
+  @media (min-width: var.$tablet-width) {
+    top: 40%;
+  }
+
+  &--pp1 {
+    top: 45%;
+
     @media (min-width: var.$tablet-width) {
-      top: calc(50% - 12px);
+      top: 50%;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      top: 47%;
+    }
+  }
+
+  &--pp2 {
+    @media (min-width: var.$desktop-width) {
+      transform: translate(-50%, -50%) scale(100%, 95%);
+    }
+  }
+
+  &--pp3 {
+    top: 52.5%;
+
+    @media (min-width: var.$tablet-width) {
+      top: 50%;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      top: 47%;
+    }
+  }
+
+  &--pp5 {
+    top: 55%;
+
+    @media (min-width: var.$tablet-width) {
+      top: 50%;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      top: 47%;
+    }
+  }
+
+  &--pp6 {
+    @media (min-width: var.$tablet-width) {
+      top: 45%;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      top: 41%;
+    }
+  }
+
+  &--pp7 {
+    top: 52.5%;
+
+    @media (min-width: var.$tablet-width) {
+      top: 50%;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      top: 47%;
     }
   }
 }
@@ -192,6 +272,10 @@
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &--secondary {
+    line-height: 25px;
+  }
 }
 
 .product-card__description {
@@ -202,7 +286,9 @@
   text-align: center;
 
   @media (min-width: var.$tablet-width) {
-    margin: 0 50px 0 50px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 20px 0 20px;
   }
 
   @media (min-width: var.$desktop-width) {

@@ -101,10 +101,11 @@
   color: var.$text-special;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 
   @media (min-width: var.$tablet-width) {
     padding-left: 0;
+    margin-bottom: 23px;
     font-size: 36px;
     line-height: 36px;
   }

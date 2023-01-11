@@ -1,7 +1,6 @@
 @use "../../variables.scss" as var;
 
 .compare-slider {
-  --knob-position-limit: clamp(20px, var(--knob-position), 100% - 20px);
   position: relative;
   width: 100%;
   height: 100%;
@@ -15,8 +14,9 @@
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   margin: 0;
-  width: 100%;
+  width: calc(100% + 40px);
   height: 100%;
+  left: -20px;
   background-color: transparent;
 
   &::-webkit-slider-thumb {
@@ -60,13 +60,17 @@
   width: 100%;
   height: auto;
   background: image-set(
-    url("../img/cat-before-mobile@1x.png") 1x,
-    url("../img/cat-before-mobile@2x.png") 2x) no-repeat left / auto 100%;
+    url("../img/cat-before-mobile@2x.webp") 2x,
+    url("../img/cat-before-mobile@2x.png") 2x,
+    url("../img/cat-before-mobile@1x.webp") 1x,
+    url("../img/cat-before-mobile@1x.png") 1x) no-repeat left / auto 100%;
 
   @media (min-width: var.$tablet-width) {
     background: image-set(
       url("../img/cat-before-tablet@1x.png") 1x,
-      url("../img/cat-before-tablet@2x.png") 2x) no-repeat left / auto 100%;
+      url("../img/cat-before-tablet@2x.png") 2x,
+      url("../img/cat-before-tablet@1x.webp") 1x,
+      url("../img/cat-before-tablet@2x.webp") 2x) no-repeat left / auto 100%;
   }
 }
 
@@ -77,12 +81,16 @@
   width: 100%;
   height: auto;
   background: image-set(
-    url("../img/cat-after-mobile.png") 1x,
-    url("../img/cat-after-mobile@2x.png") 2x) no-repeat right / auto 100%;
+    url("../img/cat-after-mobile@2x.webp") 2x,
+    url("../img/cat-after-mobile@2x.png") 2x,
+    url("../img/cat-after-mobile@1x.webp") 1x,
+    url("../img/cat-after-mobile@1x.png") 1x) no-repeat right / auto 100%;
 
   @media (min-width: var.$tablet-width) {
     background: image-set(
-      url("../img/cat-after-xl.png") 1x,
-      url("../img/cat-after-xl@2x.png") 2x) no-repeat right / auto 100%;
+      url("../img/cat-after-tablet@2x.png") 2x,
+      url("../img/cat-after-tablet@2x.png") 2x,
+      url("../img/cat-after-tablet@1x.png") 1x,
+      url("../img/cat-after-tablet@1x.png") 1x) no-repeat right / auto 100%;
   }
 }

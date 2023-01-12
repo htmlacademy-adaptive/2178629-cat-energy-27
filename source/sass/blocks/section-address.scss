@@ -21,9 +21,20 @@
   height: 362px;
   border: none;
 
-
   @media (min-width: var.$tablet-width) {
     height: 400px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    display: none;
+  }
+
+  &--desktop-width {
+    display: none;
+
+    @media (min-width: var.$desktop-width) {
+      display: block;
+    }
   }
 }
 

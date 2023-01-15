@@ -1,11 +1,9 @@
 .page {
-  min-width: 320px;
   display: flex;
   flex-direction: column;
 }
 
 .page__body {
+  min-width: 320px;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }

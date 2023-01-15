@@ -6,6 +6,48 @@
   height: 100%;
   display: grid;
   grid-template-columns: var(--knob-position) 1fr;
+
+  &::before {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    content: "";
+    width: 100%;
+    height: auto;
+    background: image-set(
+      url("../img/cat-before-mobile@2x.webp") 2x,
+      url("../img/cat-before-mobile@2x.png") 2x,
+      url("../img/cat-before-mobile@1x.webp") 1x,
+      url("../img/cat-before-mobile@1x.png") 1x) no-repeat left / auto 100%;
+
+    @media (min-width: var.$tablet-width) {
+      background: image-set(
+        url("../img/cat-before-tablet@1x.png") 1x,
+        url("../img/cat-before-tablet@2x.png") 2x,
+        url("../img/cat-before-tablet@1x.webp") 1x,
+        url("../img/cat-before-tablet@2x.webp") 2x) no-repeat left / auto 100%;
+    }
+  }
+
+  &::after {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+    content: "";
+    width: 100%;
+    height: auto;
+    background: image-set(
+      url("../img/cat-after-mobile@2x.webp") 2x,
+      url("../img/cat-after-mobile@2x.png") 2x,
+      url("../img/cat-after-mobile@1x.webp") 1x,
+      url("../img/cat-after-mobile@1x.png") 1x) no-repeat right / auto 100%;
+
+    @media (min-width: var.$tablet-width) {
+      background: image-set(
+        url("../img/cat-after-tablet@2x.png") 2x,
+        url("../img/cat-after-tablet@2x.png") 2x,
+        url("../img/cat-after-tablet@1x.png") 1x,
+        url("../img/cat-after-tablet@1x.png") 1x) no-repeat right / auto 100%;
+    }
+  }
 }
 
 .compare-slider__control-knob-group {
@@ -50,47 +92,5 @@
     @media (min-width: var.$tablet-width) {
       background: url("../img/sprite.svg#control-knob-512-active") center;
     }
-  }
-}
-
-.compare-slider::before {
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
-  content: "";
-  width: 100%;
-  height: auto;
-  background: image-set(
-    url("../img/cat-before-mobile@2x.webp") 2x,
-    url("../img/cat-before-mobile@2x.png") 2x,
-    url("../img/cat-before-mobile@1x.webp") 1x,
-    url("../img/cat-before-mobile@1x.png") 1x) no-repeat left / auto 100%;
-
-  @media (min-width: var.$tablet-width) {
-    background: image-set(
-      url("../img/cat-before-tablet@1x.png") 1x,
-      url("../img/cat-before-tablet@2x.png") 2x,
-      url("../img/cat-before-tablet@1x.webp") 1x,
-      url("../img/cat-before-tablet@2x.webp") 2x) no-repeat left / auto 100%;
-  }
-}
-
-.compare-slider::after {
-  grid-column: 2 / -1;
-  grid-row: 1 / -1;
-  content: "";
-  width: 100%;
-  height: auto;
-  background: image-set(
-    url("../img/cat-after-mobile@2x.webp") 2x,
-    url("../img/cat-after-mobile@2x.png") 2x,
-    url("../img/cat-after-mobile@1x.webp") 1x,
-    url("../img/cat-after-mobile@1x.png") 1x) no-repeat right / auto 100%;
-
-  @media (min-width: var.$tablet-width) {
-    background: image-set(
-      url("../img/cat-after-tablet@2x.png") 2x,
-      url("../img/cat-after-tablet@2x.png") 2x,
-      url("../img/cat-after-tablet@1x.png") 1x,
-      url("../img/cat-after-tablet@1x.png") 1x) no-repeat right / auto 100%;
   }
 }

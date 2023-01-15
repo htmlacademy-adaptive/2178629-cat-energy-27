@@ -48,6 +48,8 @@
 
 .section-hero__title {
   display: block;
+  position: relative;
+  z-index: 2;
   font-size: 36px;
   line-height: 36px;
   text-align: inherit;

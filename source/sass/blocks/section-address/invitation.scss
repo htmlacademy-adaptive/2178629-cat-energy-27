@@ -19,13 +19,13 @@
     gap: 0;
     background-color: var.$white;
   }
-}
 
-.invitation--background {
-  background-color: #f2f2f2;
+  &--background {
+    background-color: #f2f2f2;
 
-  @media (min-width: var.$desktop-width) {
-    background-color: var.$white;
+    @media (min-width: var.$desktop-width) {
+      background-color: var.$white;
+    }
   }
 }
 

@@ -12,14 +12,14 @@
       justify-content: space-between;
     }
   }
-}
 
-.htmlacademy-logo:hover {
-  color: var.$brand-color;
-}
+  &:hover {
+    color: var.$brand-color;
+  }
 
-.htmlacademy-logo:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .htmlacademy-logo__text {

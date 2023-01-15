@@ -101,6 +101,7 @@
     @media (min-width: var.$desktop-width) {
       @include mixvar.cup-desktop(60px);
       flex-direction: row;
+      flex-wrap: wrap;
       gap: 80px;
     }
   }
@@ -131,6 +132,10 @@
 
     @media (min-width: var.$tablet-width) {
       gap: 19px;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      width: calc((100% - 80px) / 2);
     }
   }
 }

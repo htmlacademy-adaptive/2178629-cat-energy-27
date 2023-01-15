@@ -19,7 +19,7 @@
   @media (min-width: var.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 62px 80px;
+    gap: 66px 80px;
   }
 
   &--optional-goods {
@@ -35,5 +35,9 @@
 .cards-wrapper__product-card {
   @media (max-width: var.$mobile-width-only) {
     border-bottom: 1px solid #d9d9d9;
+  }
+
+  &--functional {
+    height: 100%;
   }
 }

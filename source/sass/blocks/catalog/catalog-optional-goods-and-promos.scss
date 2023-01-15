@@ -19,9 +19,19 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    @include mixvar.cup-desktop(80px);
+    @include mixvar.cup-desktop(78px);
   }
 }
+
+.catalog-optional-goods-and-promos__title-spanned {
+  background: var.$white;
+  box-shadow: 20px 0 var.$white, -38px 0 var.$white;
+
+  @media (min-width: var.$tablet-width) {
+    box-shadow: 36px 0 var.$white, -37px 0 var.$white;
+  }
+}
+
 
 .catalog-optional-goods-and-promos__group {
   @media (min-width: var.$desktop-width) {

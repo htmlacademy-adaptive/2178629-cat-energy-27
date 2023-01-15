@@ -8,10 +8,11 @@
   min-height: 205px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 55px 1fr auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas: "img title"
     "img description"
     "btn btn";
+  align-items: stretch;
 
   @media (max-width: var.$mobile-width-only) {
     @include mixvar.cup-mobile(24px, 20px);
@@ -19,37 +20,31 @@
 
   @media (min-width: var.$tablet-width) {
     box-sizing: border-box;
-    min-height: 511px;
     width: 100%;
     padding: 0 36px 39px 40px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 243px 68px auto 40px;
+    grid-template-rows: 243px auto auto auto;
     grid-template-areas: "img" "title" "description" "btn";
-    background: linear-gradient(to top, var.$brand-background 430px, var.$white 430px);
+    background: linear-gradient(to bottom, var.$white 81px, var.$brand-background 81px);
   }
 
   &--functional {
-    min-height: 208px;
+    min-height: calc(100% - 81px);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 58px 29px auto 41px;
+    grid-template-rows: 58px auto auto auto;
     grid-template-areas: "img" "title" "description" "btn";
 
     @media (min-width: var.$tablet-width) {
-      min-height: 430px;
+      align-self: stretch;
+      height: calc(100% - 81px);
+      margin-top: 81px;
       background: none;
       border: 1px solid var.$brand-background;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 160px 68px auto 40px;
-      grid-template-areas: "img" "title" "description" "btn";
-    }
-
-    @media (min-width: var.$desktop-width) {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 160px 68px auto 40px;
+      grid-template-rows: 160px auto 1fr auto;
       grid-template-areas: "img" "title" "description" "btn";
     }
   }
@@ -102,15 +97,14 @@
       background: none;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto 39px;
+      grid-template-rows: auto auto;
       grid-template-areas: "title description" "btn btn";
-      row-gap: 25px;
-      align-items: end;
+      row-gap: 24px;
+      align-items: baseline;
     }
 
     @media (min-width: var.$desktop-width) {
-      padding: 15px 0;
-      min-height: fit-content;
+      padding: 15px 0 16px 0;
       display: grid;
       grid-template-columns: 284px 1fr 244px;
       grid-template-rows: none;
@@ -134,23 +128,37 @@
   @include mixvar.accented-text(16px, 20px, uppercase);
   text-decoration: none;
   color: var.$text-common;
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 0;
 
   @media (min-width: var.$tablet-width) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    padding: 0 50px;
+    padding: 0 50px 0 50px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: var.$desktop-width) {
-    padding: 0 10px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 0;
     line-height: 21px;
   }
 
   &--functional {
     text-align: center;
+    margin-bottom: 9px;
+
+    @media (min-width: var.$tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      margin-bottom: 22px;
+    }
   }
 
   &--optional-goods {
@@ -180,7 +188,19 @@
   @include mixvar.reset-list;
 
   &--main-goods {
-    padding-bottom: 21px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  &--optional-goods {
+    margin-bottom: 10px;
+
+    @media (min-width: var.$tablet-width) {
+      margin: 0;
+    }
   }
 }
 
@@ -214,6 +234,10 @@
   }
 
   &--pp2 {
+    @media (min-width: var.$tablet-width) {
+      transform: translate(-50%, -43%);
+    }
+
     @media (min-width: var.$desktop-width) {
       transform: translate(-50%, -50%) scale(100%, 95%);
     }
@@ -228,6 +252,16 @@
 
     @media (min-width: var.$desktop-width) {
       top: 47%;
+    }
+  }
+
+  &--pp4 {
+    @media (min-width: var.$tablet-width) {
+      top: 45%;
+    }
+
+    @media (min-width: var.$desktop-width) {
+      top: 41%;
     }
   }
 
@@ -249,7 +283,7 @@
     }
 
     @media (min-width: var.$desktop-width) {
-      top: 41%;
+      top: 40%;
     }
   }
 
@@ -275,11 +309,17 @@
 
   &--secondary {
     line-height: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    @media (min-width: var.$tablet-width) {
+      padding-bottom: 5px;
+    }
   }
 }
 
 .product-card__description {
-  margin: 0;
+  margin: 0 0 20px 0;
   grid-area: description;
   font-size: 12px;
   line-height: 16px;
@@ -292,6 +332,6 @@
   }
 
   @media (min-width: var.$desktop-width) {
-    margin: 0 10px 0 10px;
+    margin: 0;
   }
 }
